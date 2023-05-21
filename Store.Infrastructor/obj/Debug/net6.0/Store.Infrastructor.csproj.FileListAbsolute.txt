@@ -1,0 +1,12 @@
+C:\projects\Store\Store\Store.Infrastructor\bin\Debug\net6.0\Store.Infrastructor.deps.json
+C:\projects\Store\Store\Store.Infrastructor\bin\Debug\net6.0\Store.Infrastructor.dll
+C:\projects\Store\Store\Store.Infrastructor\bin\Debug\net6.0\Store.Infrastructor.pdb
+C:\projects\Store\Store\Store.Infrastructor\obj\Debug\net6.0\Store.Infrastructor.csproj.AssemblyReference.cache
+C:\projects\Store\Store\Store.Infrastructor\obj\Debug\net6.0\Store.Infrastructor.GeneratedMSBuildEditorConfig.editorconfig
+C:\projects\Store\Store\Store.Infrastructor\obj\Debug\net6.0\Store.Infrastructor.AssemblyInfoInputs.cache
+C:\projects\Store\Store\Store.Infrastructor\obj\Debug\net6.0\Store.Infrastructor.AssemblyInfo.cs
+C:\projects\Store\Store\Store.Infrastructor\obj\Debug\net6.0\Store.Infrastructor.csproj.CoreCompileInputs.cache
+C:\projects\Store\Store\Store.Infrastructor\obj\Debug\net6.0\Store.Infrastructor.dll
+C:\projects\Store\Store\Store.Infrastructor\obj\Debug\net6.0\refint\Store.Infrastructor.dll
+C:\projects\Store\Store\Store.Infrastructor\obj\Debug\net6.0\Store.Infrastructor.pdb
+C:\projects\Store\Store\Store.Infrastructor\obj\Debug\net6.0\ref\Store.Infrastructor.dll

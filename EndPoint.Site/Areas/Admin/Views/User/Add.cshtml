@@ -1,0 +1,175 @@
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@model EndPoint.Site.Areas.Admin.Controllers.UserModel_Request
+@{
+    ViewData["Title"] = "Add";
+    Layout = "~/Areas/Admin/Views/Shared/_Adminlayout.cshtml";
+}
+@section Head{
+    <link rel="stylesheet" href="~/AdminTemplate/lib/toastify-js/toastify.min.css" />
+}
+<div class="content">
+    <div class="intro-y flex items-center mt-8">
+        <h2 class="text-lg font-medium mr-auto">
+            Form Validation
+        </h2>
+    </div>
+    <div class="grid grid-cols-12 gap-6 mt-5">
+        <div class="intro-y col-span-12 lg:col-span-6">
+            <!-- BEGIN: Form Validation -->
+            <div class="intro-y box">
+                <div class="flex flex-col sm:flex-row items-center p-5 border-b border-slate-200/60 dark:border-darkmode-400">
+                    <h2 class="font-medium text-base mr-auto">
+                        Create User
+                    </h2>
+                </div>
+                <div id="form-validation" class="p-5">
+                    <div class="preview">
+                        <form method="post" Id="UserForm">
+                            <!-- BEGIN: Validation Form -->
+                            <div class="input-form">
+                                <label asp-for="Name" class="form-label w-full flex flex-col sm:flex-row"> Name <span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500">Required, at least 2 characters</span> </label>
+                                <input asp-for="Name" type="text" class="form-control mb-1" placeholder="Name">
+                                <span asp-validation-for="Name" class="pristine-error text-danger mt-2"></span>
+                            </div>
+                            <div class="input-form mt-3">
+                                <label asp-for="LastName" class="form-label w-full flex flex-col sm:flex-row"> Last Name <span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500">Required, at least 2 characters</span> </label>
+                                <input asp-for="LastName" type="text" class="form-control mb-1" placeholder="Last Name">
+                                <span asp-validation-for="LastName" class="pristine-error text-danger mt-2"></span>
+
+                            </div>
+                            <div class="input-form mt-3">
+                                <label class="form-label w-full flex flex-col sm:flex-row"> Rolls </label>
+                                <select asp-for="Rolls" data-placeholder="Select rolls" asp-items="ViewBag.Rolls" class="tom-select w-full" multiple>
+                                </select>
+                            </div>
+                            <div class="input-form mt-3">
+                                <label class="form-label w-full flex flex-col sm:flex-row"> Gender  </label>
+                                <div class="form-inline items-start flex-col xl:flex-row  first:mt-0 first:pt-0">
+                                    <div class="w-full mt-3 xl:mt-0 flex-1">
+                                        <div class="flex flex-col sm:flex-row">
+                                            <div class="form-check mr-4">
+                                                <input asp-for="Gender" class="form-check-input" type="radio" value="1">
+                                                <label class="form-check-label" for="shipping-service-standard">Man</label>
+                                            </div>
+                                            <div class="form-check mr-4 mt-2 sm:mt-0">
+                                                <input asp-for="Gender" class="form-check-input" type="radio" value="2">
+                                                <label class="form-check-label" for="shipping-service-custom">Female</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-form mt-3">
+                                <label class="form-label w-full mt-5 flex flex-col sm:flex-row"> Status  </label>
+                                <div class="w-full mt-3 xl:mt-0 flex-1">
+                                    <div class="form-check form-switch">
+                                        <input asp-for="IsActive" class="form-check-input" type="checkbox">
+                                        <label class="form-check-label leading-relaxed text-slate-500 text-xs" for="preorder-active"> Select status 'Active' or 'Inactive'' </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-form mt-3">
+                                <label asp-for="Mobile" class="form-label w-full flex flex-col sm:flex-row"> Mobile <span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500">Required, Number only &amp; max and min 11 characters</span> </label>
+                                <input asp-for="Mobile" type="number" class="form-control mb-1" placeholder="Mobile">
+                                <span asp-validation-for="Mobile" class="pristine-error text-danger mt-2"></span>
+                            </div>
+                            <div class="input-form mt-3">
+                                <label asp-for="Email" class="form-label w-full flex flex-col sm:flex-row"> Email <span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500">Required, email address format</span> </label>
+                                <input asp-for="Email" type="email" class="form-control mb-1" placeholder="example@gmail.com">
+                                <span asp-validation-for="Email" class="pristine-error text-danger mt-2"></span>
+                            </div>
+                            <div class="input-form mt-3">
+                                <label asp-for="Username" class="form-label w-full flex flex-col sm:flex-row"> Username <span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500">Required, at least 2 characters</span> </label>
+                                <input asp-for="Username" type="text" class="form-control mb-1" placeholder="Username" minlength="2" required="">
+                                <span asp-validation-for="Username" class="pristine-error text-danger mt-2"></span>
+                            </div>
+                            <div class="input-form mt-3">
+                                <label asp-for="Password" class="form-label w-full flex flex-col sm:flex-row"> Password  </label>
+                                <input asp-for="Password" type="password" class="form-control mb-1" placeholder="secret">
+                                <span asp-validation-for="Password" class="pristine-error text-danger mt-2"></span>
+                            </div>
+                            <div class="input-form mt-3">
+                                <label asp-for="Address" class="form-label w-full flex flex-col sm:flex-row"> Address </label>
+                                <textarea asp-for="Address" class="form-control mb-1" placeholder="Type your Address"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary mt-5 frm-register-user">Register</button>
+
+                            <!-- END: Validation Form -->
+                            <!-- BEGIN: Success Notification Content -->
+                            <div id="success-notification-content" class="toastify-content hidden flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="check-circle" class="lucide lucide-check-circle text-success" data-lucide="check-circle"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                <div class="ml-4 mr-4">
+                                    <div class="font-medium color-black">Registration success!</div>
+                                    <div class="text-slate-500 mt-1"> Please check your e-mail for further info! </div>
+                                </div>
+                            </div>
+                            <!-- END: Success Notification Content -->
+                            <!-- BEGIN: Failed Notification Content -->
+                            <div id="failed-notification-content" class="toastify-content hidden flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="x-circle" class="lucide lucide-x-circle text-danger" data-lucide="x-circle"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+                                <div class="ml-4 mr-4">
+                                    <div class="font-medium color color-black">Registration failed!</div>
+                                    <div class="text-slate-500 mt-1"> Please check the fileld form. </div>
+                                </div>
+                            </div>
+                            <!-- END: Failed Notification Content -->
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            <!-- END: Form Validation -->
+        </div>
+    </div>
+</div>
+@section Scripts{
+    <script src="~/AdminTemplate/lib/jquery/jquery.min.js"></script>
+    <script src="~/AdminTemplate/lib/jquery-validate/jquery.validate.min.js"></script>
+    <script src="~/AdminTemplate/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/AdminTemplate/lib/toastify-js/toastify.min.js"></script>
+    <script src="~/AdminTemplate/js/main.js"></script>
+    <script>
+        //create
+        $('#UserForm').on("submit", function (e) {
+            event.preventDefault();
+            if ($(this).valid()) {
+                let rollsItem = [];
+                $('#Rolls :selected').each(function (i, sel) {
+                    rollsItem.push(parseInt($(sel).val()));
+                });
+                let elementItems = e.target;
+                let Name = elementItems.Name.value
+                let LastName = elementItems.LastName.value
+                let Rolls = rollsItem
+                let Gender = elementItems.Gender.value
+                let IsActive = $('#IsActive').is(':checked') ? true : false
+                let Mobile = elementItems.Mobile.value
+                let Email = elementItems.Email.value
+                let Username = elementItems.Username.value
+                let Password = elementItems.Password.value
+                let Address = elementItems.Address.value
+
+                var data = {
+                    Name, LastName, Rolls, Gender, IsActive, Mobile, Email, Username, Password, Address
+                }
+                console.log(data);
+                //ajax request
+                ajaxFunc("Add", data, "POST",
+                    function (result) {
+                        if (result.isSuccess) {
+                            $("#UserForm").trigger("reset");
+                            successToastify.showToast();
+                        } else {
+                            dangerToastify.showToast();
+                        }
+                    },
+                    function (error) {
+                        dangerToastify.showToast();
+                        console.log(error);
+                    }
+                );
+            }
+        });
+    </script>
+}
+
