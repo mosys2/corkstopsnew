@@ -1,4 +1,4 @@
-﻿@using EndPoint.Site.Areas.Admin.Controllers;
+﻿@using EndPoint.Site.Areas.Admin.Models.ContollerModels.User;
 @addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
 @model UserModel_Edit
 
@@ -10,6 +10,7 @@
 @section Head{
     <link rel="stylesheet" href="~/AdminTemplate/lib/toastify-js/toastify.min.css" />
 }
+
 <div class="content">
     <div class="intro-y flex items-center mt-8">
         <h2 class="text-lg font-medium mr-auto">
@@ -25,9 +26,9 @@
                         Create User
                     </h2>
                 </div>
-                <div id="form-validation" class="p-5">
+                <div  id="form-validation" class="p-5">
                     <div class="preview">
-                        <form method="post" Id="UserFormEdit">
+                        <form  method="post" Id="UserFormEdit">
                             <input asp-for="Id" type="hidden" />
                             <!-- BEGIN: Validation Form -->
                             <div class="input-form">
@@ -126,6 +127,14 @@
     <script src="~/AdminTemplate/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
     <script src="~/AdminTemplate/lib/toastify-js/toastify.min.js"></script>
     <script src="~/AdminTemplate/js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#Mobile").trigger("focus");
+            $("#Email").trigger("focus");
+            $("#Username").trigger("focus");
+            $("#Name").trigger("focus");
+        });
+    </script>
     <script>
         //create
         $('#UserFormEdit').on("submit", function (e) {

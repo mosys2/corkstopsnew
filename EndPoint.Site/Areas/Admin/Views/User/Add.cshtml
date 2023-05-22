@@ -1,5 +1,6 @@
-﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
-@model EndPoint.Site.Areas.Admin.Controllers.UserModel_Request
+﻿@using EndPoint.Site.Areas.Admin.Models.ContollerModels.User;
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@model UserModel_Request
 @{
     ViewData["Title"] = "Add";
     Layout = "~/Areas/Admin/Views/Shared/_Adminlayout.cshtml";
@@ -153,7 +154,6 @@
                     Name, LastName, Rolls, Gender, IsActive, Mobile, Email, Username, Password, Address
                 }
                 console.log(data);
-                //ajax request
                 ajaxFunc("Add", model, "POST",
                     function (result) {
                         if (result.isSuccess) {

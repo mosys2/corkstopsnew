@@ -41,9 +41,15 @@ namespace Store.Application.Services.Users.Commands.EditeUser
             {
 
                 //Remove Last Rolls
-                var userInRolls = userItem.UserInRolls.ToList();
-                _context.UserInRolls.RemoveRange(userInRolls);
-                await _context.SaveChangesAsync();
+                //var userInRolls = userItem.UserInRolls.ToList();
+                //_context.UserInRolls.RemoveRange(userInRolls);
+                //await _context.SaveChangesAsync();
+
+                foreach(var item in userItem.UserInRolls.ToList())
+                {
+                    _context.UserInRolls.Remove(item);
+                    await _context.SaveChangesAsync();
+                }
 
                 //Add New Rolls
                 List<UserInRoll> userInRollList = new List<UserInRoll>();

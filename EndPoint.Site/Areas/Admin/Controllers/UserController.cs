@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using EndPoint.Site.Areas.Admin.Models.ContollerModels.User;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Build.Framework;
@@ -55,6 +57,7 @@ namespace EndPoint.Site.Areas.Admin.Controllers
         }
 
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> Add(UserModel_Request model)
         {
             if (ModelState.IsValid)
@@ -86,10 +89,8 @@ namespace EndPoint.Site.Areas.Admin.Controllers
             });
         }
 
-
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Delete([FromBody] DelleteUserModel_Request request)
+        public async Task<IActionResult> Delete(DelleteUserModel_Request request)
         {
             return Json(await _removeUserServices_Admin.Execute(request.currentItemId));
         }
@@ -117,11 +118,19 @@ namespace EndPoint.Site.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(UserModel_Edit request)
         {
+            if (!ModelState.IsValid)
+            {
+                return Json(new ResultDto
+                {
+                    IsSuccess=false,
+                    Message=Messages.ErrorsMessage.RegisterFeaild
+                });
+            }
                var result=await _editeUserServicess.Execute(new UserEditeDetailDto
                {
+                   
                    Id=request.Id,
                    Name=request.Name,
                    LastName=request.LastName,
@@ -140,56 +149,5 @@ namespace EndPoint.Site.Areas.Admin.Controllers
                 });
         }
     }
-    public class UserModel_Request
-    {
-
-        [Required]
-        public string Name { get; set; }
-        [Required]
-        public string LastName { get; set; }
-        public int[] Rolls { get; set; }
-        public int Gender { get; set; }
-        public bool IsActive { get; set; }
-        [Required]
-        [Remote(action: "CheckUserExistByMobile", controller: "Common")]
-        
-        public string Mobile { get; set; }
-        [Required]
-        [Remote(action: "CheckUserExistByEmail",controller:"Common")]
-        public string Email { get; set; }
-        [Required]
-        [Remote(action: "CheckUserExistByUsername", controller: "Common")]
-        public string Username { get; set; }
-        [Required]
-        public string Password { get; set; }
-        public string Address { get; set; }
-    }
-    public class DelleteUserModel_Request
-    {
-        public long currentItemId { get; set; }
-    }
-    public class UserModel_Edit
-    {
-        public long Id { get; set; }
-        [Required]
-        public string Name { get; set; }
-        [Required]
-        public string LastName { get; set; }
-        public long[] Rolls { get; set; }
-        public int Gender { get; set; }
-        public bool IsActive { get; set; }
-        [Required]
-        [Remote(action: "CheckUserExistByMobile", controller: "Common",AdditionalFields ="Id")]
-
-        public string Mobile { get; set; }
-        [Required]
-        [Remote(action: "CheckUserExistByEmail", controller: "Common", AdditionalFields = "Id")]
-
-        public string Email { get; set; }
-        [Required]
-        public string Username { get; set; }
-        [Remote(action: "CheckUserExistByUsername", controller: "Common", AdditionalFields = "Id")]
-
-        public string Address { get; set; }
-    }
+  
 }

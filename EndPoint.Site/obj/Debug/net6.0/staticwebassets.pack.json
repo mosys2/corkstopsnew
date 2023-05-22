@@ -1057,6 +1057,1798 @@
       "PackagePath": "staticwebassets\\AdminTemplate\\lib\\toastify-js\\toastify.min.js"
     },
     {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\css\\animate.css",
+      "PackagePath": "staticwebassets\\SiteTemplate\\css\\animate.css"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\SiteTemplate\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\css\\flaticon_shofy.css",
+      "PackagePath": "staticwebassets\\SiteTemplate\\css\\flaticon_shofy.css"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\css\\font-awesome-pro.css",
+      "PackagePath": "staticwebassets\\SiteTemplate\\css\\font-awesome-pro.css"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\SiteTemplate\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\css\\main.css",
+      "PackagePath": "staticwebassets\\SiteTemplate\\css\\main.css"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\css\\slick.css",
+      "PackagePath": "staticwebassets\\SiteTemplate\\css\\slick.css"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\css\\spacing.css",
+      "PackagePath": "staticwebassets\\SiteTemplate\\css\\spacing.css"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\css\\swiper-bundle.css",
+      "PackagePath": "staticwebassets\\SiteTemplate\\css\\swiper-bundle.css"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\fonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\SiteTemplate\\fonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\fonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\SiteTemplate\\fonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\fonts\\fa-light-300.ttf",
+      "PackagePath": "staticwebassets\\SiteTemplate\\fonts\\fa-light-300.ttf"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\fonts\\fa-light-300.woff2",
+      "PackagePath": "staticwebassets\\SiteTemplate\\fonts\\fa-light-300.woff2"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\fonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\SiteTemplate\\fonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\fonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\SiteTemplate\\fonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\fonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\SiteTemplate\\fonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\fonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\SiteTemplate\\fonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\fonts\\fa-thin-100.ttf",
+      "PackagePath": "staticwebassets\\SiteTemplate\\fonts\\fa-thin-100.ttf"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\fonts\\fa-thin-100.woff2",
+      "PackagePath": "staticwebassets\\SiteTemplate\\fonts\\fa-thin-100.woff2"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\fonts\\fa-v4compatibility.ttf",
+      "PackagePath": "staticwebassets\\SiteTemplate\\fonts\\fa-v4compatibility.ttf"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\fonts\\fa-v4compatibility.woff2",
+      "PackagePath": "staticwebassets\\SiteTemplate\\fonts\\fa-v4compatibility.woff2"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\fonts\\flaticon_shofy.eot",
+      "PackagePath": "staticwebassets\\SiteTemplate\\fonts\\flaticon_shofy.eot"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\fonts\\flaticon_shofy.ttf",
+      "PackagePath": "staticwebassets\\SiteTemplate\\fonts\\flaticon_shofy.ttf"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\fonts\\flaticon_shofy.woff",
+      "PackagePath": "staticwebassets\\SiteTemplate\\fonts\\flaticon_shofy.woff"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\fonts\\flaticon_shofy.woff2",
+      "PackagePath": "staticwebassets\\SiteTemplate\\fonts\\flaticon_shofy.woff2"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\about\\about-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\about\\about-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\about\\about-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\about\\about-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\about\\about-big-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\about\\about-big-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\banner\\2\\banner-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\banner\\2\\banner-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\banner\\2\\banner-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\banner\\2\\banner-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\banner\\2\\banner-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\banner\\2\\banner-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\banner\\banner-slider-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\banner\\banner-slider-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\banner\\banner-slider-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\banner\\banner-slider-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\banner\\banner-slider-offer.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\banner\\banner-slider-offer.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\2\\blog-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\2\\blog-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\2\\blog-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\2\\blog-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\2\\blog-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\2\\blog-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\blog-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\blog-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\blog-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\blog-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\blog-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\blog-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\blog-big-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\blog-big-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\blog-big-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\blog-big-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\blog-big-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\blog-big-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\blog-big-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\blog-big-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\blog-big-6.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\blog-big-6.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\details\\blog-big-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\details\\blog-big-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\details\\blog-details-sm-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\details\\blog-details-sm-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\details\\shape\\line.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\details\\shape\\line.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\details\\shape\\quote.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\details\\shape\\quote.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\grid\\blog-grid-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\grid\\blog-grid-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\grid\\blog-grid-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\grid\\blog-grid-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\grid\\blog-grid-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\grid\\blog-grid-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\grid\\blog-grid-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\grid\\blog-grid-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\grid\\blog-grid-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\grid\\blog-grid-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\grid\\blog-grid-6.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\grid\\blog-grid-6.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\grid\\blog-grid-7.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\grid\\blog-grid-7.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\grid\\blog-grid-8.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\grid\\blog-grid-8.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\list\\blog-list-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\list\\blog-list-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\list\\blog-list-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\list\\blog-list-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\list\\blog-list-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\list\\blog-list-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\list\\blog-list-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\list\\blog-list-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\list\\blog-list-6.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\list\\blog-list-6.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\sidebar\\blog-sidebar-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\sidebar\\blog-sidebar-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\sidebar\\blog-sidebar-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\sidebar\\blog-sidebar-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\sidebar\\blog-sidebar-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\sidebar\\blog-sidebar-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\signature\\signature.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\signature\\signature.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\brand\\author\\logo_01.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\brand\\author\\logo_01.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\brand\\author\\logo_02.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\brand\\author\\logo_02.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\brand\\author\\logo_03.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\brand\\author\\logo_03.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\brand\\author\\logo_04.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\brand\\author\\logo_04.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\brand\\logo_01.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\brand\\logo_01.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\brand\\logo_02.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\brand\\logo_02.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\brand\\logo_03.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\brand\\logo_03.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\brand\\logo_04.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\brand\\logo_04.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\brand\\logo_05.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\brand\\logo_05.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\category\\category-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\category\\category-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\category\\category-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\category\\category-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\category\\category-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\category\\category-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\category\\category-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\category\\category-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\category\\category-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\category\\category-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\category\\category-6.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\category\\category-6.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\contact\\contact-icon-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\contact\\contact-icon-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\contact\\contact-icon-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\contact\\contact-icon-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\contact\\contact-icon-3.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\contact\\contact-icon-3.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\cta\\cta-thumb-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\cta\\cta-thumb-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\cta\\shape\\cta-shape-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\cta\\shape\\cta-shape-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\cta\\shape\\cta-shape-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\cta\\shape\\cta-shape-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\deal\\shape\\shape-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\deal\\shape\\shape-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\deal\\shape\\shape-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\deal\\shape\\shape-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\deal\\shape\\shape-3.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\deal\\shape\\shape-3.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\deal\\shape\\shape-4.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\deal\\shape\\shape-4.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\deal\\shape\\shape-5.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\deal\\shape\\shape-5.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\deal\\shape\\shape-6.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\deal\\shape\\shape-6.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\deal\\shape\\shape-7.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\deal\\shape\\shape-7.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\error\\error.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\error\\error.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\footer\\footer-pay-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\footer\\footer-pay-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\footer\\footer-pay.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\footer\\footer-pay.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\header\\menu\\grocery\\img-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\header\\menu\\grocery\\img-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\header\\menu\\grocery\\img-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\header\\menu\\grocery\\img-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\header\\menu\\grocery\\img-3.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\header\\menu\\grocery\\img-3.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\header\\menu\\grocery\\img-4.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\header\\menu\\grocery\\img-4.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\header\\menu\\grocery\\img-5.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\header\\menu\\grocery\\img-5.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\header\\menu\\grocery\\img-6.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\header\\menu\\grocery\\img-6.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\header\\menu\\grocery\\menu-brand-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\header\\menu\\grocery\\menu-brand-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\header\\menu\\grocery\\menu-brand-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\header\\menu\\grocery\\menu-brand-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\header\\menu\\grocery\\menu-brand-3.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\header\\menu\\grocery\\menu-brand-3.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\header\\menu\\menu-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\header\\menu\\menu-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\header\\menu\\menu-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\header\\menu\\menu-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\header\\menu\\menu-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\header\\menu\\menu-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\history\\history-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\history\\history-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\history\\history-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\history\\history-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\icon\\contact.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\icon\\contact.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\icon\\cross-out.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\icon\\cross-out.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\icon\\language-flag.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\icon\\language-flag.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\icon\\login\\apple.svg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\icon\\login\\apple.svg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\icon\\login\\facebook.svg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\icon\\login\\facebook.svg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\icon\\login\\google.svg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\icon\\login\\google.svg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\icon\\payment-option.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\icon\\payment-option.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\2\\insta-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\2\\insta-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\2\\insta-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\2\\insta-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\2\\insta-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\2\\insta-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\2\\insta-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\2\\insta-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\2\\insta-icon.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\2\\insta-icon.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\3\\instagram-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\3\\instagram-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\3\\instagram-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\3\\instagram-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\3\\instagram-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\3\\instagram-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\3\\instagram-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\3\\instagram-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\3\\instagram-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\3\\instagram-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\3\\instagram-6.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\3\\instagram-6.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\4\\instagram-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\4\\instagram-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\4\\instagram-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\4\\instagram-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\4\\instagram-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\4\\instagram-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\4\\instagram-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\4\\instagram-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\4\\instagram-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\4\\instagram-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\4\\instagram-6.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\4\\instagram-6.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\instagram-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\instagram-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\instagram-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\instagram-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\instagram-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\instagram-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\instagram-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\instagram-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\instagram-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\instagram-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\login\\laptop.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\login\\laptop.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\login\\login-shape-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\login\\login-shape-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\login\\login-shape-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\login\\login-shape-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\login\\login-shape-3.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\login\\login-shape-3.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\login\\login-shape-4.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\login\\login-shape-4.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\login\\man.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\login\\man.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\login\\shape-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\login\\shape-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\login\\shape-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\login\\shape-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\login\\shape-3.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\login\\shape-3.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\login\\shape-4.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\login\\shape-4.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\logo\\favicon.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\logo\\favicon.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\logo\\logo-white.svg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\logo\\logo-white.svg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\logo\\logo.svg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\logo\\logo.svg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\logo\\preloader\\preloader-icon.svg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\logo\\preloader\\preloader-icon.svg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\menu\\menu-home-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\menu\\menu-home-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\menu\\menu-home-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\menu\\menu-home-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\menu\\menu-home-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\menu\\menu-home-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\menu\\menu-home-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\menu\\menu-home-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\menu\\menu-home-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\menu\\menu-home-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\menu\\product\\menu-product-img-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\menu\\product\\menu-product-img-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\menu\\product\\menu-product-img-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\menu\\product\\menu-product-img-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\2\\prodcut-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\2\\prodcut-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\2\\prodcut-10.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\2\\prodcut-10.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\2\\prodcut-11.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\2\\prodcut-11.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\2\\prodcut-12.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\2\\prodcut-12.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\2\\prodcut-13.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\2\\prodcut-13.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\2\\prodcut-14.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\2\\prodcut-14.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\2\\prodcut-15.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\2\\prodcut-15.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\2\\prodcut-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\2\\prodcut-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\2\\prodcut-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\2\\prodcut-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\2\\prodcut-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\2\\prodcut-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\2\\prodcut-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\2\\prodcut-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\2\\prodcut-6.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\2\\prodcut-6.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\2\\prodcut-7.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\2\\prodcut-7.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\2\\prodcut-8.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\2\\prodcut-8.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\2\\prodcut-9.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\2\\prodcut-9.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-10.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-10.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-11.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-11.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-12.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-12.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-13.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-13.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-14.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-14.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-15.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-15.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-16.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-16.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-17.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-17.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-18.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-18.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-19.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-19.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-20.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-20.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-6.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-6.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-7.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-7.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-8.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-8.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-9.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-9.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\4\\product-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\4\\product-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\4\\product-10.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\4\\product-10.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\4\\product-11.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\4\\product-11.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\4\\product-12.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\4\\product-12.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\4\\product-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\4\\product-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\4\\product-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\4\\product-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\4\\product-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\4\\product-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\4\\product-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\4\\product-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\4\\product-6.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\4\\product-6.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\4\\product-7.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\4\\product-7.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\4\\product-8.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\4\\product-8.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\4\\product-9.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\4\\product-9.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\5\\product-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\5\\product-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\5\\product-10.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\5\\product-10.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\5\\product-11.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\5\\product-11.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\5\\product-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\5\\product-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\5\\product-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\5\\product-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\5\\product-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\5\\product-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\5\\product-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\5\\product-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\5\\product-6.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\5\\product-6.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\5\\product-7.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\5\\product-7.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\5\\product-8.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\5\\product-8.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\5\\product-9.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\5\\product-9.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\cart\\product-cart-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\cart\\product-cart-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\cart\\product-cart-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\cart\\product-cart-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\cart\\product-cart-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\cart\\product-cart-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\cart\\product-cart-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\cart\\product-cart-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\cartmini\\empty-cart.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\cartmini\\empty-cart.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\category\\product-cat-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\category\\product-cat-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\category\\product-cat-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\category\\product-cat-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\category\\product-cat-3.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\category\\product-cat-3.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\category\\product-cat-4.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\category\\product-cat-4.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\category\\product-cat-5.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\category\\product-cat-5.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\collection\\4\\collection-sm-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\collection\\4\\collection-sm-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\collection\\4\\side-text.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\collection\\4\\side-text.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\2\\desc\\product-details-desc-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\2\\desc\\product-details-desc-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\2\\desc\\product-details-desc-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\2\\desc\\product-details-desc-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\2\\desc\\product-details-desc-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\2\\desc\\product-details-desc-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\2\\desc\\product-details-desc-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\2\\desc\\product-details-desc-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\2\\desc\\product-details-desc-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\2\\desc\\product-details-desc-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\2\\main\\product-details-main-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\2\\main\\product-details-main-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\2\\main\\product-details-main-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\2\\main\\product-details-main-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\2\\main\\product-details-main-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\2\\main\\product-details-main-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\2\\main\\product-details-main-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\2\\main\\product-details-main-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\2\\main\\product-details-main-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\2\\main\\product-details-main-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\2\\nav\\product-details-nav-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\2\\nav\\product-details-nav-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\2\\nav\\product-details-nav-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\2\\nav\\product-details-nav-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\2\\nav\\product-details-nav-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\2\\nav\\product-details-nav-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\2\\nav\\product-details-nav-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\2\\nav\\product-details-nav-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\2\\nav\\product-details-nav-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\2\\nav\\product-details-nav-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\3\\main\\product-details-main-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\3\\main\\product-details-main-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\3\\main\\product-details-main-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\3\\main\\product-details-main-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\3\\main\\product-details-main-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\3\\main\\product-details-main-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\3\\main\\product-details-main-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\3\\main\\product-details-main-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\3\\nav\\product-details-nav-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\3\\nav\\product-details-nav-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\3\\nav\\product-details-nav-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\3\\nav\\product-details-nav-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\3\\nav\\product-details-nav-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\3\\nav\\product-details-nav-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\3\\nav\\product-details-nav-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\3\\nav\\product-details-nav-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\4\\main\\product-details-main-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\4\\main\\product-details-main-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\4\\main\\product-details-main-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\4\\main\\product-details-main-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\4\\main\\product-details-main-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\4\\main\\product-details-main-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\4\\main\\product-details-main-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\4\\main\\product-details-main-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\4\\nav\\product-details-nav-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\4\\nav\\product-details-nav-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\4\\nav\\product-details-nav-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\4\\nav\\product-details-nav-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\4\\nav\\product-details-nav-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\4\\nav\\product-details-nav-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\4\\nav\\product-details-nav-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\4\\nav\\product-details-nav-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\5\\main\\product-details-main-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\5\\main\\product-details-main-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\5\\main\\product-details-main-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\5\\main\\product-details-main-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\5\\main\\product-details-main-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\5\\main\\product-details-main-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\5\\main\\product-details-main-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\5\\main\\product-details-main-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\5\\nav\\product-details-nav-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\5\\nav\\product-details-nav-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\5\\nav\\product-details-nav-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\5\\nav\\product-details-nav-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\5\\nav\\product-details-nav-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\5\\nav\\product-details-nav-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\desc\\product-details-desc-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\desc\\product-details-desc-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\desc\\product-details-desc-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\desc\\product-details-desc-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\desc\\product-details-desc-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\desc\\product-details-desc-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\grid\\product-details-grid-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\grid\\product-details-grid-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\grid\\product-details-grid-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\grid\\product-details-grid-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\grid\\product-details-grid-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\grid\\product-details-grid-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\grid\\product-details-grid-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\grid\\product-details-grid-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\grid\\product-details-grid-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\grid\\product-details-grid-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\grid\\product-details-grid-6.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\grid\\product-details-grid-6.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\list\\product-details-list-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\list\\product-details-list-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\list\\product-details-list-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\list\\product-details-list-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\list\\product-details-list-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\list\\product-details-list-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\list\\product-details-list-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\list\\product-details-list-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\main\\product-details-main-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\main\\product-details-main-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\main\\product-details-main-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\main\\product-details-main-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\main\\product-details-main-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\main\\product-details-main-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\main\\product-details-main-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\main\\product-details-main-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\main\\product-details-main-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\main\\product-details-main-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\nav\\product-details-nav-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\nav\\product-details-nav-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\nav\\product-details-nav-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\nav\\product-details-nav-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\nav\\product-details-nav-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\nav\\product-details-nav-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\nav\\product-details-nav-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\nav\\product-details-nav-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\nav\\product-details-nav-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\nav\\product-details-nav-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\slider\\product-details-slider-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\slider\\product-details-slider-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\slider\\product-details-slider-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\slider\\product-details-slider-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\slider\\product-details-slider-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\slider\\product-details-slider-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\slider\\product-details-slider-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\slider\\product-details-slider-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\slider\\product-details-slider-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\slider\\product-details-slider-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\slider\\product-details-slider-6.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\slider\\product-details-slider-6.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\featured\\featured-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\featured\\featured-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\featured\\featured-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\featured\\featured-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\featured\\featured-3.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\featured\\featured-3.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\gadget\\gadget-girl.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\gadget\\gadget-girl.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\icons\\check-2.svg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\icons\\check-2.svg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\icons\\check-3.svg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\icons\\check-3.svg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\icons\\check.svg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\icons\\check.svg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\icons\\payment-option.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\icons\\payment-option.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\list\\product-list-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\list\\product-list-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\list\\product-list-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\list\\product-list-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\list\\product-list-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\list\\product-list-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\list\\product-list-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\list\\product-list-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\list\\product-list-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\list\\product-list-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\list\\product-list-6.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\list\\product-list-6.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\list\\product-list-7.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\list\\product-list-7.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\masonary\\masonary-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\masonary\\masonary-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\masonary\\masonary-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\masonary\\masonary-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\offer\\product-offer-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\offer\\product-offer-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\offer\\product-offer-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\offer\\product-offer-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\offer\\product-offer-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\offer\\product-offer-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\product-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\product-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\product-10.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\product-10.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\product-12.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\product-12.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\product-13.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\product-13.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\product-14.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\product-14.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\product-15.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\product-15.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\product-16.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\product-16.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\product-17.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\product-17.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\product-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\product-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\product-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\product-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\product-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\product-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\product-5-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\product-5-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\product-5-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\product-5-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\product-5-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\product-5-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\product-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\product-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\product-6.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\product-6.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\product-7.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\product-7.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\product-8.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\product-8.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\product-9.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\product-9.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\related\\2\\product-related-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\related\\2\\product-related-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\related\\2\\product-related-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\related\\2\\product-related-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\related\\2\\product-related-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\related\\2\\product-related-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\related\\2\\product-related-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\related\\2\\product-related-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\related\\product-related-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\related\\product-related-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\related\\product-related-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\related\\product-related-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\related\\product-related-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\related\\product-related-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\related\\product-related-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\related\\product-related-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\shop\\brand\\logo_01.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\shop\\brand\\logo_01.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\shop\\brand\\logo_02.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\shop\\brand\\logo_02.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\shop\\brand\\logo_03.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\shop\\brand\\logo_03.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\shop\\brand\\logo_04.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\shop\\brand\\logo_04.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\shop\\brand\\logo_05.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\shop\\brand\\logo_05.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\shop\\brand\\logo_06.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\shop\\brand\\logo_06.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\shop\\brand\\logo_07.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\shop\\brand\\logo_07.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\shop\\brand\\logo_08.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\shop\\brand\\logo_08.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\shop\\sm\\shop-sm-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\shop\\sm\\shop-sm-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\shop\\sm\\shop-sm-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\shop\\sm\\shop-sm-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\shop\\sm\\shop-sm-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\shop\\sm\\shop-sm-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\shop\\sm\\shop-sm-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\shop\\sm\\shop-sm-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\side\\pre-title.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\side\\pre-title.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\side\\side-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\side\\side-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\slider\\product-slider-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\slider\\product-slider-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\slider\\product-slider-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\slider\\product-slider-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\slider\\product-slider-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\slider\\product-slider-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\slider\\product-slider-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\slider\\product-slider-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\slider\\product-slider-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\slider\\product-slider-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\sm\\5\\product-sm-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\sm\\5\\product-sm-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\sm\\5\\product-sm-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\sm\\5\\product-sm-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\sm\\5\\product-sm-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\sm\\5\\product-sm-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\sm\\5\\product-sm-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\sm\\5\\product-sm-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\sm\\5\\product-sm-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\sm\\5\\product-sm-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\sm\\5\\product-sm-6.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\sm\\5\\product-sm-6.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\sm\\product-sm-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\sm\\product-sm-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\sm\\product-sm-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\sm\\product-sm-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\sm\\product-sm-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\sm\\product-sm-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\sm\\product-sm-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\sm\\product-sm-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\sm\\product-sm-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\sm\\product-sm-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\sm\\product-sm-6.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\sm\\product-sm-6.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\sm\\product-sm-7.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\sm\\product-sm-7.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\sm\\product-sm-8.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\sm\\product-sm-8.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\sm\\product-sm-9.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\sm\\product-sm-9.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\special\\big\\special-big-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\special\\big\\special-big-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\special\\special-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\special\\special-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\special\\special-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\special\\special-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\trending\\trending-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\trending\\trending-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\trending\\trending-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\trending\\trending-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\trending\\trending-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\trending\\trending-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\2\\shape\\shape-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\2\\shape\\shape-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\2\\shape\\shape-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\2\\shape\\shape-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\2\\shape\\shape-3.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\2\\shape\\shape-3.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\2\\slider-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\2\\slider-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\2\\slider-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\2\\slider-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\2\\slider-3.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\2\\slider-3.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\4\\nav\\icon-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\4\\nav\\icon-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\4\\nav\\icon-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\4\\nav\\icon-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\4\\nav\\icon-3.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\4\\nav\\icon-3.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\4\\nav\\icon-4.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\4\\nav\\icon-4.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\4\\shape\\rounded-test.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\4\\shape\\rounded-test.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\4\\slider-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\4\\slider-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\4\\slider-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\4\\slider-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\4\\slider-3.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\4\\slider-3.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\4\\slider-4.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\4\\slider-4.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\5\\shape\\offer.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\5\\shape\\offer.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\5\\shape\\shape-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\5\\shape\\shape-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\5\\shape\\shape-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\5\\shape\\shape-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\5\\shape\\shape-3.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\5\\shape\\shape-3.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\5\\shape\\shape-4.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\5\\shape\\shape-4.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\5\\slider-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\5\\slider-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\5\\subtitle.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\5\\subtitle.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\shape\\slider-shape-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\shape\\slider-shape-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\shape\\slider-shape-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\shape\\slider-shape-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\shape\\slider-shape-3.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\shape\\slider-shape-3.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\shape\\slider-shape-4.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\shape\\slider-shape-4.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\slider-img-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\slider-img-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\slider-img-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\slider-img-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\slider-img-3.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\slider-img-3.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\subscribe\\plane.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\subscribe\\plane.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\subscribe\\subscribe-shape-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\subscribe\\subscribe-shape-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\subscribe\\subscribe-shape-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\subscribe\\subscribe-shape-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\subscribe\\subscribe-shape-3.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\subscribe\\subscribe-shape-3.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\subscribe\\subscribe-shape-4.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\subscribe\\subscribe-shape-4.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\testimonial\\testimonial-quote-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\testimonial\\testimonial-quote-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\testimonial\\testimonial-quote.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\testimonial\\testimonial-quote.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\users\\user-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\users\\user-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\users\\user-10.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\users\\user-10.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\users\\user-11.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\users\\user-11.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\users\\user-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\users\\user-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\users\\user-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\users\\user-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\users\\user-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\users\\user-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\users\\user-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\users\\user-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\users\\user-6.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\users\\user-6.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\ajax-form.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\js\\ajax-form.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\bootstrap-bundle.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\js\\bootstrap-bundle.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\btnloadmore.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\js\\btnloadmore.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\countdown.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\js\\countdown.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\imagesloaded-pkgd.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\js\\imagesloaded-pkgd.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\infinite-scroll.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\js\\infinite-scroll.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\isotope-pkgd.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\js\\isotope-pkgd.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\magnific-popup.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\js\\magnific-popup.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\main.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\js\\main.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\meanmenu.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\js\\meanmenu.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\nice-select.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\js\\nice-select.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\parallax.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\js\\parallax.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\purecounter.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\js\\purecounter.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\range-slider.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\js\\range-slider.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\slick.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\js\\slick.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\swiper-bundle.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\js\\swiper-bundle.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\vendor\\jquery.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\js\\vendor\\jquery.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\vendor\\waypoints.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\js\\vendor\\waypoints.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\wow.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\js\\wow.js"
+    },
+    {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.EndPoint.Site.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
