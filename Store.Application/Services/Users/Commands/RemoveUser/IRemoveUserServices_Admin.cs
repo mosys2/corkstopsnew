@@ -10,7 +10,7 @@ namespace Store.Application.Services.Users.Commands.RemoveUser
 {
     public interface IRemoveUserServices_Admin
     {
-        public ResultDto Execute(long userId);
+        Task<ResultDto> Execute(long userId);
     }
     public class RemoveUserServices_Admin : IRemoveUserServices_Admin
     {
@@ -20,9 +20,9 @@ namespace Store.Application.Services.Users.Commands.RemoveUser
             _context = context;
         }
 
-        public ResultDto Execute(long userId)
+        public async Task<ResultDto> Execute(long userId)
         {
-            var user = _context.Users.Find(userId);
+            var user =await _context.Users.FindAsync(userId);
             if (user==null)
             {
                 return new ResultDto()
@@ -33,7 +33,7 @@ namespace Store.Application.Services.Users.Commands.RemoveUser
             }
             user.IsRemoved = true;
             user.RemoveTime = DateTime.Now;
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
             return new ResultDto
             {
                 IsSuccess = true,

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Store.Persistence.Contexts;
 
@@ -11,9 +12,10 @@ using Store.Persistence.Contexts;
 namespace Store.Persistence.Migrations
 {
     [DbContext(typeof(DataBaseContext))]
-    partial class DataBaseContextModelSnapshot : ModelSnapshot
+    [Migration("20230521151324_Concurrency_aa")]
+    partial class Concurrency_aa
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -116,7 +118,7 @@ namespace Store.Persistence.Migrations
                         {
                             Id = 1L,
                             Icon = "smartphone",
-                            InsertTime = new DateTime(2023, 5, 21, 19, 47, 28, 425, DateTimeKind.Local).AddTicks(5184),
+                            InsertTime = new DateTime(2023, 5, 21, 19, 43, 23, 945, DateTimeKind.Local).AddTicks(6510),
                             IsRemoved = false,
                             Title = "Mobile",
                             Value = "Mobile"
@@ -125,7 +127,7 @@ namespace Store.Persistence.Migrations
                         {
                             Id = 2L,
                             Icon = "phone",
-                            InsertTime = new DateTime(2023, 5, 21, 19, 47, 28, 425, DateTimeKind.Local).AddTicks(5201),
+                            InsertTime = new DateTime(2023, 5, 21, 19, 43, 23, 945, DateTimeKind.Local).AddTicks(6542),
                             IsRemoved = false,
                             Title = "Phone",
                             Value = "Phone"
@@ -134,7 +136,7 @@ namespace Store.Persistence.Migrations
                         {
                             Id = 3L,
                             Icon = "mail",
-                            InsertTime = new DateTime(2023, 5, 21, 19, 47, 28, 425, DateTimeKind.Local).AddTicks(5213),
+                            InsertTime = new DateTime(2023, 5, 21, 19, 43, 23, 945, DateTimeKind.Local).AddTicks(6562),
                             IsRemoved = false,
                             Title = "Email",
                             Value = "Email"
@@ -143,7 +145,7 @@ namespace Store.Persistence.Migrations
                         {
                             Id = 4L,
                             Icon = "map-pin",
-                            InsertTime = new DateTime(2023, 5, 21, 19, 47, 28, 425, DateTimeKind.Local).AddTicks(5224),
+                            InsertTime = new DateTime(2023, 5, 21, 19, 43, 23, 945, DateTimeKind.Local).AddTicks(6580),
                             IsRemoved = false,
                             Title = "Address",
                             Value = "Address"
@@ -152,7 +154,7 @@ namespace Store.Persistence.Migrations
                         {
                             Id = 5L,
                             Icon = "home",
-                            InsertTime = new DateTime(2023, 5, 21, 19, 47, 28, 425, DateTimeKind.Local).AddTicks(5235),
+                            InsertTime = new DateTime(2023, 5, 21, 19, 43, 23, 945, DateTimeKind.Local).AddTicks(6709),
                             IsRemoved = false,
                             Title = "PostalCode",
                             Value = "PostalCode"
@@ -249,7 +251,7 @@ namespace Store.Persistence.Migrations
                         new
                         {
                             Id = 1L,
-                            InsertTime = new DateTime(2023, 5, 21, 19, 47, 28, 425, DateTimeKind.Local).AddTicks(5100),
+                            InsertTime = new DateTime(2023, 5, 21, 19, 43, 23, 945, DateTimeKind.Local).AddTicks(6389),
                             IsRemoved = false,
                             RollName = "Admin",
                             Title = "Admin"
@@ -257,7 +259,7 @@ namespace Store.Persistence.Migrations
                         new
                         {
                             Id = 2L,
-                            InsertTime = new DateTime(2023, 5, 21, 19, 47, 28, 425, DateTimeKind.Local).AddTicks(5169),
+                            InsertTime = new DateTime(2023, 5, 21, 19, 43, 23, 945, DateTimeKind.Local).AddTicks(6482),
                             IsRemoved = false,
                             RollName = "Customer",
                             Title = "Customer"

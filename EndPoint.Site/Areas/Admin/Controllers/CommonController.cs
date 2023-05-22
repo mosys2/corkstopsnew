@@ -17,9 +17,9 @@ namespace EndPoint.Site.Areas.Admin.Controllers
             _checkUserExistByUsernameServices=checkUserExistByUsernameServices;
         }
 
-        public IActionResult CheckUserExistByEmail(string Email)
+        public async Task<IActionResult> CheckUserExistByEmail(string Email,long Id)
         {
-            var user = _checkUserExistByEmailServices.Excute(Email);
+            var user =await _checkUserExistByEmailServices.Excute(Email,Id);
             if (user==null || user.Count<1)
             {
                 return Json(true);
@@ -29,9 +29,9 @@ namespace EndPoint.Site.Areas.Admin.Controllers
                 return Json($"Email {Email} is already in use.");
             }
         }
-        public IActionResult CheckUserExistByMobile(string Mobile)
+        public async Task<IActionResult> CheckUserExistByMobile(string Mobile, long Id)
         {
-            var user = _checkUserExistByMobileServices.Excute(Mobile);
+            var user =await _checkUserExistByMobileServices.Excute(Mobile,Id);
             if (user==null || user.Count<1)
             {
                 return Json(true);
@@ -41,9 +41,9 @@ namespace EndPoint.Site.Areas.Admin.Controllers
                 return Json($"Mobile {Mobile} is already in use.");
             }
         }
-        public IActionResult CheckUserExistByUsername(string Username)
+        public async Task<IActionResult> CheckUserExistByUsername(string Username, long Id)
         {
-            var user = _checkUserExistByUsernameServices.Excute(Username);
+            var user =await _checkUserExistByUsernameServices.Excute(Username,Id);
             if (user==null || user.Count<1)
             {
                 return Json(true);

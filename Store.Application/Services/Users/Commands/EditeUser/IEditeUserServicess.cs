@@ -16,7 +16,7 @@ namespace Store.Application.Services.Users.Commands.EditeUser
 {
     public interface IEditeUserServicess
     {
-        public ResultDto Execute(UserEditeDetailDto request);
+        Task<ResultDto> Execute(UserEditeDetailDto request);
     }
     public class EditeUserServicess : IEditeUserServicess
     {
@@ -25,27 +25,25 @@ namespace Store.Application.Services.Users.Commands.EditeUser
         {
             _context = context;
         }
-        public ResultDto Execute(UserEditeDetailDto request)
+
+
+        public async Task<ResultDto> Execute(UserEditeDetailDto request)
         {
-            var userItem = _context.Users
+
+            var userItem = await _context.Users
                 .Include(p => p.Logins)
                 .Include(p => p.UserInRolls)
                 .Include(p => p.Contacts)
                 .Where(p => p.Id==request.Id)
-                .FirstOrDefault();
+                .FirstOrDefaultAsync();
 
             if (userItem!=null)
             {
-                userItem.Name=request.Name;
-                userItem.LastName=request.LastName;
-                userItem.FullName=request.Name+" "+request.LastName;
-                userItem.IsActive=request.IsActive;
-                userItem.UpdateTime=DateTime.Now;
-                userItem.Gender=request.Gender;
 
                 //Remove Last Rolls
                 var userInRolls = userItem.UserInRolls.ToList();
                 _context.UserInRolls.RemoveRange(userInRolls);
+                await _context.SaveChangesAsync();
 
                 //Add New Rolls
                 List<UserInRoll> userInRollList = new List<UserInRoll>();
@@ -58,11 +56,13 @@ namespace Store.Application.Services.Users.Commands.EditeUser
                         InsertTime=DateTime.Now,
                     });
                 }
-                _context.UserInRolls.AddRange(userInRollList);
+                await _context.UserInRolls.AddRangeAsync(userInRollList);
+                await _context.SaveChangesAsync();
 
                 //Remove Last Contacts
                 var contacts = userItem.Contacts.ToList();
                 _context.Contacts.RemoveRange(contacts);
+                await _context.SaveChangesAsync();
 
                 //Add New Contacts
                 List<Contact> contactsList = new List<Contact>();
@@ -93,19 +93,32 @@ namespace Store.Application.Services.Users.Commands.EditeUser
                         InsertTime=DateTime.Now
                     });
                 }
-                _context.Contacts.AddRange(contactsList);
-                _context.SaveChanges();
+               await _context.Contacts.AddRangeAsync(contactsList);
+               await _context.SaveChangesAsync();
+
+                userItem.Name=request.Name;
+                userItem.LastName=request.LastName;
+                userItem.FullName=request.Name+" "+request.LastName;
+                userItem.IsActive=request.IsActive;
+                userItem.UpdateTime=DateTime.Now;
+                userItem.Gender=request.Gender;
+                userItem.Logins.FirstOrDefault().UserName=request.Username;
+                await _context.SaveChangesAsync();
                 return new ResultDto
                 {
                     IsSuccess=true,
                     Message=Messages.Message.RegisterSuccess
                 };
             }
-            return new ResultDto
+            else
             {
-                IsSuccess=false,
-                Message=Messages.ErrorsMessage.RegisterFeaild
-            };
+                return new ResultDto
+                {
+                    IsSuccess=false,
+                    Message=Messages.ErrorsMessage.RegisterFeaild
+                };
+            }
+            
         }
     }
     public class UserEditeDetailDto

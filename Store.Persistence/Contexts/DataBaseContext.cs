@@ -27,6 +27,13 @@ namespace Store.Persistence.Contexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<User>().Property(a => a.RowVersion).IsConcurrencyToken().ValueGeneratedOnAddOrUpdate();
+            modelBuilder.Entity<Roll>().Property(a => a.RowVersion).IsConcurrencyToken().ValueGeneratedOnAddOrUpdate();
+            modelBuilder.Entity<UserInRoll>().Property(a => a.RowVersion).IsConcurrencyToken().ValueGeneratedOnAddOrUpdate();
+            modelBuilder.Entity<Login>().Property(a => a.RowVersion).IsConcurrencyToken().ValueGeneratedOnAddOrUpdate();
+            modelBuilder.Entity<Contact>().Property(a => a.RowVersion).IsConcurrencyToken().ValueGeneratedOnAddOrUpdate();
+            modelBuilder.Entity<ContactType>().Property(a => a.RowVersion).IsConcurrencyToken().ValueGeneratedOnAddOrUpdate();
+
             //Query Fillter
             modelBuilder.Entity<User>().HasQueryFilter(p => !p.IsRemoved);
 

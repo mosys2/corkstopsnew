@@ -1,9 +1,9 @@
 ﻿@using EndPoint.Site.Areas.Admin.Controllers;
 @addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
-@model UserModel_Edite
+@model UserModel_Edit
 
 @{
-    ViewData["Title"] = "Edite";
+    ViewData["Title"] = "Edit";
     Layout = "~/Areas/Admin/Views/Shared/_Adminlayout.cshtml";
 }
 
@@ -27,7 +27,7 @@
                 </div>
                 <div id="form-validation" class="p-5">
                     <div class="preview">
-                        <form method="post" Id="UserForm">
+                        <form method="post" Id="UserFormEdit">
                             <input asp-for="Id" type="hidden" />
                             <!-- BEGIN: Validation Form -->
                             <div class="input-form">
@@ -128,7 +128,7 @@
     <script src="~/AdminTemplate/js/main.js"></script>
     <script>
         //create
-        $('#UserForm').on("submit", function (e) {
+        $('#UserFormEdit').on("submit", function (e) {
             event.preventDefault();
             if ($(this).valid()) {
                 let rollsItem = [];
@@ -152,7 +152,7 @@
                 }
                 console.log(data);
                 //ajax request
-                ajaxFunc("Edite", data, "POST",
+                ajaxFunc("Edit", data, "POST",
                     function (result) {
                         if (result.isSuccess) {
                             successToastify.showToast();

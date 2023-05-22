@@ -149,12 +149,12 @@
                 let Password = elementItems.Password.value
                 let Address = elementItems.Address.value
 
-                var data = {
+                var model = {
                     Name, LastName, Rolls, Gender, IsActive, Mobile, Email, Username, Password, Address
                 }
                 console.log(data);
                 //ajax request
-                ajaxFunc("Add", data, "POST",
+                ajaxFunc("Add", model, "POST",
                     function (result) {
                         if (result.isSuccess) {
                             $("#UserForm").trigger("reset");

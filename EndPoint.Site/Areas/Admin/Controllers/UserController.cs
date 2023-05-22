@@ -47,29 +47,30 @@ namespace EndPoint.Site.Areas.Admin.Controllers
             return View(result.Data);
         }
         [HttpGet]
-        public IActionResult Add()
+        public async Task<IActionResult> Add()
         {
-            ViewBag.Rolls=new SelectList(_getAllRolls.Execute().Data, "Id", "Title");
+            var result = await _getAllRolls.Execute();
+            ViewBag.Rolls=new SelectList(result.Data, "Id", "Title");
             return View();
         }
 
         [HttpPost]
-        public IActionResult Add([FromBody]UserModel_Request request)
+        public async Task<IActionResult> Add(UserModel_Request model)
         {
             if (ModelState.IsValid)
             {
-              var result=_registerUser_Admin.Execute(new RequestRegisterUserDto
+              var result=await _registerUser_Admin.Execute(new RequestRegisterUserDto
                 {
-                    Name=request.Name,
-                    LastName=request.LastName,
-                    Gender=request.Gender,
-                    Rolls=request.Rolls,
-                    IsActive=request.IsActive,
-                    Email=request.Email,
-                    Mobile=request.Mobile,
-                    Username=request.Username,
-                    Password=request.Password,
-                    Address=request.Address,
+                    Name=model.Name,
+                    LastName=model.LastName,
+                    Gender=model.Gender,
+                    Rolls=model.Rolls,
+                    IsActive=model.IsActive,
+                    Email=model.Email,
+                    Mobile=model.Mobile,
+                    Username=model.Username,
+                    Password=model.Password,
+                    Address=model.Address,
                 });
                 if(result.IsSuccess)
                 return Json(new ResultDto
@@ -85,39 +86,41 @@ namespace EndPoint.Site.Areas.Admin.Controllers
             });
         }
 
+
         [HttpPost]
-        public IActionResult Delete([FromBody] DelleteUserModel_Request request)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Delete([FromBody] DelleteUserModel_Request request)
         {
-            return Json(_removeUserServices_Admin.Execute(request.currentItemId));
+            return Json(await _removeUserServices_Admin.Execute(request.currentItemId));
         }
 
         [HttpGet]
-        public IActionResult Edite(long id)
+        public async Task<IActionResult> Edit(long id)
         {
-            ViewBag.Rolls=new SelectList(_getAllRolls.Execute().Data, "Id", "Title");
-            var result =_getUserDetailServices.Execute(id).Data;
-            UserModel_Edite user = new UserModel_Edite()
+            var rolls = await _getAllRolls.Execute();
+            ViewBag.Rolls=new SelectList(rolls.Data, "Id", "Title");
+            var result =await _getUserDetailServices.Execute(id);
+            UserModel_Edit user = new UserModel_Edit()
             {
-                Id=result.Id,
-                Name=result?.Name,
-                LastName=result.LastName,
-                Rolls=result.Rolls,
-                Gender=result.Gender,
-                IsActive=result.IsActive,
-                Mobile=result.Mobile,
-                Email=result.Email,
-                Username=result.Username,
-                Address=result.Address
+                Id=result.Data.Id,
+                Name=result.Data.Name,
+                LastName=result.Data.LastName,
+                Rolls=result.Data.Rolls,
+                Gender=result.Data.Gender,
+                IsActive=result.Data.IsActive,
+                Mobile=result.Data.Mobile,
+                Email=result.Data.Email,
+                Username=result.Data.Username,
+                Address=result.Data.Address
             };
             return View(user);
         }
 
         [HttpPost]
-        public IActionResult Edite([FromBody]UserModel_Edite request)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(UserModel_Edit request)
         {
-            if (ModelState.IsValid)
-            {
-               var result= _editeUserServicess.Execute(new UserEditeDetailDto
+               var result=await _editeUserServicess.Execute(new UserEditeDetailDto
                {
                    Id=request.Id,
                    Name=request.Name,
@@ -132,19 +135,14 @@ namespace EndPoint.Site.Areas.Admin.Controllers
                });
                 return Json(new ResultDto
                 {
-                    IsSuccess=true,
-                    Message=Messages.Message.RegisterSuccess
+                    IsSuccess=result.IsSuccess,
+                    Message=result.Message
                 });
-            }
-            return Json(new ResultDto
-            {
-                IsSuccess=false,
-                Message=Messages.ErrorsMessage.RegisterFeaild
-            });
         }
     }
     public class UserModel_Request
     {
+
         [Required]
         public string Name { get; set; }
         [Required]
@@ -154,7 +152,7 @@ namespace EndPoint.Site.Areas.Admin.Controllers
         public bool IsActive { get; set; }
         [Required]
         [Remote(action: "CheckUserExistByMobile", controller: "Common")]
-
+        
         public string Mobile { get; set; }
         [Required]
         [Remote(action: "CheckUserExistByEmail",controller:"Common")]
@@ -170,7 +168,7 @@ namespace EndPoint.Site.Areas.Admin.Controllers
     {
         public long currentItemId { get; set; }
     }
-    public class UserModel_Edite
+    public class UserModel_Edit
     {
         public long Id { get; set; }
         [Required]
@@ -181,16 +179,16 @@ namespace EndPoint.Site.Areas.Admin.Controllers
         public int Gender { get; set; }
         public bool IsActive { get; set; }
         [Required]
-        [Remote(action: "CheckUserExistByMobile", controller: "Common")]
+        [Remote(action: "CheckUserExistByMobile", controller: "Common",AdditionalFields ="Id")]
 
         public string Mobile { get; set; }
         [Required]
-        [Remote(action: "CheckUserExistByEmail", controller: "Common")]
+        [Remote(action: "CheckUserExistByEmail", controller: "Common", AdditionalFields = "Id")]
 
         public string Email { get; set; }
         [Required]
         public string Username { get; set; }
-        [Remote(action: "CheckUserExistByUsername", controller: "Common")]
+        [Remote(action: "CheckUserExistByUsername", controller: "Common", AdditionalFields = "Id")]
 
         public string Address { get; set; }
     }

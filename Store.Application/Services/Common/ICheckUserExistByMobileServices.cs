@@ -12,7 +12,7 @@ namespace Store.Application.Services.Common
 {
     public interface ICheckUserExistByMobileServices
     {
-        public List<FindedUserDetailByMobileDto> Excute(string Email);
+        Task<List<FindedUserDetailByMobileDto>> Excute(string Mobile, long Id);
     }
     public class CheckUserExistByMobileServices : ICheckUserExistByMobileServices
     {
@@ -21,18 +21,35 @@ namespace Store.Application.Services.Common
         {
             _context = context;
         }
-        public List<FindedUserDetailByMobileDto> Excute(string Email)
+        public async Task<List<FindedUserDetailByMobileDto>> Excute(string Mobile, long Id)
         {
-            var user = _context.Contacts
+            
+            var user =await _context.Contacts
                 .Include(p => p.User)
-                .Where(p => p.Value==Email && p.ContactTypeId==(long)ContactTypeEnum.Mobile)
-                .Select(p => new FindedUserDetailByMobileDto()
+                .Where(p => p.Value==Mobile && p.ContactTypeId==(long)ContactTypeEnum.Mobile)
+                .ToListAsync();
+            if (Id==0)
+            {
+                var userList1 = user.Select(p => new FindedUserDetailByMobileDto()
                 {
                     Id=p.User.Id,
                     FullName=p.User.FullName,
                     IsActive=p.User.IsActive
                 }).ToList();
-            return user;
+                return userList1;
+
+            }
+            else
+            {
+                var userList1 = user.Where(p => p.User.Id!=Id).Select(p => new FindedUserDetailByMobileDto()
+                {
+                    Id=p.User.Id,
+                    FullName=p.User.FullName,
+                    IsActive=p.User.IsActive
+                }).ToList();
+                return userList1;
+            }
+            
         }
     }
     public class FindedUserDetailByMobileDto

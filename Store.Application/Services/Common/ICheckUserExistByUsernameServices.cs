@@ -12,7 +12,7 @@ namespace Store.Application.Services.Common
 {
     public interface ICheckUserExistByUsernameServices
     {
-        public List<FindedUserDetailByUsernameDto> Excute(string Username);
+        Task<List<FindedUserDetailByUsernameDto>> Excute(string Username, long Id);
     }
     public class CheckUserExistByUsernameServices : ICheckUserExistByUsernameServices
     {
@@ -21,18 +21,32 @@ namespace Store.Application.Services.Common
         {
             _context = context;
         }
-        public List<FindedUserDetailByUsernameDto> Excute(string Username)
+        public async Task<List<FindedUserDetailByUsernameDto>> Excute(string Username,long Id)
         {
-            var user = _context.Logins
+            var user =await _context.Logins
                 .Include(p => p.User)
                 .Where(p => p.UserName==Username)
-                .Select(p => new FindedUserDetailByUsernameDto()
+                .ToListAsync();
+            if (Id==0)
+            {
+                var userList1 = user.Select(p => new FindedUserDetailByUsernameDto()
                 {
                     Id=p.User.Id,
                     FullName=p.User.FullName,
                     IsActive=p.User.IsActive
                 }).ToList();
-            return user;
+                return userList1;
+            }
+            else
+            {
+                var userList1 = user.Where(p => p.User.Id!=Id).Select(p => new FindedUserDetailByUsernameDto()
+                {
+                    Id=p.User.Id,
+                    FullName=p.User.FullName,
+                    IsActive=p.User.IsActive
+                }).ToList();
+                return userList1;
+            }
         }
     }
     public class FindedUserDetailByUsernameDto

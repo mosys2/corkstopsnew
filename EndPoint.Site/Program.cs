@@ -16,6 +16,8 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<DataBaseContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("StoreConnectionString")));
 
+builder.Services.AddAntiforgery(options => options.HeaderName = "RequestVerificationToken");
+
 builder.Services.AddScoped<IDataBaseContext, DataBaseContext>();
 
 builder.Services.AddScoped<IGetUsersServices, GetUsersServices>();
@@ -27,6 +29,7 @@ builder.Services.AddScoped<IEditeUserServicess, EditeUserServicess>();
 builder.Services.AddScoped<ICheckUserExistByEmailServices, CheckUserExistByEmailServices>();
 builder.Services.AddScoped<ICheckUserExistByMobileServices, CheckUserExistByMobileServices>();
 builder.Services.AddScoped<ICheckUserExistByUsernameServices, CheckUserExistByUsernameServices>();
+
 
 var app = builder.Build();
 

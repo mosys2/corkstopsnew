@@ -928,11 +928,12 @@ License: You must have a valid license purchased only from themeforest(the above
             <div class="dark-mode-switcher__toggle border"></div>
         </div>
         <!-- END: Dark Mode Switcher-->
-
+        @Html.AntiForgeryToken()
         <!-- BEGIN: JS Assets-->
         <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
         
         <script src="/AdminTemplate/js/app.js"></script>
+
         @await RenderSectionAsync("Scripts",required:false);
 
         <!-- END: JS Assets-->

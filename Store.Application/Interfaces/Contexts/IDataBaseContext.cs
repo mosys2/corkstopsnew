@@ -18,6 +18,7 @@ namespace Store.Application.Interfaces.Contexts
         DbSet<Contact> Contacts { get; set; }
         DbSet<ContactType> ContactTypes { get; set; }
 
+        
         int SaveChanges(bool acceptAllChangeOnSuccess);
         int SaveChanges();
         Task<int> SaveChangesAsync(bool acceptAllChangeOnSuccess, CancellationToken cancellationToken = new CancellationToken());

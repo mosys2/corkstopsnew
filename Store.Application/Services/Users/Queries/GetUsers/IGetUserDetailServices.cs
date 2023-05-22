@@ -12,7 +12,7 @@ namespace Store.Application.Services.Users.Queries.GetUsers
 {
     public interface IGetUserDetailServices
     {
-        ResultDto<UserDetailDto> Execute(long userId);
+       Task<ResultDto<UserDetailDto>> Execute(long userId);
     }
     public class GetUserDetailServices : IGetUserDetailServices
     {
@@ -21,14 +21,14 @@ namespace Store.Application.Services.Users.Queries.GetUsers
         {
             _context=context;
         }
-        public ResultDto<UserDetailDto> Execute(long userId)
+        public async Task<ResultDto<UserDetailDto>> Execute(long userId)
         {
-            var user = _context.Users
+            var user =await _context.Users
                 .Include(p=>p.Logins)
                  .Include(p => p.UserInRolls)
                  .Include(p => p.Contacts)
                  .Where(p => p.Id==userId)
-                 .FirstOrDefault();
+                 .FirstOrDefaultAsync();
             return new ResultDto<UserDetailDto>
             {
                 Data=new UserDetailDto

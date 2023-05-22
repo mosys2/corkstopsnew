@@ -15,7 +15,7 @@ namespace Store.Application.Services.Users.Commands.RegisterUser
 {
     public interface IRegisterUser_Admin
     {
-        ResultDto<ResultRegisterUserDto> Execute(RequestRegisterUserDto request);
+       Task<ResultDto<ResultRegisterUserDto>> Execute(RequestRegisterUserDto request);
     }
     public class RegisterUser_Admin : IRegisterUser_Admin
     {
@@ -25,7 +25,7 @@ namespace Store.Application.Services.Users.Commands.RegisterUser
             _context=context;
         }
 
-        public ResultDto<ResultRegisterUserDto> Execute(RequestRegisterUserDto request)
+        public async Task<ResultDto<ResultRegisterUserDto>> Execute(RequestRegisterUserDto request)
         {
             User user = new User()
             {
@@ -90,11 +90,11 @@ namespace Store.Application.Services.Users.Commands.RegisterUser
                 });
             }
             //add & save change
-            _context.Users.Add(user);
-            _context.Logins.Add(login);
-            _context.UserInRolls.AddRange(userInRoll);
-            _context.Contacts.AddRange(contacts);
-            _context.SaveChanges();
+           await _context.Users.AddAsync(user);
+           await _context.Logins.AddAsync(login);
+           await _context.UserInRolls.AddRangeAsync(userInRoll);
+           await _context.Contacts.AddRangeAsync(contacts);
+           await _context.SaveChangesAsync();
 
             return new ResultDto<ResultRegisterUserDto>
             {

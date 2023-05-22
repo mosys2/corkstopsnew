@@ -1,4 +1,5 @@
-﻿using Store.Application.Interfaces.Contexts;
+﻿using Microsoft.EntityFrameworkCore;
+using Store.Application.Interfaces.Contexts;
 using Store.Common.ResultDto;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,7 @@ namespace Store.Application.Services.Users.Queries.GetAllRolls
 {
     public interface IGetAllRolls_ForAdmin
     {
-        public ResultDto<List<AllRolls_ForAdminDto>>  Execute();
+        Task<ResultDto<List<AllRolls_ForAdminDto>>>  Execute();
     }
     public class GetAllRolls_ForAdmin : IGetAllRolls_ForAdmin
     {
@@ -18,17 +19,23 @@ namespace Store.Application.Services.Users.Queries.GetAllRolls
         public GetAllRolls_ForAdmin(IDataBaseContext context) {
             _context=context;
         }
-        public ResultDto<List<AllRolls_ForAdminDto>> Execute()
+        public async Task<ResultDto<List<AllRolls_ForAdminDto>>> Execute()
         {
-            var rolls = _context.Rolls.ToList().Select(p => new AllRolls_ForAdminDto
+            var rolls =await _context.Rolls.Select(p => new AllRolls_ForAdminDto
             {
                 Id=p.Id,
                 RollName=p.RollName,
                 Title=p.Title
-            }).ToList();
+            }).ToListAsync();
             return new ResultDto<List<AllRolls_ForAdminDto>>()
             {
-                Data= rolls,
+                
+                Data= rolls.Select(p=>new AllRolls_ForAdminDto
+                {
+                    Id=p.Id,
+                    RollName=p.RollName,
+                    Title=p.Title
+                }).ToList(),
                 IsSuccess=true
             };
         }

@@ -12,7 +12,7 @@ namespace Store.Application.Services.Common
 {
     public interface ICheckUserExistByEmailServices
     {
-        public List<FindedUserDetailByEmailDto> Excute(string Email);
+        Task<List<FindedUserDetailByEmailDto>> Excute(string Email, long Id);
     }
     public class CheckUserExistByEmailServices : ICheckUserExistByEmailServices
     {
@@ -21,18 +21,34 @@ namespace Store.Application.Services.Common
         {
             _context = context;
         }
-        public List<FindedUserDetailByEmailDto> Excute(string Email)
+        public async Task<List<FindedUserDetailByEmailDto>> Excute(string Email, long Id)
         {
-            var user = _context.Contacts
+            var user =await  _context.Contacts
                 .Include(p => p.User)
                 .Where(p => p.Value==Email && p.ContactTypeId==(long)ContactTypeEnum.Email)
-                .Select(p => new FindedUserDetailByEmailDto()
+                .ToListAsync();
+            if (Id==0)
+            {
+                var userList1=user.Select(p => new FindedUserDetailByEmailDto()
                 {
                     Id=p.User.Id,
                     FullName=p.User.FullName,
                     IsActive=p.User.IsActive
                 }).ToList();
-            return user;
+                return userList1;
+
+            }
+            else
+            {
+                var userList1 =user.Where(p=>p.User.Id!=Id).Select(p => new FindedUserDetailByEmailDto()
+                {
+                    Id=p.User.Id,
+                    FullName=p.User.FullName,
+                    IsActive=p.User.IsActive
+                }).ToList();
+                return userList1;
+            }
+            
         }
     }
     public class FindedUserDetailByEmailDto
