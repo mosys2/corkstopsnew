@@ -124,14 +124,14 @@ namespace Store.Application.Services.Users.Commands.EditeUser
     public class UserEditeDetailDto
     {
         public long Id { get; set; }
-        public string? Name { get; set; }
-        public string? LastName { get; set; }
-        public long[]? Rolls { get; set; }
+        public string Name { get; set; }
+        public string LastName { get; set; }
+        public long[] Rolls { get; set; }
         public int Gender { get; set; }
         public bool IsActive { get; set; }
-        public string? Mobile { get; set; }
-        public string? Email { get; set; }
-        public string? Username { get; set; }
-        public string? Address { get; set; }
+        public string Mobile { get; set; }
+        public string Email { get; set; }
+        public string Username { get; set; }
+        public string Address { get; set; }
     }
 }

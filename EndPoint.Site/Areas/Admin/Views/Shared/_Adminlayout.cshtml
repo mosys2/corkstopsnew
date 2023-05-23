@@ -939,16 +939,13 @@ License: You must have a valid license purchased only from themeforest(the above
     <!-- END: JS Assets-->
 
     <script>
-
         const activePage = window.location.pathname;
         const navLinks = document.querySelectorAll('.side-nav ul li a').
             forEach(link => {
                 if (link.href.includes(`${activePage}`)) {
                     link.classList.add('side-menu--active');
                 }
-            })
-
-
+            });
     </script>
 </body>
 </html>

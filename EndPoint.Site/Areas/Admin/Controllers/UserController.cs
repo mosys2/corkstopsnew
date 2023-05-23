@@ -106,7 +106,7 @@ namespace EndPoint.Site.Areas.Admin.Controllers
                 Name=result.Data.Name,
                 LastName=result.Data.LastName,
                 Rolls=result.Data.Rolls,
-                Gender=result.Data.Gender,
+                Gender=result.Data.Gender.Value,
                 IsActive=result.Data.IsActive,
                 Mobile=result.Data.Mobile,
                 Email=result.Data.Email,
@@ -129,7 +129,6 @@ namespace EndPoint.Site.Areas.Admin.Controllers
             }
                var result=await _editeUserServicess.Execute(new UserEditeDetailDto
                {
-                   
                    Id=request.Id,
                    Name=request.Name,
                    LastName=request.LastName,

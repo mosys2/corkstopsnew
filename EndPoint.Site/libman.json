@@ -3,10 +3,6 @@
   "defaultProvider": "cdnjs",
   "libraries": [
     {
-      "library": "jquery-validate@1.19.5",
-      "destination": "wwwroot/AdminTemplate/lib/jquery-validate/"
-    },
-    {
       "library": "jquery-validation-unobtrusive@4.0.0",
       "destination": "wwwroot/AdminTemplate/lib/jquery-validation-unobtrusive/"
     },
@@ -21,6 +17,10 @@
     {
       "library": "sweetalert2@11.7.5",
       "destination": "wwwroot/AdminTemplate/lib/sweetalert2/"
+    },
+    {
+      "library": "jquery-validate@1.19.5",
+      "destination": "wwwroot/SiteTemplate/lib/jquery-validate/"
     }
   ]
 }

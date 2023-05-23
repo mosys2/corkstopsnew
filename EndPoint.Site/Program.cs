@@ -4,6 +4,7 @@ using Store.Application.Services.Common;
 using Store.Application.Services.Users.Commands.EditeUser;
 using Store.Application.Services.Users.Commands.RegisterUser;
 using Store.Application.Services.Users.Commands.RemoveUser;
+using Store.Application.Services.Users.Commands.Website.RegisterUser;
 using Store.Application.Services.Users.Queries.GetAllRolls;
 using Store.Application.Services.Users.Queries.GetUsers;
 using Store.Persistence.Contexts;
@@ -17,9 +18,9 @@ builder.Services.AddDbContext<DataBaseContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("StoreConnectionString")));
 
 builder.Services.AddAntiforgery(options => options.HeaderName = "RequestVerificationToken");
-
 builder.Services.AddScoped<IDataBaseContext, DataBaseContext>();
 
+//Scopded Admin
 builder.Services.AddScoped<IGetUsersServices, GetUsersServices>();
 builder.Services.AddScoped<IGetAllRolls_ForAdmin, GetAllRolls_ForAdmin>();
 builder.Services.AddScoped<IRegisterUser_Admin, RegisterUser_Admin>();
@@ -30,6 +31,8 @@ builder.Services.AddScoped<ICheckUserExistByEmailServices, CheckUserExistByEmail
 builder.Services.AddScoped<ICheckUserExistByMobileServices, CheckUserExistByMobileServices>();
 builder.Services.AddScoped<ICheckUserExistByUsernameServices, CheckUserExistByUsernameServices>();
 
+//Scopded Website
+builder.Services.AddScoped<IRegisterUser_Website, RegisterUser_Website>();
 
 var app = builder.Build();
 
@@ -56,7 +59,6 @@ app.UseEndpoints(endpoints =>
     endpoints.MapControllerRoute(
         name: "default",
         pattern: "{controller=Home}/{action=Index}/{id?}");
-
 
     //پیج پیشفرض آریا مدیریت
     endpoints.MapControllerRoute(

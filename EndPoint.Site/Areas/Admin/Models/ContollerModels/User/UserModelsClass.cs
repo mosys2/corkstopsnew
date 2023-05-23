@@ -48,9 +48,9 @@ namespace EndPoint.Site.Areas.Admin.Models.ContollerModels.User
         [Remote(action: "CheckUserExistByEmail", controller: "Common", AdditionalFields =nameof(Id))]
         public string Email { get; set; }
         [Required]
-        //[Remote(action: "CheckUserExistByUsername", controller: "Common", AdditionalFields = "Id", HttpMethod = "POST")]
+        [Remote(action: "CheckUserExistByUsername", controller: "Common", AdditionalFields = nameof(Id))]
         public string Username { get; set; }
 
-        public string Address { get; set; }
+        public string? Address { get; set; }
     }
 }
