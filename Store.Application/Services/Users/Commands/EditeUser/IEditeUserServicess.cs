@@ -25,11 +25,8 @@ namespace Store.Application.Services.Users.Commands.EditeUser
         {
             _context = context;
         }
-
-
         public async Task<ResultDto> Execute(UserEditeDetailDto request)
         {
-
             var userItem = await _context.Users
                 .Include(p => p.Logins)
                 .Include(p => p.UserInRolls)
@@ -39,31 +36,27 @@ namespace Store.Application.Services.Users.Commands.EditeUser
 
             if (userItem!=null)
             {
-
                 //Remove Last Rolls
-                //var userInRolls = userItem.UserInRolls.ToList();
-                //_context.UserInRolls.RemoveRange(userInRolls);
-                //await _context.SaveChangesAsync();
-
-                foreach(var item in userItem.UserInRolls.ToList())
-                {
-                    _context.UserInRolls.Remove(item);
-                    await _context.SaveChangesAsync();
-                }
+                var userInRolls = userItem.UserInRolls.ToList();
+                _context.UserInRolls.RemoveRange(userInRolls);
+                await _context.SaveChangesAsync();
 
                 //Add New Rolls
-                List<UserInRoll> userInRollList = new List<UserInRoll>();
-                foreach (long item in request.Rolls)
+                if (request.Rolls!=null)
                 {
-                    userInRollList.Add(new UserInRoll
+                    List<UserInRoll> userInRollList = new List<UserInRoll>();
+                    foreach (long item in request.Rolls)
                     {
-                        RollId= item,
-                        UserId= request.Id,
-                        InsertTime=DateTime.Now,
-                    });
+                        userInRollList.Add(new UserInRoll
+                        {
+                            RollId= item,
+                            UserId= request.Id,
+                            InsertTime=DateTime.Now,
+                        });
+                    }
+                    await _context.UserInRolls.AddRangeAsync(userInRollList);
+                    await _context.SaveChangesAsync();
                 }
-                await _context.UserInRolls.AddRangeAsync(userInRollList);
-                await _context.SaveChangesAsync();
 
                 //Remove Last Contacts
                 var contacts = userItem.Contacts.ToList();
@@ -99,17 +92,19 @@ namespace Store.Application.Services.Users.Commands.EditeUser
                         InsertTime=DateTime.Now
                     });
                 }
-               await _context.Contacts.AddRangeAsync(contactsList);
-               await _context.SaveChangesAsync();
+                await _context.Contacts.AddRangeAsync(contactsList);
+                await _context.SaveChangesAsync();
 
+                //User Changes
+                userItem.Logins.FirstOrDefault().UserName=request.Username;
                 userItem.Name=request.Name;
                 userItem.LastName=request.LastName;
                 userItem.FullName=request.Name+" "+request.LastName;
                 userItem.IsActive=request.IsActive;
                 userItem.UpdateTime=DateTime.Now;
                 userItem.Gender=request.Gender;
-                userItem.Logins.FirstOrDefault().UserName=request.Username;
                 await _context.SaveChangesAsync();
+
                 return new ResultDto
                 {
                     IsSuccess=true,
@@ -124,20 +119,19 @@ namespace Store.Application.Services.Users.Commands.EditeUser
                     Message=Messages.ErrorsMessage.RegisterFeaild
                 };
             }
-            
         }
     }
     public class UserEditeDetailDto
     {
         public long Id { get; set; }
-        public string Name { get; set; }
-        public string LastName { get; set; }
-        public long[] Rolls { get; set; }
+        public string? Name { get; set; }
+        public string? LastName { get; set; }
+        public long[]? Rolls { get; set; }
         public int Gender { get; set; }
         public bool IsActive { get; set; }
-        public string Mobile { get; set; }
-        public string Email { get; set; }
-        public string Username { get; set; }
-        public string Address { get; set; }
+        public string? Mobile { get; set; }
+        public string? Email { get; set; }
+        public string? Username { get; set; }
+        public string? Address { get; set; }
     }
 }

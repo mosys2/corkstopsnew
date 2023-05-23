@@ -38,18 +38,18 @@ namespace EndPoint.Site.Areas.Admin.Controllers
             _editeUserServicess=editeUserServicess;
         }
 
-        public IActionResult Index(int Page=1,int PageSize=20)
+        public IActionResult Index(string SearchKey="",int Page=1,int PageSize=20 )
         {
             var result = _getUsers.Execute(new RequestGetUserDto()
             {
                 Page= Page,
                 PageSize=PageSize,
-                SerachKey=""
+                SerachKey=SearchKey
             });
             return View(result.Data);
         }
         [HttpGet]
-        public async Task<IActionResult> Add()
+        public async Task<IActionResult> Create()
         {
             var result = await _getAllRolls.Execute();
             ViewBag.Rolls=new SelectList(result.Data, "Id", "Title");
@@ -58,7 +58,7 @@ namespace EndPoint.Site.Areas.Admin.Controllers
 
         [HttpPost]
         [AllowAnonymous]
-        public async Task<IActionResult> Add(UserModel_Request model)
+        public async Task<IActionResult> Create(UserModel_Request model)
         {
             if (ModelState.IsValid)
             {
@@ -75,11 +75,10 @@ namespace EndPoint.Site.Areas.Admin.Controllers
                     Password=model.Password,
                     Address=model.Address,
                 });
-                if(result.IsSuccess)
                 return Json(new ResultDto
                 {
-                    IsSuccess=true,
-                    Message="success"
+                    IsSuccess=result.IsSuccess,
+                    Message=result.Message
                 });
             }
             return Json(new ResultDto

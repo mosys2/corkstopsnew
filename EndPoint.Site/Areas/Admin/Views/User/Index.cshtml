@@ -18,7 +18,7 @@
     </h2>
     <div class="grid grid-cols-12 gap-6 mt-5">
         <div class="intro-y col-span-12 flex flex-wrap sm:flex-nowrap items-center mt-2">
-            <a href="~/admin/user/add" class="btn btn-primary shadow-md mr-2">Add New User</a>
+            <a href="~/Admin/User/Create" class="btn btn-primary shadow-md mr-2">Add New User</a>
             <div class="dropdown">
                 <button class="dropdown-toggle btn px-2 box" aria-expanded="false" data-tw-toggle="dropdown">
                     <span class="w-5 h-5 flex items-center justify-center"> <i class="w-4 h-4" data-lucide="plus"></i> </span>
@@ -36,11 +36,13 @@
             </div>
             <div class="hidden md:block mx-auto text-slate-500">Showing 1 to 10 of 150 entries</div>
             <div class="w-full sm:w-auto mt-3 sm:mt-0 sm:ml-auto md:ml-0">
+                <form id="search-for">
+                    <div class="w-56 relative text-slate-500">
+                        <input id="SearchKey" name="SearchKey" type="search" class="form-control w-56 box pr-10" placeholder="Search...">
+                        <i class="w-4 h-4 absolute my-auto inset-y-0 mr-3 right-0" data-lucide="search"></i>
+                    </div>
+                </form>
                 
-                <div class="w-56 relative text-slate-500">
-                    <input id="search-user" type="search" class="form-control w-56 box pr-10" placeholder="Search...">
-                    <i class="w-4 h-4 absolute my-auto inset-y-0 mr-3 right-0" data-lucide="search"></i>
-                </div>
             </div>
         </div>
         <!-- BEGIN: Users Layout -->
@@ -54,7 +56,7 @@
                                 <img alt="Midone - HTML Admin Template" class="rounded-full" src="/AdminTemplate/images/avatar.png">
                             </div>
                             <div class="lg:ml-4 text-center lg:text-left mt-3 lg:mt-0">
-                                <a href="~/admin/user/edit/@item.Id" class="font-medium">@item.FullName</a>
+                                <a href="~/Admin/User/Edit/@item.Id" class="font-medium">@item.FullName</a>
                                 <div class="text-slate-500 text-xs mt-0.5">
                                     <span class="text-xs px-1 rounded-full @(item.IsActive? "bg-success":"bg-danger") text-white mr-1">@(item.IsActive ? "Active" : "Inactive")</span>
                                 </div>
@@ -64,7 +66,7 @@
                             <a class="dropdown-toggle w-5 h-5 block" href="javascript:;" aria-expanded="false" data-tw-toggle="dropdown"> <i data-lucide="more-horizontal" class="w-5 h-5 text-slate-500"></i> </a>
                             <div class="dropdown-menu w-40">
                                 <div class="dropdown-content">
-                                    <a href="~/admin/user/edit/@item.Id" class="dropdown-item"> <i data-lucide="edit-2" class="w-4 h-4 mr-2"></i> Edit </a>
+                                    <a href="~/Admin/User/Edit/@item.Id" class="dropdown-item"> <i data-lucide="edit-2" class="w-4 h-4 mr-2"></i> Edit </a>
                                     <button class="dropdown-item" data-itemid="@item.Id" id="remove-user"> <i data-lucide="trash" class="w-4 h-4 mr-2"></i> Delete </button>
                                 </div>
                             </div>
@@ -202,9 +204,14 @@
             });
 
         });
-        $('#search-user').on('enter',function(){
-            alert($(this).val());
-        })
+        //$('#search-form').on('submit', function (event) {
+        //    event.preventDefault();
+        //    var text=event.target.search.value;
+        //    if(text.trim().length>0){
+        //        window.location='/admin/user/'+
+        //    }
+        //    alert(text);
+        //})
 
     </script>
 }
