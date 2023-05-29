@@ -1,0 +1,3469 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\EndPoint.Site.bundle.scp.css",
+      "PackagePath": "staticwebassets\\EndPoint.Site.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\.DS_Store",
+      "PackagePath": "staticwebassets\\AdminTemplate\\.DS_Store"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\css\\_app.css",
+      "PackagePath": "staticwebassets\\AdminTemplate\\css\\_app.css"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\css\\app.css",
+      "PackagePath": "staticwebassets\\AdminTemplate\\css\\app.css"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\css\\style.css",
+      "PackagePath": "staticwebassets\\AdminTemplate\\css\\style.css"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\fonts\\.DS_Store",
+      "PackagePath": "staticwebassets\\AdminTemplate\\fonts\\.DS_Store"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\fonts\\roboto\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\AdminTemplate\\fonts\\roboto\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\fonts\\roboto\\Roboto-Black.ttf",
+      "PackagePath": "staticwebassets\\AdminTemplate\\fonts\\roboto\\Roboto-Black.ttf"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\fonts\\roboto\\Roboto-BlackItalic.ttf",
+      "PackagePath": "staticwebassets\\AdminTemplate\\fonts\\roboto\\Roboto-BlackItalic.ttf"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\fonts\\roboto\\Roboto-Bold.ttf",
+      "PackagePath": "staticwebassets\\AdminTemplate\\fonts\\roboto\\Roboto-Bold.ttf"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\fonts\\roboto\\Roboto-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\AdminTemplate\\fonts\\roboto\\Roboto-BoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\fonts\\roboto\\Roboto-Italic.ttf",
+      "PackagePath": "staticwebassets\\AdminTemplate\\fonts\\roboto\\Roboto-Italic.ttf"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\fonts\\roboto\\Roboto-Light.ttf",
+      "PackagePath": "staticwebassets\\AdminTemplate\\fonts\\roboto\\Roboto-Light.ttf"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\fonts\\roboto\\Roboto-LightItalic.ttf",
+      "PackagePath": "staticwebassets\\AdminTemplate\\fonts\\roboto\\Roboto-LightItalic.ttf"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\fonts\\roboto\\Roboto-Medium.ttf",
+      "PackagePath": "staticwebassets\\AdminTemplate\\fonts\\roboto\\Roboto-Medium.ttf"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\fonts\\roboto\\Roboto-MediumItalic.ttf",
+      "PackagePath": "staticwebassets\\AdminTemplate\\fonts\\roboto\\Roboto-MediumItalic.ttf"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\fonts\\roboto\\Roboto-Regular.ttf",
+      "PackagePath": "staticwebassets\\AdminTemplate\\fonts\\roboto\\Roboto-Regular.ttf"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\fonts\\roboto\\Roboto-Thin.ttf",
+      "PackagePath": "staticwebassets\\AdminTemplate\\fonts\\roboto\\Roboto-Thin.ttf"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\fonts\\roboto\\Roboto-ThinItalic.ttf",
+      "PackagePath": "staticwebassets\\AdminTemplate\\fonts\\roboto\\Roboto-ThinItalic.ttf"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\.DS_Store",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\.DS_Store"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\Group 1.svg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\Group 1.svg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\Group 2.svg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\Group 2.svg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\avatar.png",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\avatar.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\bg-login-page-dark.svg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\bg-login-page-dark.svg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\bg-login-page.svg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\bg-login-page.svg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\bg-main-dark.svg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\bg-main-dark.svg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\bg-main.svg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\bg-main.svg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\error-illustration.svg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\error-illustration.svg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\food-beverage-1.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\food-beverage-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\food-beverage-10.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\food-beverage-10.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\food-beverage-11.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\food-beverage-11.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\food-beverage-12.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\food-beverage-12.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\food-beverage-13.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\food-beverage-13.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\food-beverage-14.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\food-beverage-14.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\food-beverage-15.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\food-beverage-15.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\food-beverage-16.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\food-beverage-16.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\food-beverage-17.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\food-beverage-17.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\food-beverage-18.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\food-beverage-18.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\food-beverage-19.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\food-beverage-19.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\food-beverage-2.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\food-beverage-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\food-beverage-3.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\food-beverage-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\food-beverage-4.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\food-beverage-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\food-beverage-5.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\food-beverage-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\food-beverage-6.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\food-beverage-6.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\food-beverage-7.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\food-beverage-7.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\food-beverage-8.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\food-beverage-8.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\food-beverage-9.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\food-beverage-9.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\illustration.svg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\illustration.svg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\illustration2.svg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\illustration2.svg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\logo.svg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\logo.svg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\map-marker-dark.svg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\map-marker-dark.svg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\map-marker-region-dark.svg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\map-marker-region-dark.svg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\map-marker-region.png",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\map-marker-region.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\map-marker-region.svg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\map-marker-region.svg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\map-marker.png",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\map-marker.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\map-marker.svg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\map-marker.svg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\phone-illustration.svg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\phone-illustration.svg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\placeholders\\.DS_Store",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\placeholders\\.DS_Store"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\placeholders\\200x200.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\placeholders\\200x200.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\placeholders\\800x800.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\placeholders\\800x800.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\preview-1.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\preview-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\preview-10.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\preview-10.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\preview-11.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\preview-11.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\preview-12.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\preview-12.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\preview-13.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\preview-13.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\preview-14.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\preview-14.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\preview-15.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\preview-15.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\preview-16.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\preview-16.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\preview-17.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\preview-17.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\preview-18.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\preview-18.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\preview-19.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\preview-19.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\preview-2.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\preview-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\preview-3.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\preview-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\preview-4.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\preview-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\preview-5.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\preview-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\preview-6.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\preview-6.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\preview-7.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\preview-7.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\preview-8.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\preview-8.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\preview-9.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\preview-9.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\profile-1.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\profile-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\profile-10.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\profile-10.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\profile-11.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\profile-11.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\profile-12.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\profile-12.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\profile-13.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\profile-13.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\profile-14.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\profile-14.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\profile-15.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\profile-15.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\profile-16.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\profile-16.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\profile-17.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\profile-17.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\profile-18.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\profile-18.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\profile-19.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\profile-19.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\profile-2.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\profile-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\profile-3.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\profile-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\profile-4.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\profile-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\profile-5.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\profile-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\profile-6.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\profile-6.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\profile-7.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\profile-7.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\profile-8.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\profile-8.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\profile-9.jpg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\profile-9.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\woman-illustration.svg",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\woman-illustration.svg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\js\\.DS_Store",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\.DS_Store"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\js\\app.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\app.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\js\\app.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\app.js.LICENSE.txt"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\js\\ckeditor-balloon-block.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\ckeditor-balloon-block.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\js\\ckeditor-balloon-block.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\ckeditor-balloon-block.js.LICENSE.txt"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\js\\ckeditor-balloon.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\ckeditor-balloon.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\js\\ckeditor-balloon.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\ckeditor-balloon.js.LICENSE.txt"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\js\\ckeditor-classic.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\ckeditor-classic.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\js\\ckeditor-classic.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\ckeditor-classic.js.LICENSE.txt"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\js\\ckeditor-document.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\ckeditor-document.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\js\\ckeditor-document.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\ckeditor-document.js.LICENSE.txt"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\js\\ckeditor-inline.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\ckeditor-inline.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\js\\ckeditor-inline.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\ckeditor-inline.js.LICENSE.txt"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\js\\main.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\main.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\json\\location.json",
+      "PackagePath": "staticwebassets\\AdminTemplate\\json\\location.json"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\additional-methods.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\jquery-validation-sri.json",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\jquery-validation-sri.json"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_ar.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_ar.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_ar.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_ar.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_az.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_az.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_az.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_az.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_bg.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_bg.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_bg.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_bg.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_bn_BD.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_bn_BD.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_bn_BD.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_bn_BD.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_ca.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_ca.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_ca.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_ca.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_cs.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_cs.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_cs.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_cs.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_da.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_da.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_da.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_da.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_de.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_de.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_de.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_de.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_el.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_el.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_el.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_el.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_es.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_es.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_es.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_es.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_es_AR.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_es_AR.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_es_AR.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_es_AR.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_es_PE.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_es_PE.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_es_PE.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_es_PE.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_et.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_et.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_et.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_et.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_eu.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_eu.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_eu.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_eu.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_fa.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_fa.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_fa.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_fa.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_fi.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_fi.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_fi.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_fi.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_fr.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_fr.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_fr.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_fr.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_ge.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_ge.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_ge.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_ge.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_gl.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_gl.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_gl.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_gl.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_he.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_he.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_he.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_he.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_hr.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_hr.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_hr.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_hr.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_hu.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_hu.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_hu.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_hu.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_hy_AM.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_hy_AM.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_hy_AM.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_hy_AM.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_id.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_id.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_id.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_id.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_is.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_is.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_is.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_is.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_it.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_it.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_it.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_it.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_ja.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_ja.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_ja.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_ja.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_ka.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_ka.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_ka.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_ka.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_kk.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_kk.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_kk.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_kk.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_ko.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_ko.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_ko.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_ko.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_lt.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_lt.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_lt.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_lt.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_lv.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_lv.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_lv.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_lv.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_mk.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_mk.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_mk.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_mk.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_my.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_my.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_my.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_my.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_nl.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_nl.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_nl.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_nl.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_no.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_no.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_no.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_no.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_pl.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_pl.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_pl.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_pl.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_pt_BR.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_pt_BR.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_pt_BR.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_pt_BR.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_pt_PT.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_pt_PT.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_pt_PT.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_pt_PT.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_ro.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_ro.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_ro.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_ro.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_ru.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_ru.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_ru.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_ru.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_sd.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_sd.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_sd.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_sd.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_si.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_si.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_si.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_si.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_sk.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_sk.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_sk.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_sk.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_sl.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_sl.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_sl.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_sl.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_sr.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_sr.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_sr.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_sr.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_sr_lat.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_sr_lat.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_sr_lat.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_sr_lat.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_sv.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_sv.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_sv.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_sv.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_th.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_th.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_th.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_th.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_tj.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_tj.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_tj.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_tj.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_tr.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_tr.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_tr.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_tr.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_uk.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_uk.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_uk.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_uk.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_ur.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_ur.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_ur.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_ur.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_vi.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_vi.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_vi.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_vi.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_zh.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_zh.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_zh.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_zh.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_zh_TW.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_zh_TW.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_zh_TW.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\messages_zh_TW.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\methods_de.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\methods_de.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\methods_de.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\methods_de.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\methods_es_CL.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\methods_es_CL.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\methods_es_CL.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\methods_es_CL.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\methods_fi.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\methods_fi.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\methods_fi.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\methods_fi.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\methods_it.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\methods_it.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\methods_it.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\methods_it.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\methods_nl.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\methods_nl.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\methods_nl.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\methods_nl.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\methods_pt.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\methods_pt.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validate\\localization\\methods_pt.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validate\\localization\\methods_pt.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery\\jquery.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery\\jquery.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery\\jquery.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery\\jquery.min.map",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery\\jquery.slim.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery\\jquery.slim.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\jquery\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\jquery\\jquery.slim.min.map"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\sweetalert2\\sweetalert2.all.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\sweetalert2\\sweetalert2.all.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\sweetalert2\\sweetalert2.all.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\sweetalert2\\sweetalert2.all.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\sweetalert2\\sweetalert2.css",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\sweetalert2\\sweetalert2.css"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\sweetalert2\\sweetalert2.d.ts",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\sweetalert2\\sweetalert2.d.ts"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\sweetalert2\\sweetalert2.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\sweetalert2\\sweetalert2.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\sweetalert2\\sweetalert2.min.css",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\sweetalert2\\sweetalert2.min.css"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\sweetalert2\\sweetalert2.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\sweetalert2\\sweetalert2.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\toastify-js\\toastify-es.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\toastify-js\\toastify-es.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\toastify-js\\toastify-es.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\toastify-js\\toastify-es.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\toastify-js\\toastify.css",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\toastify-js\\toastify.css"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\toastify-js\\toastify.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\toastify-js\\toastify.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\toastify-js\\toastify.min.css",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\toastify-js\\toastify.min.css"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\lib\\toastify-js\\toastify.min.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\lib\\toastify-js\\toastify.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\css\\animate.css",
+      "PackagePath": "staticwebassets\\SiteTemplate\\css\\animate.css"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\SiteTemplate\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\css\\flaticon_shofy.css",
+      "PackagePath": "staticwebassets\\SiteTemplate\\css\\flaticon_shofy.css"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\css\\font-awesome-pro.css",
+      "PackagePath": "staticwebassets\\SiteTemplate\\css\\font-awesome-pro.css"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\SiteTemplate\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\css\\main.css",
+      "PackagePath": "staticwebassets\\SiteTemplate\\css\\main.css"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\css\\slick.css",
+      "PackagePath": "staticwebassets\\SiteTemplate\\css\\slick.css"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\css\\spacing.css",
+      "PackagePath": "staticwebassets\\SiteTemplate\\css\\spacing.css"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\css\\swiper-bundle.css",
+      "PackagePath": "staticwebassets\\SiteTemplate\\css\\swiper-bundle.css"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\fonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\SiteTemplate\\fonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\fonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\SiteTemplate\\fonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\fonts\\fa-light-300.ttf",
+      "PackagePath": "staticwebassets\\SiteTemplate\\fonts\\fa-light-300.ttf"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\fonts\\fa-light-300.woff2",
+      "PackagePath": "staticwebassets\\SiteTemplate\\fonts\\fa-light-300.woff2"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\fonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\SiteTemplate\\fonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\fonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\SiteTemplate\\fonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\fonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\SiteTemplate\\fonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\fonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\SiteTemplate\\fonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\fonts\\fa-thin-100.ttf",
+      "PackagePath": "staticwebassets\\SiteTemplate\\fonts\\fa-thin-100.ttf"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\fonts\\fa-thin-100.woff2",
+      "PackagePath": "staticwebassets\\SiteTemplate\\fonts\\fa-thin-100.woff2"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\fonts\\fa-v4compatibility.ttf",
+      "PackagePath": "staticwebassets\\SiteTemplate\\fonts\\fa-v4compatibility.ttf"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\fonts\\fa-v4compatibility.woff2",
+      "PackagePath": "staticwebassets\\SiteTemplate\\fonts\\fa-v4compatibility.woff2"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\fonts\\flaticon_shofy.eot",
+      "PackagePath": "staticwebassets\\SiteTemplate\\fonts\\flaticon_shofy.eot"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\fonts\\flaticon_shofy.ttf",
+      "PackagePath": "staticwebassets\\SiteTemplate\\fonts\\flaticon_shofy.ttf"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\fonts\\flaticon_shofy.woff",
+      "PackagePath": "staticwebassets\\SiteTemplate\\fonts\\flaticon_shofy.woff"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\fonts\\flaticon_shofy.woff2",
+      "PackagePath": "staticwebassets\\SiteTemplate\\fonts\\flaticon_shofy.woff2"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\about\\about-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\about\\about-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\about\\about-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\about\\about-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\about\\about-big-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\about\\about-big-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\banner\\2\\banner-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\banner\\2\\banner-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\banner\\2\\banner-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\banner\\2\\banner-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\banner\\2\\banner-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\banner\\2\\banner-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\banner\\banner-slider-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\banner\\banner-slider-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\banner\\banner-slider-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\banner\\banner-slider-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\banner\\banner-slider-offer.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\banner\\banner-slider-offer.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\2\\blog-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\2\\blog-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\2\\blog-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\2\\blog-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\2\\blog-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\2\\blog-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\blog-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\blog-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\blog-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\blog-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\blog-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\blog-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\blog-big-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\blog-big-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\blog-big-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\blog-big-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\blog-big-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\blog-big-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\blog-big-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\blog-big-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\blog-big-6.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\blog-big-6.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\details\\blog-big-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\details\\blog-big-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\details\\blog-details-sm-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\details\\blog-details-sm-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\details\\shape\\line.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\details\\shape\\line.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\details\\shape\\quote.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\details\\shape\\quote.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\grid\\blog-grid-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\grid\\blog-grid-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\grid\\blog-grid-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\grid\\blog-grid-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\grid\\blog-grid-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\grid\\blog-grid-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\grid\\blog-grid-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\grid\\blog-grid-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\grid\\blog-grid-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\grid\\blog-grid-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\grid\\blog-grid-6.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\grid\\blog-grid-6.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\grid\\blog-grid-7.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\grid\\blog-grid-7.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\grid\\blog-grid-8.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\grid\\blog-grid-8.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\list\\blog-list-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\list\\blog-list-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\list\\blog-list-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\list\\blog-list-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\list\\blog-list-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\list\\blog-list-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\list\\blog-list-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\list\\blog-list-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\list\\blog-list-6.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\list\\blog-list-6.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\sidebar\\blog-sidebar-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\sidebar\\blog-sidebar-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\sidebar\\blog-sidebar-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\sidebar\\blog-sidebar-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\sidebar\\blog-sidebar-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\sidebar\\blog-sidebar-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\blog\\signature\\signature.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\blog\\signature\\signature.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\brand\\author\\logo_01.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\brand\\author\\logo_01.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\brand\\author\\logo_02.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\brand\\author\\logo_02.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\brand\\author\\logo_03.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\brand\\author\\logo_03.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\brand\\author\\logo_04.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\brand\\author\\logo_04.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\brand\\logo_01.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\brand\\logo_01.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\brand\\logo_02.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\brand\\logo_02.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\brand\\logo_03.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\brand\\logo_03.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\brand\\logo_04.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\brand\\logo_04.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\brand\\logo_05.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\brand\\logo_05.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\category\\category-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\category\\category-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\category\\category-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\category\\category-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\category\\category-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\category\\category-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\category\\category-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\category\\category-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\category\\category-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\category\\category-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\category\\category-6.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\category\\category-6.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\contact\\contact-icon-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\contact\\contact-icon-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\contact\\contact-icon-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\contact\\contact-icon-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\contact\\contact-icon-3.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\contact\\contact-icon-3.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\cta\\cta-thumb-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\cta\\cta-thumb-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\cta\\shape\\cta-shape-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\cta\\shape\\cta-shape-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\cta\\shape\\cta-shape-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\cta\\shape\\cta-shape-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\deal\\shape\\shape-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\deal\\shape\\shape-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\deal\\shape\\shape-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\deal\\shape\\shape-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\deal\\shape\\shape-3.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\deal\\shape\\shape-3.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\deal\\shape\\shape-4.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\deal\\shape\\shape-4.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\deal\\shape\\shape-5.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\deal\\shape\\shape-5.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\deal\\shape\\shape-6.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\deal\\shape\\shape-6.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\deal\\shape\\shape-7.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\deal\\shape\\shape-7.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\error\\error.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\error\\error.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\footer\\footer-pay-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\footer\\footer-pay-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\footer\\footer-pay.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\footer\\footer-pay.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\header\\menu\\grocery\\img-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\header\\menu\\grocery\\img-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\header\\menu\\grocery\\img-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\header\\menu\\grocery\\img-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\header\\menu\\grocery\\img-3.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\header\\menu\\grocery\\img-3.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\header\\menu\\grocery\\img-4.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\header\\menu\\grocery\\img-4.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\header\\menu\\grocery\\img-5.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\header\\menu\\grocery\\img-5.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\header\\menu\\grocery\\img-6.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\header\\menu\\grocery\\img-6.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\header\\menu\\grocery\\menu-brand-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\header\\menu\\grocery\\menu-brand-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\header\\menu\\grocery\\menu-brand-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\header\\menu\\grocery\\menu-brand-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\header\\menu\\grocery\\menu-brand-3.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\header\\menu\\grocery\\menu-brand-3.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\header\\menu\\menu-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\header\\menu\\menu-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\header\\menu\\menu-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\header\\menu\\menu-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\header\\menu\\menu-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\header\\menu\\menu-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\history\\history-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\history\\history-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\history\\history-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\history\\history-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\icon\\contact.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\icon\\contact.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\icon\\cross-out.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\icon\\cross-out.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\icon\\language-flag.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\icon\\language-flag.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\icon\\login\\apple.svg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\icon\\login\\apple.svg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\icon\\login\\facebook.svg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\icon\\login\\facebook.svg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\icon\\login\\google.svg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\icon\\login\\google.svg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\icon\\payment-option.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\icon\\payment-option.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\2\\insta-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\2\\insta-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\2\\insta-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\2\\insta-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\2\\insta-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\2\\insta-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\2\\insta-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\2\\insta-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\2\\insta-icon.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\2\\insta-icon.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\3\\instagram-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\3\\instagram-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\3\\instagram-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\3\\instagram-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\3\\instagram-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\3\\instagram-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\3\\instagram-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\3\\instagram-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\3\\instagram-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\3\\instagram-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\3\\instagram-6.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\3\\instagram-6.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\4\\instagram-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\4\\instagram-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\4\\instagram-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\4\\instagram-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\4\\instagram-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\4\\instagram-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\4\\instagram-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\4\\instagram-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\4\\instagram-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\4\\instagram-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\4\\instagram-6.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\4\\instagram-6.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\instagram-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\instagram-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\instagram-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\instagram-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\instagram-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\instagram-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\instagram-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\instagram-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\instagram\\instagram-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\instagram\\instagram-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\login\\laptop.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\login\\laptop.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\login\\login-shape-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\login\\login-shape-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\login\\login-shape-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\login\\login-shape-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\login\\login-shape-3.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\login\\login-shape-3.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\login\\login-shape-4.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\login\\login-shape-4.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\login\\man.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\login\\man.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\login\\shape-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\login\\shape-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\login\\shape-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\login\\shape-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\login\\shape-3.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\login\\shape-3.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\login\\shape-4.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\login\\shape-4.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\logo\\favicon.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\logo\\favicon.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\logo\\logo-white.svg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\logo\\logo-white.svg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\logo\\logo.svg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\logo\\logo.svg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\logo\\preloader\\preloader-icon.svg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\logo\\preloader\\preloader-icon.svg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\menu\\menu-home-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\menu\\menu-home-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\menu\\menu-home-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\menu\\menu-home-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\menu\\menu-home-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\menu\\menu-home-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\menu\\menu-home-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\menu\\menu-home-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\menu\\menu-home-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\menu\\menu-home-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\menu\\product\\menu-product-img-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\menu\\product\\menu-product-img-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\menu\\product\\menu-product-img-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\menu\\product\\menu-product-img-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\2\\prodcut-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\2\\prodcut-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\2\\prodcut-10.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\2\\prodcut-10.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\2\\prodcut-11.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\2\\prodcut-11.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\2\\prodcut-12.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\2\\prodcut-12.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\2\\prodcut-13.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\2\\prodcut-13.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\2\\prodcut-14.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\2\\prodcut-14.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\2\\prodcut-15.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\2\\prodcut-15.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\2\\prodcut-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\2\\prodcut-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\2\\prodcut-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\2\\prodcut-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\2\\prodcut-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\2\\prodcut-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\2\\prodcut-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\2\\prodcut-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\2\\prodcut-6.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\2\\prodcut-6.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\2\\prodcut-7.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\2\\prodcut-7.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\2\\prodcut-8.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\2\\prodcut-8.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\2\\prodcut-9.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\2\\prodcut-9.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-10.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-10.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-11.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-11.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-12.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-12.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-13.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-13.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-14.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-14.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-15.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-15.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-16.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-16.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-17.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-17.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-18.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-18.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-19.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-19.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-20.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-20.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-6.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-6.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-7.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-7.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-8.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-8.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\3\\product-9.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\3\\product-9.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\4\\product-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\4\\product-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\4\\product-10.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\4\\product-10.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\4\\product-11.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\4\\product-11.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\4\\product-12.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\4\\product-12.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\4\\product-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\4\\product-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\4\\product-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\4\\product-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\4\\product-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\4\\product-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\4\\product-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\4\\product-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\4\\product-6.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\4\\product-6.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\4\\product-7.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\4\\product-7.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\4\\product-8.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\4\\product-8.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\4\\product-9.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\4\\product-9.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\5\\product-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\5\\product-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\5\\product-10.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\5\\product-10.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\5\\product-11.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\5\\product-11.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\5\\product-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\5\\product-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\5\\product-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\5\\product-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\5\\product-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\5\\product-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\5\\product-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\5\\product-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\5\\product-6.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\5\\product-6.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\5\\product-7.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\5\\product-7.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\5\\product-8.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\5\\product-8.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\5\\product-9.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\5\\product-9.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\cart\\product-cart-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\cart\\product-cart-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\cart\\product-cart-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\cart\\product-cart-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\cart\\product-cart-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\cart\\product-cart-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\cart\\product-cart-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\cart\\product-cart-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\cartmini\\empty-cart.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\cartmini\\empty-cart.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\category\\product-cat-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\category\\product-cat-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\category\\product-cat-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\category\\product-cat-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\category\\product-cat-3.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\category\\product-cat-3.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\category\\product-cat-4.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\category\\product-cat-4.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\category\\product-cat-5.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\category\\product-cat-5.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\collection\\4\\collection-sm-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\collection\\4\\collection-sm-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\collection\\4\\side-text.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\collection\\4\\side-text.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\2\\desc\\product-details-desc-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\2\\desc\\product-details-desc-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\2\\desc\\product-details-desc-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\2\\desc\\product-details-desc-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\2\\desc\\product-details-desc-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\2\\desc\\product-details-desc-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\2\\desc\\product-details-desc-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\2\\desc\\product-details-desc-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\2\\desc\\product-details-desc-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\2\\desc\\product-details-desc-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\2\\main\\product-details-main-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\2\\main\\product-details-main-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\2\\main\\product-details-main-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\2\\main\\product-details-main-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\2\\main\\product-details-main-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\2\\main\\product-details-main-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\2\\main\\product-details-main-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\2\\main\\product-details-main-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\2\\main\\product-details-main-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\2\\main\\product-details-main-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\2\\nav\\product-details-nav-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\2\\nav\\product-details-nav-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\2\\nav\\product-details-nav-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\2\\nav\\product-details-nav-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\2\\nav\\product-details-nav-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\2\\nav\\product-details-nav-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\2\\nav\\product-details-nav-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\2\\nav\\product-details-nav-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\2\\nav\\product-details-nav-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\2\\nav\\product-details-nav-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\3\\main\\product-details-main-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\3\\main\\product-details-main-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\3\\main\\product-details-main-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\3\\main\\product-details-main-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\3\\main\\product-details-main-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\3\\main\\product-details-main-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\3\\main\\product-details-main-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\3\\main\\product-details-main-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\3\\nav\\product-details-nav-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\3\\nav\\product-details-nav-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\3\\nav\\product-details-nav-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\3\\nav\\product-details-nav-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\3\\nav\\product-details-nav-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\3\\nav\\product-details-nav-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\3\\nav\\product-details-nav-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\3\\nav\\product-details-nav-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\4\\main\\product-details-main-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\4\\main\\product-details-main-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\4\\main\\product-details-main-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\4\\main\\product-details-main-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\4\\main\\product-details-main-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\4\\main\\product-details-main-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\4\\main\\product-details-main-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\4\\main\\product-details-main-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\4\\nav\\product-details-nav-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\4\\nav\\product-details-nav-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\4\\nav\\product-details-nav-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\4\\nav\\product-details-nav-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\4\\nav\\product-details-nav-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\4\\nav\\product-details-nav-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\4\\nav\\product-details-nav-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\4\\nav\\product-details-nav-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\5\\main\\product-details-main-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\5\\main\\product-details-main-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\5\\main\\product-details-main-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\5\\main\\product-details-main-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\5\\main\\product-details-main-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\5\\main\\product-details-main-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\5\\main\\product-details-main-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\5\\main\\product-details-main-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\5\\nav\\product-details-nav-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\5\\nav\\product-details-nav-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\5\\nav\\product-details-nav-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\5\\nav\\product-details-nav-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\5\\nav\\product-details-nav-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\5\\nav\\product-details-nav-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\desc\\product-details-desc-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\desc\\product-details-desc-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\desc\\product-details-desc-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\desc\\product-details-desc-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\desc\\product-details-desc-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\desc\\product-details-desc-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\grid\\product-details-grid-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\grid\\product-details-grid-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\grid\\product-details-grid-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\grid\\product-details-grid-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\grid\\product-details-grid-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\grid\\product-details-grid-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\grid\\product-details-grid-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\grid\\product-details-grid-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\grid\\product-details-grid-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\grid\\product-details-grid-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\grid\\product-details-grid-6.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\grid\\product-details-grid-6.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\list\\product-details-list-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\list\\product-details-list-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\list\\product-details-list-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\list\\product-details-list-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\list\\product-details-list-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\list\\product-details-list-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\list\\product-details-list-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\list\\product-details-list-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\main\\product-details-main-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\main\\product-details-main-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\main\\product-details-main-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\main\\product-details-main-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\main\\product-details-main-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\main\\product-details-main-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\main\\product-details-main-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\main\\product-details-main-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\main\\product-details-main-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\main\\product-details-main-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\nav\\product-details-nav-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\nav\\product-details-nav-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\nav\\product-details-nav-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\nav\\product-details-nav-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\nav\\product-details-nav-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\nav\\product-details-nav-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\nav\\product-details-nav-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\nav\\product-details-nav-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\nav\\product-details-nav-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\nav\\product-details-nav-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\slider\\product-details-slider-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\slider\\product-details-slider-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\slider\\product-details-slider-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\slider\\product-details-slider-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\slider\\product-details-slider-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\slider\\product-details-slider-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\slider\\product-details-slider-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\slider\\product-details-slider-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\slider\\product-details-slider-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\slider\\product-details-slider-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\details\\slider\\product-details-slider-6.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\details\\slider\\product-details-slider-6.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\featured\\featured-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\featured\\featured-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\featured\\featured-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\featured\\featured-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\featured\\featured-3.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\featured\\featured-3.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\gadget\\gadget-girl.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\gadget\\gadget-girl.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\icons\\check-2.svg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\icons\\check-2.svg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\icons\\check-3.svg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\icons\\check-3.svg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\icons\\check.svg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\icons\\check.svg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\icons\\payment-option.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\icons\\payment-option.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\list\\product-list-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\list\\product-list-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\list\\product-list-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\list\\product-list-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\list\\product-list-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\list\\product-list-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\list\\product-list-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\list\\product-list-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\list\\product-list-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\list\\product-list-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\list\\product-list-6.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\list\\product-list-6.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\list\\product-list-7.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\list\\product-list-7.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\masonary\\masonary-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\masonary\\masonary-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\masonary\\masonary-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\masonary\\masonary-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\offer\\product-offer-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\offer\\product-offer-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\offer\\product-offer-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\offer\\product-offer-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\offer\\product-offer-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\offer\\product-offer-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\product-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\product-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\product-10.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\product-10.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\product-12.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\product-12.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\product-13.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\product-13.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\product-14.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\product-14.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\product-15.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\product-15.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\product-16.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\product-16.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\product-17.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\product-17.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\product-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\product-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\product-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\product-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\product-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\product-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\product-5-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\product-5-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\product-5-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\product-5-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\product-5-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\product-5-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\product-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\product-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\product-6.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\product-6.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\product-7.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\product-7.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\product-8.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\product-8.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\product-9.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\product-9.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\related\\2\\product-related-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\related\\2\\product-related-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\related\\2\\product-related-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\related\\2\\product-related-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\related\\2\\product-related-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\related\\2\\product-related-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\related\\2\\product-related-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\related\\2\\product-related-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\related\\product-related-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\related\\product-related-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\related\\product-related-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\related\\product-related-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\related\\product-related-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\related\\product-related-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\related\\product-related-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\related\\product-related-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\shop\\brand\\logo_01.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\shop\\brand\\logo_01.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\shop\\brand\\logo_02.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\shop\\brand\\logo_02.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\shop\\brand\\logo_03.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\shop\\brand\\logo_03.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\shop\\brand\\logo_04.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\shop\\brand\\logo_04.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\shop\\brand\\logo_05.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\shop\\brand\\logo_05.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\shop\\brand\\logo_06.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\shop\\brand\\logo_06.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\shop\\brand\\logo_07.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\shop\\brand\\logo_07.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\shop\\brand\\logo_08.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\shop\\brand\\logo_08.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\shop\\sm\\shop-sm-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\shop\\sm\\shop-sm-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\shop\\sm\\shop-sm-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\shop\\sm\\shop-sm-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\shop\\sm\\shop-sm-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\shop\\sm\\shop-sm-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\shop\\sm\\shop-sm-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\shop\\sm\\shop-sm-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\side\\pre-title.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\side\\pre-title.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\side\\side-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\side\\side-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\slider\\product-slider-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\slider\\product-slider-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\slider\\product-slider-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\slider\\product-slider-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\slider\\product-slider-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\slider\\product-slider-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\slider\\product-slider-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\slider\\product-slider-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\slider\\product-slider-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\slider\\product-slider-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\sm\\5\\product-sm-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\sm\\5\\product-sm-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\sm\\5\\product-sm-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\sm\\5\\product-sm-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\sm\\5\\product-sm-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\sm\\5\\product-sm-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\sm\\5\\product-sm-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\sm\\5\\product-sm-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\sm\\5\\product-sm-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\sm\\5\\product-sm-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\sm\\5\\product-sm-6.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\sm\\5\\product-sm-6.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\sm\\product-sm-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\sm\\product-sm-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\sm\\product-sm-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\sm\\product-sm-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\sm\\product-sm-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\sm\\product-sm-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\sm\\product-sm-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\sm\\product-sm-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\sm\\product-sm-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\sm\\product-sm-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\sm\\product-sm-6.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\sm\\product-sm-6.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\sm\\product-sm-7.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\sm\\product-sm-7.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\sm\\product-sm-8.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\sm\\product-sm-8.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\sm\\product-sm-9.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\sm\\product-sm-9.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\special\\big\\special-big-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\special\\big\\special-big-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\special\\special-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\special\\special-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\special\\special-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\special\\special-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\trending\\trending-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\trending\\trending-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\trending\\trending-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\trending\\trending-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\trending\\trending-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\trending\\trending-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\2\\shape\\shape-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\2\\shape\\shape-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\2\\shape\\shape-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\2\\shape\\shape-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\2\\shape\\shape-3.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\2\\shape\\shape-3.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\2\\slider-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\2\\slider-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\2\\slider-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\2\\slider-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\2\\slider-3.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\2\\slider-3.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\4\\nav\\icon-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\4\\nav\\icon-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\4\\nav\\icon-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\4\\nav\\icon-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\4\\nav\\icon-3.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\4\\nav\\icon-3.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\4\\nav\\icon-4.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\4\\nav\\icon-4.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\4\\shape\\rounded-test.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\4\\shape\\rounded-test.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\4\\slider-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\4\\slider-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\4\\slider-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\4\\slider-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\4\\slider-3.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\4\\slider-3.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\4\\slider-4.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\4\\slider-4.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\5\\shape\\offer.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\5\\shape\\offer.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\5\\shape\\shape-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\5\\shape\\shape-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\5\\shape\\shape-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\5\\shape\\shape-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\5\\shape\\shape-3.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\5\\shape\\shape-3.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\5\\shape\\shape-4.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\5\\shape\\shape-4.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\5\\slider-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\5\\slider-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\5\\subtitle.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\5\\subtitle.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\shape\\slider-shape-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\shape\\slider-shape-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\shape\\slider-shape-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\shape\\slider-shape-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\shape\\slider-shape-3.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\shape\\slider-shape-3.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\shape\\slider-shape-4.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\shape\\slider-shape-4.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\slider-img-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\slider-img-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\slider-img-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\slider-img-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\slider\\slider-img-3.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\slider\\slider-img-3.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\subscribe\\plane.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\subscribe\\plane.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\subscribe\\subscribe-shape-1.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\subscribe\\subscribe-shape-1.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\subscribe\\subscribe-shape-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\subscribe\\subscribe-shape-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\subscribe\\subscribe-shape-3.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\subscribe\\subscribe-shape-3.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\subscribe\\subscribe-shape-4.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\subscribe\\subscribe-shape-4.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\testimonial\\testimonial-quote-2.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\testimonial\\testimonial-quote-2.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\testimonial\\testimonial-quote.png",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\testimonial\\testimonial-quote.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\users\\user-1.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\users\\user-1.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\users\\user-10.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\users\\user-10.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\users\\user-11.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\users\\user-11.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\users\\user-2.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\users\\user-2.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\users\\user-3.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\users\\user-3.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\users\\user-4.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\users\\user-4.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\users\\user-5.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\users\\user-5.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\users\\user-6.jpg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\users\\user-6.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\ajax-form.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\js\\ajax-form.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\bootstrap-bundle.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\js\\bootstrap-bundle.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\btnloadmore.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\js\\btnloadmore.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\countdown.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\js\\countdown.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\imagesloaded-pkgd.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\js\\imagesloaded-pkgd.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\infinite-scroll.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\js\\infinite-scroll.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\isotope-pkgd.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\js\\isotope-pkgd.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\magnific-popup.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\js\\magnific-popup.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\main.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\js\\main.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\meanmenu.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\js\\meanmenu.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\nice-select.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\js\\nice-select.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\parallax.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\js\\parallax.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\purecounter.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\js\\purecounter.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\range-slider.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\js\\range-slider.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\slick.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\js\\slick.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\swiper-bundle.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\js\\swiper-bundle.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\vendor\\jquery.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\js\\vendor\\jquery.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\vendor\\waypoints.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\js\\vendor\\waypoints.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\wow.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\js\\wow.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\additional-methods.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\jquery-validation-sri.json",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\jquery-validation-sri.json"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_ar.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_ar.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_ar.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_ar.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_az.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_az.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_az.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_az.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_bg.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_bg.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_bg.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_bg.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_bn_BD.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_bn_BD.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_bn_BD.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_bn_BD.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_ca.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_ca.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_ca.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_ca.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_cs.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_cs.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_cs.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_cs.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_da.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_da.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_da.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_da.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_de.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_de.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_de.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_de.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_el.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_el.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_el.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_el.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_es.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_es.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_es.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_es.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_es_AR.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_es_AR.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_es_AR.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_es_AR.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_es_PE.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_es_PE.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_es_PE.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_es_PE.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_et.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_et.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_et.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_et.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_eu.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_eu.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_eu.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_eu.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_fa.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_fa.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_fa.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_fa.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_fi.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_fi.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_fi.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_fi.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_fr.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_fr.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_fr.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_fr.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_ge.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_ge.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_ge.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_ge.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_gl.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_gl.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_gl.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_gl.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_he.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_he.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_he.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_he.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_hr.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_hr.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_hr.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_hr.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_hu.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_hu.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_hu.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_hu.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_hy_AM.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_hy_AM.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_hy_AM.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_hy_AM.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_id.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_id.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_id.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_id.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_is.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_is.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_is.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_is.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_it.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_it.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_it.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_it.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_ja.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_ja.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_ja.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_ja.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_ka.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_ka.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_ka.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_ka.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_kk.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_kk.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_kk.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_kk.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_ko.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_ko.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_ko.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_ko.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_lt.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_lt.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_lt.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_lt.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_lv.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_lv.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_lv.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_lv.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_mk.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_mk.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_mk.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_mk.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_my.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_my.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_my.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_my.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_nl.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_nl.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_nl.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_nl.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_no.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_no.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_no.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_no.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_pl.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_pl.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_pl.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_pl.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_pt_BR.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_pt_BR.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_pt_BR.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_pt_BR.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_pt_PT.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_pt_PT.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_pt_PT.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_pt_PT.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_ro.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_ro.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_ro.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_ro.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_ru.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_ru.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_ru.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_ru.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_sd.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_sd.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_sd.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_sd.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_si.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_si.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_si.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_si.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_sk.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_sk.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_sk.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_sk.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_sl.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_sl.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_sl.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_sl.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_sr.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_sr.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_sr.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_sr.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_sr_lat.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_sr_lat.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_sr_lat.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_sr_lat.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_sv.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_sv.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_sv.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_sv.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_th.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_th.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_th.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_th.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_tj.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_tj.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_tj.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_tj.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_tr.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_tr.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_tr.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_tr.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_uk.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_uk.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_uk.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_uk.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_ur.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_ur.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_ur.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_ur.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_vi.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_vi.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_vi.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_vi.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_zh.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_zh.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_zh.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_zh.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_zh_TW.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_zh_TW.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_zh_TW.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\messages_zh_TW.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\methods_de.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\methods_de.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\methods_de.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\methods_de.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\methods_es_CL.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\methods_es_CL.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\methods_es_CL.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\methods_es_CL.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\methods_fi.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\methods_fi.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\methods_fi.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\methods_fi.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\methods_it.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\methods_it.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\methods_it.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\methods_it.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\methods_nl.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\methods_nl.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\methods_nl.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\methods_nl.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\methods_pt.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\methods_pt.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validate\\localization\\methods_pt.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validate\\localization\\methods_pt.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery\\jquery.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery\\jquery.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery\\jquery.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery\\jquery.min.map",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery\\jquery.slim.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery\\jquery.slim.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\jquery\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\jquery\\jquery.slim.min.map"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\sweetalert2\\sweetalert2.all.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\sweetalert2\\sweetalert2.all.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\sweetalert2\\sweetalert2.all.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\sweetalert2\\sweetalert2.all.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\sweetalert2\\sweetalert2.css",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\sweetalert2\\sweetalert2.css"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\sweetalert2\\sweetalert2.d.ts",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\sweetalert2\\sweetalert2.d.ts"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\sweetalert2\\sweetalert2.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\sweetalert2\\sweetalert2.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\sweetalert2\\sweetalert2.min.css",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\sweetalert2\\sweetalert2.min.css"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\sweetalert2\\sweetalert2.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\sweetalert2\\sweetalert2.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\toastify-js\\toastify-es.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\toastify-js\\toastify-es.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\toastify-js\\toastify-es.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\toastify-js\\toastify-es.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\toastify-js\\toastify.css",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\toastify-js\\toastify.css"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\toastify-js\\toastify.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\toastify-js\\toastify.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\toastify-js\\toastify.min.css",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\toastify-js\\toastify.min.css"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\toastify-js\\toastify.min.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\lib\\toastify-js\\toastify.min.js"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.EndPoint.Site.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.EndPoint.Site.props",
+      "PackagePath": "build\\EndPoint.Site.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.EndPoint.Site.props",
+      "PackagePath": "buildMultiTargeting\\EndPoint.Site.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.EndPoint.Site.props",
+      "PackagePath": "buildTransitive\\EndPoint.Site.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

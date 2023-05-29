@@ -565,7 +565,6 @@ C:\Users\Mosys\Downloads\corkstops-main\corkstops-main\EndPoint.Site\obj\Debug\n
 C:\Users\Mosys\Downloads\corkstops-main\corkstops-main\EndPoint.Site\obj\Debug\net6.0\EndPoint.Site.pdb
 C:\Users\Mosys\Downloads\corkstops-main\corkstops-main\EndPoint.Site\obj\Debug\net6.0\EndPoint.Site.genruntimeconfig.cache
 C:\Users\Mosys\Downloads\corkstops-main\corkstops-main\EndPoint.Site\obj\Debug\net6.0\ref\EndPoint.Site.dll
-C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\appsettings.Development.json
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\appsettings.json
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\libman.json
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\EndPoint.Site.staticwebassets.runtime.json
@@ -578,6 +577,9 @@ C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\Humanizer.dll
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\LazZiya.TagHelpers.dll
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\MessagePack.dll
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\MessagePack.Annotations.dll
+C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
@@ -604,7 +606,6 @@ C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\Microsoft.DotNet.PlatformAb
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\Microsoft.DotNet.Scaffolding.Shared.dll
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
@@ -614,7 +615,6 @@ C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\Microsoft.IdentityModel.Log
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
-C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\Microsoft.NET.StringTools.dll
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\Microsoft.VisualStudio.Debugger.Contracts.dll
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
@@ -643,7 +643,6 @@ C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\System.Composition.TypedPar
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\System.Drawing.Common.dll
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
-C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\System.Reflection.MetadataLoadContext.dll
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\System.Runtime.Caching.dll
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\System.Security.Permissions.dll
@@ -810,12 +809,7 @@ C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\runtimes\win-arm\native\Mic
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
-C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
-C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
-C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\Store.Application.dll
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\Store.Common.dll
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\Store.Domain.dll
@@ -849,3 +843,18 @@ C:\projects\corkstops\EndPoint.Site\obj\Debug\net6.0\refint\EndPoint.Site.dll
 C:\projects\corkstops\EndPoint.Site\obj\Debug\net6.0\EndPoint.Site.pdb
 C:\projects\corkstops\EndPoint.Site\obj\Debug\net6.0\EndPoint.Site.genruntimeconfig.cache
 C:\projects\corkstops\EndPoint.Site\obj\Debug\net6.0\ref\EndPoint.Site.dll
+C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\appsettings.Development.json
+C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\Microsoft.Build.Tasks.Core.dll
+C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\Microsoft.Build.Utilities.Core.dll
+C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\System.CodeDom.dll
+C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\System.Resources.Extensions.dll
+C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\runtimes\win-arm\lib\net6.0\dotnet-aspnet-codegenerator-design.exe
+C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\runtimes\win-arm64\lib\net6.0\dotnet-aspnet-codegenerator-design.exe
+C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\projects\corkstops\EndPoint.Site\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll

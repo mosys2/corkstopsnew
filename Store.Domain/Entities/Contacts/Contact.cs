@@ -11,7 +11,7 @@ namespace Store.Domain.Entities.Contacts
     public class Contact:BaseEntity
     {
         public virtual User User { get; set; }
-        public long UserId { get; set; }
+        public string UserId { get; set; }
         public virtual ContactType ContactType { get; set; }
         public long ContactTypeId { get; set; }
         public string? Title { get; set; }

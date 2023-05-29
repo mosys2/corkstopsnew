@@ -43,7 +43,7 @@
                             </div>
                             <div class="input-form mt-3">
                                 <label class="form-label w-full flex flex-col sm:flex-row"> Rolls </label>
-                                <select asp-for="Rolls" data-placeholder="Select rolls" asp-items="ViewBag.Rolls" class="tom-select w-full" multiple>
+                                <select asp-for="Rols" data-placeholder="Select rolls" asp-items="ViewBag.Rolls" class="tom-select w-full" multiple>
                                 </select>
                             </div>
                             <div class="input-form mt-3">
@@ -67,7 +67,7 @@
                                 <label class="form-label w-full mt-5 flex flex-col sm:flex-row"> Status  </label>
                                 <div class="w-full mt-3 xl:mt-0 flex-1">
                                     <div class="form-check form-switch">
-                                        <input asp-for="IsActive" class="form-check-input" type="checkbox">
+                                        <input asp-for="LockoutEnabled" class="form-check-input" type="checkbox">
                                         <label class="form-check-label leading-relaxed text-slate-500 text-xs" for="preorder-active"> Select status 'Active' or 'Inactive'' </label>
                                     </div>
                                 </div>
@@ -81,15 +81,6 @@
                                 <label asp-for="Email" class="form-label w-full flex flex-col sm:flex-row"> Email <span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500">Required, email address format</span> </label>
                                 <input asp-for="Email" type="email" class="form-control mb-1" placeholder="example@gmail.com">
                                 <span asp-validation-for="Email" class="pristine-error text-danger mt-2"></span>
-                            </div>
-                            <div class="input-form mt-3">
-                                <label asp-for="Username" class="form-label w-full flex flex-col sm:flex-row"> Username <span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500">Required, at least 2 characters</span> </label>
-                                <input asp-for="Username" type="text" class="form-control mb-1" placeholder="Username" minlength="2" required="">
-                                <span asp-validation-for="Username" class="pristine-error text-danger mt-2"></span>
-                            </div>
-                            <div class="input-form mt-3">
-                                <label asp-for="Address" class="form-label w-full flex flex-col sm:flex-row"> Address </label>
-                                <textarea asp-for="Address" class="form-control mb-1" placeholder="Type your Address"></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary mt-5 frm-register-user">Edite</button>
 
@@ -150,14 +141,14 @@
                 let LastName = elementItems.LastName.value;
                 let Rolls = rollsItem;
                 let Gender = elementItems.Gender.value;
-                let IsActive = $('#IsActive').is(':checked') ? true : false
+                let LockoutEnabled = $('#"LockoutEnabled"').is(':checked') ? true : false
                 let Mobile = elementItems.Mobile.value;
                 let Email = elementItems.Email.value;
                 let Username = elementItems.Username.value;
                 let Address = elementItems.Address.value;
 
                 var data = {
-                   Id, Name, LastName, Rolls, Gender, IsActive, Mobile, Email, Username, Address
+                    Id, Name, LastName, Rolls, Gender, LockoutEnabled, Mobile, Email, Username, Address
                 }
                 console.log(data);
                 //ajax request

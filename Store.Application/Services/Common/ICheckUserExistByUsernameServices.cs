@@ -21,33 +21,38 @@ namespace Store.Application.Services.Common
         {
             _context = context;
         }
-        public async Task<List<FindedUserDetailByUsernameDto>> Excute(string Username,long Id)
+
+        public async Task<List<FindedUserDetailByUsernameDto>> Excute(string Username, long Id)
         {
-            var user =await _context.Logins
-                .Include(p => p.User)
-                .Where(p => p.UserName==Username)
-                .ToListAsync();
-            if (Id==0)
-            {
-                var userList1 = user.Select(p => new FindedUserDetailByUsernameDto()
-                {
-                    Id=p.User.Id,
-                    FullName=p.User.FullName,
-                    IsActive=p.User.IsActive
-                }).ToList();
-                return userList1;
-            }
-            else
-            {
-                var userList1 = user.Where(p => p.User.Id!=Id).Select(p => new FindedUserDetailByUsernameDto()
-                {
-                    Id=p.User.Id,
-                    FullName=p.User.FullName,
-                    IsActive=p.User.IsActive
-                }).ToList();
-                return userList1;
-            }
+            throw new NotImplementedException();
         }
+        //public async Task<List<FindedUserDetailByUsernameDto>> Excute(string Username,long Id)
+        //{
+        //    var user =await _context.Logins
+        //        .Include(p => p.User)
+        //        .Where(p => p.UserName==Username)
+        //        .ToListAsync();
+        //    if (Id==0)
+        //    {
+        //        var userList1 = user.Select(p => new FindedUserDetailByUsernameDto()
+        //        {
+        //            Id=p.User.Id,
+        //            FullName=p.User.FullName,
+        //            IsActive=p.User.IsActive
+        //        }).ToList();
+        //        return userList1;
+        //    }
+        //    else
+        //    {
+        //        var userList1 = user.Where(p => p.User.Id!=Id).Select(p => new FindedUserDetailByUsernameDto()
+        //        {
+        //            Id=p.User.Id,
+        //            FullName=p.User.FullName,
+        //            IsActive=p.User.IsActive
+        //        }).ToList();
+        //        return userList1;
+        //    }
+        //}
     }
     public class FindedUserDetailByUsernameDto
     {

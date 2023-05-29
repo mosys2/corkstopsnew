@@ -37,7 +37,7 @@ namespace EndPoint.Site.Areas.Admin.Controllers
             _getUserDetailServices=getUserDetailServices;
             _editeUserServicess=editeUserServicess;
         }
-
+        [HttpGet]
         public IActionResult Index(string SearchKey="",int Page=1,int PageSize=20 )
         {
             var result = _getUsers.Execute(new RequestGetUserDto()
@@ -52,7 +52,7 @@ namespace EndPoint.Site.Areas.Admin.Controllers
         public async Task<IActionResult> Create()
         {
             var result = await _getAllRolls.Execute();
-            ViewBag.Rolls=new SelectList(result.Data, "Id", "Title");
+            ViewBag.Role=new SelectList(result.Data, "Name", "Name");
             return View();
         }
 
@@ -62,18 +62,16 @@ namespace EndPoint.Site.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
-              var result=await _registerUser_Admin.Execute(new RequestRegisterUserDto
+                var result = await _registerUser_Admin.Execute(new RequestRegisterUserDto
                 {
                     Name=model.Name,
                     LastName=model.LastName,
                     Gender=model.Gender,
-                    Rolls=model.Rolls,
-                    IsActive=model.IsActive,
+                    LockoutEnabled=model.LockoutEnabled,
                     Email=model.Email,
                     Mobile=model.Mobile,
-                    Username=model.Username,
                     Password=model.Password,
-                    Address=model.Address,
+                    Role=model.Role
                 });
                 return Json(new ResultDto
                 {
@@ -95,7 +93,7 @@ namespace EndPoint.Site.Areas.Admin.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Edit(long id)
+        public async Task<IActionResult> Edit(string id)
         {
             var rolls = await _getAllRolls.Execute();
             ViewBag.Rolls=new SelectList(rolls.Data, "Id", "Title");
@@ -105,13 +103,11 @@ namespace EndPoint.Site.Areas.Admin.Controllers
                 Id=result.Data.Id,
                 Name=result.Data.Name,
                 LastName=result.Data.LastName,
-                Rolls=result.Data.Rolls,
+                Rols=result.Data.Rols,
                 Gender=result.Data.Gender.Value,
-                IsActive=result.Data.IsActive,
+                LockoutEnabled=result.Data.LockoutEnabled,
                 Mobile=result.Data.Mobile,
                 Email=result.Data.Email,
-                Username=result.Data.Username,
-                Address=result.Data.Address
             };
             return View(user);
         }
@@ -132,13 +128,11 @@ namespace EndPoint.Site.Areas.Admin.Controllers
                    Id=request.Id,
                    Name=request.Name,
                    LastName=request.LastName,
-                   Rolls=request.Rolls,
+                   Rols=request.Rols,
                    Gender=request.Gender,
-                   IsActive=request.IsActive,
+                   LockoutEnabled=request.LockoutEnabled,
                    Mobile=request.Mobile,
                    Email=request.Email,
-                   Username=request.Username,
-                   Address=request.Address
                });
                 return Json(new ResultDto
                 {

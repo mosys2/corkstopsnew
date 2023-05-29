@@ -1,9 +1,12 @@
 ﻿@using EndPoint.Site.Areas.Admin.Models.ContollerModels.User;
+@addTagHelper *,LazZiya.TagHelpers
+
 @addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
 @model UserModel_Request
 @{
-    ViewData["Title"] = "Create";
-    Layout = "~/Areas/Admin/Views/Shared/_Adminlayout.cshtml";
+    ViewData["Title"] = "Register User";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+
 }
 @section Head{
     <link rel="stylesheet" href="~/AdminTemplate/lib/toastify-js/toastify.min.css" />
@@ -25,7 +28,7 @@
                 </div>
                 <div id="form-validation" class="p-5">
                     <div class="preview">
-                        <form method="post" Id="UserForm">
+                        <form  Id="UserForm">
                             <!-- BEGIN: Validation Form -->
                             <div class="input-form">
                                 <label asp-for="Name" class="form-label w-full flex flex-col sm:flex-row"> Name <span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500">Required, at least 2 characters</span> </label>
@@ -38,13 +41,13 @@
                                 <span asp-validation-for="LastName" class="pristine-error text-danger mt-2"></span>
 
                             </div>
-                            <div class="input-form mt-3">
+                           <div class="input-form mt-3">
                                 <label class="form-label w-full flex flex-col sm:flex-row"> Rolls </label>
-                                <select asp-for="Rolls" data-placeholder="Select rolls" asp-items="ViewBag.Rolls" class="tom-select w-full" multiple>
+                                <select asp-for="Role" data-placeholder="Select rolls" asp-items="ViewBag.Role" class="tom-select w-full" multiple>
                                 </select>
                             </div>
                             <div class="input-form mt-3">
-                                <label class="form-label w-full flex flex-col sm:flex-row"> Gender  </label>
+                            <label class="form-label w-full flex flex-col sm:flex-row"> Gender  </label>
                                 <div class="form-inline items-start flex-col xl:flex-row  first:mt-0 first:pt-0">
                                     <div class="w-full mt-3 xl:mt-0 flex-1">
                                         <div class="flex flex-col sm:flex-row">
@@ -61,38 +64,32 @@
                                 </div>
                             </div>
                             <div class="input-form mt-3">
-                                <label class="form-label w-full mt-5 flex flex-col sm:flex-row"> Status  </label>
+                            <label class="form-label w-full mt-5 flex flex-col sm:flex-row"> Status  </label>
                                 <div class="w-full mt-3 xl:mt-0 flex-1">
                                     <div class="form-check form-switch">
-                                        <input asp-for="IsActive" class="form-check-input" type="checkbox">
+                                        <input asp-for="LockoutEnabled" class="form-check-input" type="checkbox">
                                         <label class="form-check-label leading-relaxed text-slate-500 text-xs" for="preorder-active"> Select status 'Active' or 'Inactive'' </label>
                                     </div>
                                 </div>
                             </div>
                             <div class="input-form mt-3">
-                                <label asp-for="Mobile" class="form-label w-full flex flex-col sm:flex-row"> Mobile <span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500">Required, Number only &amp; max and min 11 characters</span> </label>
+                            <label asp-for="Mobile" class="form-label w-full flex flex-col sm:flex-row"> Mobile <span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500">Required, Number only &amp; max and min 11 characters</span> </label>
                                 <input asp-for="Mobile" type="number" class="form-control mb-1" placeholder="Mobile">
                                 <span asp-validation-for="Mobile" class="pristine-error text-danger mt-2"></span>
                             </div>
                             <div class="input-form mt-3">
-                                <label asp-for="Email" class="form-label w-full flex flex-col sm:flex-row"> Email <span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500">Required, email address format</span> </label>
+                            <label asp-for="Email" class="form-label w-full flex flex-col sm:flex-row"> Email <span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500">Required, email address format</span> </label>
                                 <input asp-for="Email" type="email" class="form-control mb-1" placeholder="example@gmail.com">
                                 <span asp-validation-for="Email" class="pristine-error text-danger mt-2"></span>
                             </div>
-                            <div class="input-form mt-3">
-                                <label asp-for="Username" class="form-label w-full flex flex-col sm:flex-row"> Username <span class="sm:ml-auto mt-1 sm:mt-0 text-xs text-slate-500">Required, at least 2 characters</span> </label>
-                                <input asp-for="Username" type="text" class="form-control mb-1" placeholder="Username" minlength="2" required="">
-                                <span asp-validation-for="Username" class="pristine-error text-danger mt-2"></span>
-                            </div>
-                            <div class="input-form mt-3">
-                                <label asp-for="Password" class="form-label w-full flex flex-col sm:flex-row"> Password  </label>
+
+                           <div class="input-form mt-3">
+                            <label asp-for="Password" class="form-label w-full flex flex-col sm:flex-row"> Password  </label>
                                 <input asp-for="Password" type="password" class="form-control mb-1" placeholder="secret">
                                 <span asp-validation-for="Password" class="pristine-error text-danger mt-2"></span>
                             </div>
-                            <div class="input-form mt-3">
-                                <label asp-for="Address" class="form-label w-full flex flex-col sm:flex-row"> Address </label>
-                                <textarea asp-for="Address" class="form-control mb-1" placeholder="Type your Address"></textarea>
-                            </div>
+                            <span id="show-error" class="pristine-error text-danger mt-2"></span>
+
                             <button type="submit" class="btn btn-primary mt-5 frm-register-user">Register</button>
 
                             <!-- END: Validation Form -->
@@ -134,26 +131,24 @@
         $('#UserForm').on("submit", function (e) {
             event.preventDefault();
             if ($(this).valid()) {
-                let rollsItem = [];
-                $('#Rolls :selected').each(function (i, sel) {
-                    rollsItem.push(parseInt($(sel).val()));
+                let rolseItem = [];
+                $('#Role :selected').each(function (i, sel) {
+                    rolseItem.push($(sel).val());
                 });
                 let elementItems = e.target;
                 let Name = elementItems.Name.value
                 let LastName = elementItems.LastName.value
-                let Rolls = rollsItem
+                let Role = rolseItem
                 let Gender = elementItems.Gender.value
-                let IsActive = $('#IsActive').is(':checked') ? true : false
+                let LockoutEnabled = $('#LockoutEnabled').is(':checked') ? false : true
                 let Mobile = elementItems.Mobile.value
                 let Email = elementItems.Email.value
-                let Username = elementItems.Username.value
                 let Password = elementItems.Password.value
-                let Address = elementItems.Address.value
 
                 var model = {
-                    Name, LastName, Rolls, Gender, IsActive, Mobile, Email, Username, Password, Address
+                    Name, LastName, Role, Gender, LockoutEnabled, Mobile, Email, Password
                 }
-                console.log(data);
+                console.log(model);
                 ajaxFunc("Create", model, "POST",
                     function (result) {
                         if (result.isSuccess) {
@@ -161,7 +156,9 @@
                             successToastify.showToast();
                         } else {
                             dangerToastify.showToast();
-                        }
+                            $('#show-error').text(result.Message);
+                            console.log(result.Message);
+                                }
                     },
                     function (error) {
                         dangerToastify.showToast();

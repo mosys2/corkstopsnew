@@ -1,7 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Store.Application.Interfaces.Contexts;
 using Store.Common.Pagination;
 using Store.Common.ResultDto;
+using Store.Domain.Entities.Users;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,36 +15,33 @@ namespace Store.Application.Services.Users.Queries.GetUsers
 {
     public interface IGetUsersServices
     {
-       public ResultDto<UsersForAdmin_Dto> Execute(RequestGetUserDto request);
+        ResultDto<UsersForAdmin_Dto> Execute(RequestGetUserDto request);
     }
     public class GetUsersServices : IGetUsersServices
     {
-        private readonly IDataBaseContext _context;
-        public GetUsersServices(IDataBaseContext context)
+        private readonly UserManager<User> _userManager;
+        public GetUsersServices(UserManager<User> userManager)
         {
-            _context=context;
+            _userManager=userManager;
         }
 
         public ResultDto<UsersForAdmin_Dto> Execute(RequestGetUserDto request)
         {
-            var users = _context.Users.Include(p=>p.Contacts).ThenInclude(c=>c.ContactType).AsQueryable();
+            var users = _userManager.Users.AsQueryable();
+
             int rowsCount = 0;
             if (!string.IsNullOrWhiteSpace(request.SerachKey))
             {
-                users=users.Where(p=>p.FullName.Contains(request.SerachKey));
+                users=users.Where(p => p.FullName.Contains(request.SerachKey));
             }
             var userList = users.ToPaged(request.Page, request.PageSize, out rowsCount).OrderByDescending(p => p.InsertTime).Select
                 (p => new GetUsersDto
                 {
-                        FullName=p.FullName,
-                        Id=p.Id,
-                        IsActive=p.IsActive,
-                        ContactsUser=p.Contacts.Select(c=>new ContactsUsersDto
-                        {
-                            ContactValue=c.Value,
-                            Icon=c.ContactType.Icon
-                        }).ToList()
-                   
+                    FullName=p.FullName,
+                    Id=p.Id,
+                    LockoutEnabled=p.LockoutEnabled,
+                    Email=p.Email,
+                    Mobile=p.PhoneNumber
                 }).ToList();
             return new ResultDto<UsersForAdmin_Dto>()
             {
@@ -68,16 +67,13 @@ namespace Store.Application.Services.Users.Queries.GetUsers
     }
     public class GetUsersDto
     {
-        public long Id { get; set; }
+        public string Id { get; set; }
         public string? FullName { get; set; }
-        public bool IsActive { get; set; }
-        public List<ContactsUsersDto> ContactsUser { get; set; }
+        public bool LockoutEnabled { get; set; }
+        public string Email { get; set; }
+        public string Mobile { get; set; }
     }
-    public class ContactsUsersDto
-    {
-        public string? Icon { get; set; }
-        public string? ContactValue { get; set; }
-    }
+    
 
     public class RequestGetUserDto
     {

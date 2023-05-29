@@ -1,0 +1,12 @@
+C:\projects\corkstops\Store.Infrastructor\bin\Debug\net7.0\Store.Infrastructor.deps.json
+C:\projects\corkstops\Store.Infrastructor\bin\Debug\net7.0\Store.Infrastructor.dll
+C:\projects\corkstops\Store.Infrastructor\bin\Debug\net7.0\Store.Infrastructor.pdb
+C:\projects\corkstops\Store.Infrastructor\obj\Debug\net7.0\Store.Infrastructor.csproj.AssemblyReference.cache
+C:\projects\corkstops\Store.Infrastructor\obj\Debug\net7.0\Store.Infrastructor.GeneratedMSBuildEditorConfig.editorconfig
+C:\projects\corkstops\Store.Infrastructor\obj\Debug\net7.0\Store.Infrastructor.AssemblyInfoInputs.cache
+C:\projects\corkstops\Store.Infrastructor\obj\Debug\net7.0\Store.Infrastructor.AssemblyInfo.cs
+C:\projects\corkstops\Store.Infrastructor\obj\Debug\net7.0\Store.Infrastructor.csproj.CoreCompileInputs.cache
+C:\projects\corkstops\Store.Infrastructor\obj\Debug\net7.0\Store.Infrastructor.dll
+C:\projects\corkstops\Store.Infrastructor\obj\Debug\net7.0\refint\Store.Infrastructor.dll
+C:\projects\corkstops\Store.Infrastructor\obj\Debug\net7.0\Store.Infrastructor.pdb
+C:\projects\corkstops\Store.Infrastructor\obj\Debug\net7.0\ref\Store.Infrastructor.dll

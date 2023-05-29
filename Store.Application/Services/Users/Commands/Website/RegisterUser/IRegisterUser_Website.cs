@@ -10,98 +10,60 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Store.Application.Services.Users.Commands.RegisterUser;
+using Store.Common.Security;
+using Microsoft.AspNetCore.Identity;
 
 namespace Store.Application.Services.Users.Commands.Website.RegisterUser
 {
     public interface IRegisterUser_Website
     {
-        Task<ResultDto<ResultRegisterUserDto_Website>> Execute(RequestRegisterUserDto_Website request);
+        Task<ResultDto> Execute(RequestRegisterUserDto_Website request);
     }
     public class RegisterUser_Website : IRegisterUser_Website
     {
-        private readonly IDataBaseContext _context;
-        public RegisterUser_Website(IDataBaseContext context)
+        private readonly UserManager<User> _userManager;
+        public RegisterUser_Website(UserManager<User> userManager)
         {
-            _context=context;
+            _userManager = userManager;
         }
 
-        public async Task<ResultDto<ResultRegisterUserDto_Website>> Execute(RequestRegisterUserDto_Website request)
+        
+        public async Task<ResultDto> Execute(RequestRegisterUserDto_Website request)
         {
             try
             {
                 User user = new User()
                 {
                     FullName=request.FullName,
+                    Email=request.Email,
+                    UserName=request.Email,
+                    PhoneNumber=request.Mobile,
                     InsertTime=DateTime.Now,
-                    IsRemoved=false,
-                    IsActive=true
-                    
-                };
-                await _context.Users.AddAsync(user);
-
-                Login login = new Login()
-                {
-                    User=user,
-                    UserId=user.Id,
-                    UserName="",
-                    Password=request.Password,
-                    InsertTime=DateTime.Now,
-                    IsRemoved=false,
-                };
-                await _context.Logins.AddAsync(login);
-
-                List<UserInRoll> userInRoll = new List<UserInRoll>();
-                userInRoll.Add(new UserInRoll
-                {
-                    User=user,
-                    UserId=user.Id,
-                    RollId=(long)RollEnum.Customer,
-                    InsertTime=DateTime.Now,
+                    LockoutEnabled=true,
                     IsRemoved=false
-                });
-                await _context.UserInRolls.AddRangeAsync(userInRoll);
-
-                List<Contact> contacts = new List<Contact>();
-                contacts.Add(new Contact()
-                {
-                    User=user,
-                    UserId=user.Id,
-                    ContactTypeId=(long)ContactTypeEnum.Mobile,
-                    Title=ContactTypeTitle.Mobile,
-                    Value=request.Mobile,
-                    InsertTime=DateTime.Now
-                });
-                contacts.Add(new Contact()
-                {
-                    User=user,
-                    UserId=user.Id,
-                    ContactTypeId=(long)ContactTypeEnum.Email,
-                    Title=ContactTypeTitle.Email,
-                    Value=request.Email,
-                    InsertTime=DateTime.Now
-                });
-                await _context.Contacts.AddRangeAsync(contacts);
-
-                //save change
-                await _context.SaveChangesAsync();
-
-                return new ResultDto<ResultRegisterUserDto_Website>
-                {
-                    Data=new ResultRegisterUserDto_Website
-                    {
-                        UserId=user.Id
-                    },
-                    IsSuccess=true,
-                    Message="successs"
                 };
-            }catch(Exception ex)
-            {
-                return new ResultDto<ResultRegisterUserDto_Website>
+                var result = await _userManager.CreateAsync(user, request.Password);
+                if (result.Succeeded)
                 {
-                    Data=new ResultRegisterUserDto_Website
+                    await _userManager.AddToRoleAsync(user, RollsName.Customer);
+                    return new ResultDto
                     {
-                        UserId=0
-                    },
+                        IsSuccess=true,
+                        Message=Messages.Message.RegisterSuccess
+                    };
+                }
+                return new ResultDto
+                {
+                    IsSuccess=false,
+                    Message=result.Errors.ToString()
+                };
+
+
+            }
+            catch (Exception ex)
+            {
+                return new ResultDto
+                {
                     IsSuccess=false,
                     Message=ex.Message
                 };
@@ -114,9 +76,5 @@ namespace Store.Application.Services.Users.Commands.Website.RegisterUser
         public string Mobile { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
-    }
-    public class ResultRegisterUserDto_Website
-    {
-        public long UserId { get; set; }
     }
 }

@@ -17,17 +17,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructor", "Infrastruc
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{963C86A3-4C48-4432-A236-313C934FD63A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Store.Domain", "Store.Domain\Store.Domain.csproj", "{E32CC07B-A056-419C-B892-850A2647C8F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Store.Domain", "Store.Domain\Store.Domain.csproj", "{E32CC07B-A056-419C-B892-850A2647C8F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Store.Common", "Store.Common\Store.Common.csproj", "{2618D7AC-8AAD-4543-B368-FAE59F026BBE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Store.Common", "Store.Common\Store.Common.csproj", "{2618D7AC-8AAD-4543-B368-FAE59F026BBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Store.Application", "Store.Application\Store.Application.csproj", "{53901D3B-CFDC-431D-B392-9F8607545CAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Store.Application", "Store.Application\Store.Application.csproj", "{53901D3B-CFDC-431D-B392-9F8607545CAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Store.Infrastructor", "Store.Infrastructor\Store.Infrastructor.csproj", "{1FD94506-CC90-4A7E-8684-A75DB93A6BA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Store.Infrastructor", "Store.Infrastructor\Store.Infrastructor.csproj", "{1FD94506-CC90-4A7E-8684-A75DB93A6BA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Store.Persistence", "Store.Persistence\Store.Persistence.csproj", "{BEFED2E7-D766-4BE1-A252-3F25B19FFF52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Store.Persistence", "Store.Persistence\Store.Persistence.csproj", "{BEFED2E7-D766-4BE1-A252-3F25B19FFF52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EndPoint.Site", "EndPoint.Site\EndPoint.Site.csproj", "{5BE2EC9E-36CF-4A8E-927C-6751146BF27E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EndPoint.Site", "EndPoint.Site\EndPoint.Site.csproj", "{5BE2EC9E-36CF-4A8E-927C-6751146BF27E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

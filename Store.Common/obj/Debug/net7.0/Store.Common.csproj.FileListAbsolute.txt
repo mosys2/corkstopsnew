@@ -1,0 +1,12 @@
+C:\projects\corkstops\Store.Common\bin\Debug\net7.0\Store.Common.deps.json
+C:\projects\corkstops\Store.Common\bin\Debug\net7.0\Store.Common.dll
+C:\projects\corkstops\Store.Common\bin\Debug\net7.0\Store.Common.pdb
+C:\projects\corkstops\Store.Common\obj\Debug\net7.0\Store.Common.csproj.AssemblyReference.cache
+C:\projects\corkstops\Store.Common\obj\Debug\net7.0\Store.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\projects\corkstops\Store.Common\obj\Debug\net7.0\Store.Common.AssemblyInfoInputs.cache
+C:\projects\corkstops\Store.Common\obj\Debug\net7.0\Store.Common.AssemblyInfo.cs
+C:\projects\corkstops\Store.Common\obj\Debug\net7.0\Store.Common.csproj.CoreCompileInputs.cache
+C:\projects\corkstops\Store.Common\obj\Debug\net7.0\Store.Common.dll
+C:\projects\corkstops\Store.Common\obj\Debug\net7.0\refint\Store.Common.dll
+C:\projects\corkstops\Store.Common\obj\Debug\net7.0\Store.Common.pdb
+C:\projects\corkstops\Store.Common\obj\Debug\net7.0\ref\Store.Common.dll

@@ -1,6 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Store.Application.Interfaces.Contexts;
 using Store.Common.ResultDto;
+using Store.Domain.Entities.Users;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,35 +17,30 @@ namespace Store.Application.Services.Users.Queries.GetAllRolls
     }
     public class GetAllRolls_ForAdmin : IGetAllRolls_ForAdmin
     {
-        private readonly IDataBaseContext _context;
-        public GetAllRolls_ForAdmin(IDataBaseContext context) {
-            _context=context;
+        private readonly RoleManager<Role> _identityRole;
+        public GetAllRolls_ForAdmin(RoleManager<Role> identityRole) {
+            _identityRole=identityRole;
         }
+
         public async Task<ResultDto<List<AllRolls_ForAdminDto>>> Execute()
         {
-            var rolls =await _context.Rolls.Select(p => new AllRolls_ForAdminDto
+            var rolls = await _identityRole.Roles.Select(p => new AllRolls_ForAdminDto
             {
                 Id=p.Id,
-                RollName=p.RollName,
-                Title=p.Title
+                Name=p.Name,
+                Description=p.Description
             }).ToListAsync();
             return new ResultDto<List<AllRolls_ForAdminDto>>()
             {
-                
-                Data= rolls.Select(p=>new AllRolls_ForAdminDto
-                {
-                    Id=p.Id,
-                    RollName=p.RollName,
-                    Title=p.Title
-                }).ToList(),
+                Data= rolls,
                 IsSuccess=true
             };
         }
     }
     public class AllRolls_ForAdminDto
     {
-        public long Id { get; set; }
-        public string? RollName { get; set; }
-        public string? Title { get; set; }
+        public string Id { get; set; }
+        public string? Name { get; set; }
+        public string? Description { get; set; }
     }
 }

@@ -11,6 +11,8 @@ namespace Store.Common.Constant
         public class ErrorsMessage
         {
             public const string RegisterFeaild = "Register feaild!";
+            public const string ValidationError = "Validation error!";
+
         }
         public class Message
         {

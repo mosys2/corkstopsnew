@@ -2017,26 +2017,26 @@ function ajaxFunc(url, model, type, callback, error, async) {
 	});
 }
 
-var successToastify = Toastify({
-	text: "Login success!",
-	duration: 2000,
-	newWindow: true,
-	close: true,
-	gravity: "top", // `top` or `bottom`
-	position: "left", // `left`, `center` or `right`
-	stopOnFocus: true, // Prevents dismissing of toast on hover
-	style: {
-		background: "linear-gradient(to right, #00b09b, #96c93d)",
-	},
-	onClick: function () { } // Callback after click
-}).showToast();
+//var successToastify = Toastify({
+//	text: "Login success!",
+//	duration: 2000,
+//	newWindow: true,
+//	close: true,
+//	gravity: "top", // `top` or `bottom`
+//	position: "left", // `left`, `center` or `right`
+//	stopOnFocus: true, // Prevents dismissing of toast on hover
+//	style: {
+//		background: "linear-gradient(to right, #00b09b, #96c93d)",
+//	},
+//	onClick: function () { } // Callback after click
+//});
 
-var dangerToastify = Toastify({
-	node: $("#failed-notification-content").clone().removeClass("hidden")[0],
-	duration: 3000,
-	newWindow: true,
-	close: true,
-	gravity: "top",
-	position: "right",
-	stopOnFocus: true
-});
+//var dangerToastify = Toastify({
+//	node: $("#failed-notification-content").clone().removeClass("hidden")[0],
+//	duration: 3000,
+//	newWindow: true,
+//	close: true,
+//	gravity: "top",
+//	position: "right",
+//	stopOnFocus: true
+//});

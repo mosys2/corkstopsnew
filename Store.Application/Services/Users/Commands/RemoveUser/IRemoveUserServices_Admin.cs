@@ -22,24 +22,29 @@ namespace Store.Application.Services.Users.Commands.RemoveUser
 
         public async Task<ResultDto> Execute(long userId)
         {
-            var user =await _context.Users.FindAsync(userId);
-            if (user==null)
-            {
-                return new ResultDto()
-                {
-                    IsSuccess = false,
-                    Message = "کاربر یافت نشد",
-                };
-            }
-            user.IsRemoved = true;
-            user.RemoveTime = DateTime.Now;
-            await _context.SaveChangesAsync();
-            return new ResultDto
-            {
-                IsSuccess = true,
-                Message = "کاربر با موفقیت حذف شد"
-            };
+            throw new NotImplementedException();
         }
+
+        //public async Task<ResultDto> Execute(long userId)
+        //{
+        //    var user =await _context.Users.FindAsync(userId);
+        //    if (user==null)
+        //    {
+        //        return new ResultDto()
+        //        {
+        //            IsSuccess = false,
+        //            Message = "کاربر یافت نشد",
+        //        };
+        //    }
+        //    user.IsRemoved = true;
+        //    user.RemoveTime = DateTime.Now;
+        //    await _context.SaveChangesAsync();
+        //    return new ResultDto
+        //    {
+        //        IsSuccess = true,
+        //        Message = "کاربر با موفقیت حذف شد"
+        //    };
+        //}
 
 
     }

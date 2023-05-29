@@ -10,9 +10,8 @@ namespace EndPoint.Site.Areas.Admin.Models.ContollerModels.User
         public string Name { get; set; }
         [Required]
         public string LastName { get; set; }
-        public int[] Rolls { get; set; }
         public int Gender { get; set; }
-        public bool IsActive { get; set; }
+        public bool LockoutEnabled { get; set; }
         [Required]
         [Remote(action: "CheckUserExistByMobile", controller: "Common")]
 
@@ -21,11 +20,9 @@ namespace EndPoint.Site.Areas.Admin.Models.ContollerModels.User
         [Remote(action: "CheckUserExistByEmail", controller: "Common")]
         public string Email { get; set; }
         [Required]
-        [Remote(action: "CheckUserExistByUsername", controller: "Common")]
-        public string Username { get; set; }
-        [Required]
         public string Password { get; set; }
-        public string Address { get; set; }
+        public List<string> Role { get; set; }
+
     }
     public class DelleteUserModel_Request
     {
@@ -33,24 +30,20 @@ namespace EndPoint.Site.Areas.Admin.Models.ContollerModels.User
     }
     public class UserModel_Edit
     {
-        public long Id { get; set; }
+        public string Id { get; set; }
         [Required]
         public string Name { get; set; }
         [Required]
         public string LastName { get; set; }
-        public long[] Rolls { get; set; }
         public int Gender { get; set; }
-        public bool IsActive { get; set; }
+        public bool LockoutEnabled { get; set; }
         [Required]
         [Remote(action: "CheckUserExistByMobile", controller: "Common", AdditionalFields = nameof(Id))]
         public string Mobile { get; set; }
         [Required]
         [Remote(action: "CheckUserExistByEmail", controller: "Common", AdditionalFields =nameof(Id))]
         public string Email { get; set; }
-        [Required]
-        [Remote(action: "CheckUserExistByUsername", controller: "Common", AdditionalFields = nameof(Id))]
-        public string Username { get; set; }
+        public List<string> Rols { get; set; }
 
-        public string? Address { get; set; }
     }
 }

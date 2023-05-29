@@ -18,7 +18,7 @@ namespace EndPoint.Site.Areas.Admin.Controllers
         }
 
         [AcceptVerbs("GET", "POST")]
-        public async Task<IActionResult> CheckUserExistByEmail(string Email,long Id)
+        public async Task<IActionResult> CheckUserExistByEmail(string Email,string Id)
         {
             var user =await _checkUserExistByEmailServices.Excute(Email,Id);
             if (user==null || user.Count<1)
@@ -32,7 +32,7 @@ namespace EndPoint.Site.Areas.Admin.Controllers
         }
 
         [AcceptVerbs("GET", "POST")]
-        public async Task<IActionResult> CheckUserExistByMobile(string Mobile, long Id)
+        public async Task<IActionResult> CheckUserExistByMobile(string Mobile, string Id)
         {
             var user =await _checkUserExistByMobileServices.Excute(Mobile,Id);
             if (user==null || user.Count<1)
@@ -44,19 +44,19 @@ namespace EndPoint.Site.Areas.Admin.Controllers
                 return Json($"Mobile {Mobile} is already in use.");
             }
         }
-        [AcceptVerbs("GET", "POST")]
+        //[AcceptVerbs("GET", "POST")]
 
-        public async Task<IActionResult> CheckUserExistByUsername(string Username, long Id)
-        {
-            var user =await _checkUserExistByUsernameServices.Excute(Username,Id);
-            if (user==null || user.Count<1)
-            {
-                return Json(true);
-            }
-            else
-            {
-                return Json($"Username {Username} is already in use.");
-            }
-        }
+        //public async Task<IActionResult> CheckUserExistByUsername(string Username, string Id)
+        //{
+        //    var user =await _checkUserExistByUsernameServices.Excute(Username,Id);
+        //    if (user==null || user.Count<1)
+        //    {
+        //        return Json(true);
+        //    }
+        //    else
+        //    {
+        //        return Json($"Username {Username} is already in use.");
+        //    }
+        //}
     }
 }
