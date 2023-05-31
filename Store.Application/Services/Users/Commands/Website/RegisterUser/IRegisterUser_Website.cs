@@ -22,9 +22,12 @@ namespace Store.Application.Services.Users.Commands.Website.RegisterUser
     public class RegisterUser_Website : IRegisterUser_Website
     {
         private readonly UserManager<User> _userManager;
-        public RegisterUser_Website(UserManager<User> userManager)
+        private readonly SignInManager<User> _signInManager;
+
+        public RegisterUser_Website(UserManager<User> userManager, SignInManager<User> signInManager)
         {
             _userManager = userManager;
+            _signInManager = signInManager;
         }
 
         
@@ -46,19 +49,22 @@ namespace Store.Application.Services.Users.Commands.Website.RegisterUser
                 if (result.Succeeded)
                 {
                     await _userManager.AddToRoleAsync(user, RollsName.Customer);
+                    await _signInManager.PasswordSignInAsync(user.Email, request.Password
+                        , false, false);
                     return new ResultDto
                     {
                         IsSuccess=true,
                         Message=Messages.Message.RegisterSuccess
                     };
                 }
-                return new ResultDto
+                else
                 {
-                    IsSuccess=false,
-                    Message=result.Errors.ToString()
-                };
-
-
+                    return new ResultDto
+                    {
+                        IsSuccess=false,
+                        Message=Messages.ErrorsMessage.RegisterFeaild
+                    };
+                }
             }
             catch (Exception ex)
             {

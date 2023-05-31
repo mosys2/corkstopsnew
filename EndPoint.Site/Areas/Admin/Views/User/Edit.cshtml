@@ -43,7 +43,7 @@
                             </div>
                             <div class="input-form mt-3">
                                 <label class="form-label w-full flex flex-col sm:flex-row"> Rolls </label>
-                                <select asp-for="Rols" data-placeholder="Select rolls" asp-items="ViewBag.Rolls" class="tom-select w-full" multiple>
+                                <select asp-for="Role" data-placeholder="Select rolls" asp-items="ViewBag.Role" class="tom-select w-full" multiple>
                                 </select>
                             </div>
                             <div class="input-form mt-3">
@@ -131,34 +131,31 @@
         $('#UserFormEdit').on("submit", function (e) {
             event.preventDefault();
             if ($(this).valid()) {
-                let rollsItem = [];
-                $('#Rolls :selected').each(function (i, sel) {
-                    rollsItem.push(parseInt($(sel).val()));
+                let rolseItem = [];
+                $('#Role :selected').each(function (i, sel) {
+                    rolseItem.push($(sel).val());
                 });
                 let elementItems = e.target;
                 let Id = elementItems.Id.value;
-                let Name = elementItems.Name.value;
-                let LastName = elementItems.LastName.value;
-                let Rolls = rollsItem;
-                let Gender = elementItems.Gender.value;
-                let LockoutEnabled = $('#"LockoutEnabled"').is(':checked') ? true : false
-                let Mobile = elementItems.Mobile.value;
-                let Email = elementItems.Email.value;
-                let Username = elementItems.Username.value;
-                let Address = elementItems.Address.value;
+                let Name = elementItems.Name.value
+                let LastName = elementItems.LastName.value
+                let Role = rolseItem
+                let Gender = elementItems.Gender.value
+                let LockoutEnabled = !($('#LockoutEnabled').is(':checked') ? true : false)
+                let Mobile = elementItems.Mobile.value
+                let Email = elementItems.Email.value
 
-                var data = {
-                    Id, Name, LastName, Rolls, Gender, LockoutEnabled, Mobile, Email, Username, Address
+                var model = {
+                   Id, Name, LastName, Role, Gender, LockoutEnabled, Mobile, Email
                 }
-                console.log(data);
-                //ajax request
-                ajaxFunc("Edit", data, "POST",
+                console.log(model);
+                ajaxFunc("Edit", model, "POST",
                     function (result) {
                         if (result.isSuccess) {
                             successToastify.showToast();
-                            setTimeout(function(){
+                            setTimeout(function () {
                                 window.location.href = "/Admin/User/";
-                            },2000);
+                            }, 2000);
                         } else {
                             dangerToastify.showToast();
                         }
@@ -169,6 +166,7 @@
                     }
                 );
             }
+
 
         });
     </script>

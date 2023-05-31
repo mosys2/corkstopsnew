@@ -1,5 +1,9 @@
-﻿using Store.Application.Interfaces.Contexts;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Store.Application.Interfaces.Contexts;
+using Store.Common.Constant;
 using Store.Common.ResultDto;
+using Store.Domain.Entities.Users;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,41 +14,54 @@ namespace Store.Application.Services.Users.Commands.RemoveUser
 {
     public interface IRemoveUserServices_Admin
     {
-        Task<ResultDto> Execute(long userId);
+        Task<ResultDto> Execute(string Id);
     }
     public class RemoveUserServices_Admin : IRemoveUserServices_Admin
     {
-        private readonly IDataBaseContext _context;
-        public RemoveUserServices_Admin(IDataBaseContext context)
+        private readonly UserManager<User> _userManager;
+
+        public RemoveUserServices_Admin(UserManager<User> userManager)
         {
-            _context = context;
+            _userManager=userManager;
         }
 
-        public async Task<ResultDto> Execute(long userId)
+        public async Task<ResultDto> Execute(string Id)
         {
-            throw new NotImplementedException();
-        }
+            try
+            {
+                var user = await _userManager.FindByIdAsync(Id);
+                if (user == null) { return new ResultDto() { IsSuccess=false, Message="User not found!" }; }
 
-        //public async Task<ResultDto> Execute(long userId)
-        //{
-        //    var user =await _context.Users.FindAsync(userId);
-        //    if (user==null)
-        //    {
-        //        return new ResultDto()
-        //        {
-        //            IsSuccess = false,
-        //            Message = "کاربر یافت نشد",
-        //        };
-        //    }
-        //    user.IsRemoved = true;
-        //    user.RemoveTime = DateTime.Now;
-        //    await _context.SaveChangesAsync();
-        //    return new ResultDto
-        //    {
-        //        IsSuccess = true,
-        //        Message = "کاربر با موفقیت حذف شد"
-        //    };
-        //}
+                user.IsRemoved=true;
+                user.RemoveTime=DateTime.Now;
+                var result = await _userManager.UpdateAsync(user);
+                if (result.Succeeded)
+                {
+                    return new ResultDto
+                    {
+                        IsSuccess = true,
+                        Message =Messages.Message.RemovedSuccess
+                    };
+                }
+                else
+                {
+                    return new ResultDto
+                    {
+                        IsSuccess = false,
+                        Message =Messages.ErrorsMessage.WrongRemove
+                    };
+                }
+            }
+            catch (Exception ex)
+            {
+                return new ResultDto
+                {
+                    IsSuccess = false,
+                    Message =ex.Message
+                };
+            }
+
+        }
 
 
     }

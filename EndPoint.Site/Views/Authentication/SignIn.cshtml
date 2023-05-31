@@ -4,9 +4,10 @@
     ViewData["Title"] = "SignIn";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+@section Head{
+    <link rel="stylesheet" href="~/SiteTemplate/lib/toastify-js/toastify.min.css" />
+}
 <main>
-
     <!-- breadcrumb area start -->
     <section class="breadcrumb__area include-bg text-center pt-95 pb-50">
         <div class="container">
@@ -103,6 +104,7 @@
                                 <div class="tp-login-bottom">
                                     <button type="submit" class="tp-login-btn w-100">Login</button>
                                 </div>
+                                <span id="error-login" class="error"></span>
                             </form>
                         </div>
                     </div>
@@ -122,20 +124,21 @@
         //create
         $('#LoginForm').on("submit", function (e) {
             event.preventDefault();
+            $('.tp-login-btn').text("Please waite...");
+            $("#error-login").text("");
             if ($(this).valid()) {
                 let elementItems = e.target;
                 let Username = elementItems.Username.value
                 let Password = elementItems.Password.value
-
                 var model = {
                     Username, Password
                 }
-                console.log(model);
                 ajaxFunc("SignIn", model, "POST",
                     function (result) {
+                        console.log(result);
                         if (result.isSuccess) {
                             Toastify({
-                                text: result.messages,
+                                text: result.message,
                                 className: "successs",
                                 style: {
                                     background: "linear-gradient(to right, #00b09b, #96c93d)",
@@ -146,15 +149,19 @@
                             }, 2000);
 
                         } else {
-                            console.log(result.Message);
+                            $('.tp-login-btn').text("Login");
+                            $("#error-login").text(result.message);
+                            console.log(result.message);
                         }
                     },
                     function (error) {
+                        $('.tp-login-btn').text("Login");
+                        $("#error-login").text(result.message)
                         console.log(error);
                     }
                 );
             }
         });
     </script>
-  
+
 }

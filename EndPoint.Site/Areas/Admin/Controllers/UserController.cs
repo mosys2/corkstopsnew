@@ -38,7 +38,7 @@ namespace EndPoint.Site.Areas.Admin.Controllers
             _editeUserServicess=editeUserServicess;
         }
         [HttpGet]
-        public IActionResult Index(string SearchKey="",int Page=1,int PageSize=20 )
+        public IActionResult Index(string SearchKey = "", int Page = 1, int PageSize = 20)
         {
             var result = _getUsers.Execute(new RequestGetUserDto()
             {
@@ -60,52 +60,52 @@ namespace EndPoint.Site.Areas.Admin.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> Create(UserModel_Request model)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                var result = await _registerUser_Admin.Execute(new RequestRegisterUserDto
-                {
-                    Name=model.Name,
-                    LastName=model.LastName,
-                    Gender=model.Gender,
-                    LockoutEnabled=model.LockoutEnabled,
-                    Email=model.Email,
-                    Mobile=model.Mobile,
-                    Password=model.Password,
-                    Role=model.Role
-                });
                 return Json(new ResultDto
                 {
-                    IsSuccess=result.IsSuccess,
-                    Message=result.Message
+                    IsSuccess=false,
+                    Message=Messages.ErrorsMessage.ModelInvalid
                 });
             }
+            var result = await _registerUser_Admin.Execute(new RequestRegisterUserDto
+            {
+                Name=model.Name,
+                LastName=model.LastName,
+                Gender=model.Gender,
+                LockoutEnabled=model.LockoutEnabled,
+                Email=model.Email,
+                Mobile=model.Mobile,
+                Password=model.Password,
+                Role=model.Role
+            });
             return Json(new ResultDto
             {
-                IsSuccess=false,
-                Message="Error"
+                IsSuccess=result.IsSuccess,
+                Message=result.Message
             });
         }
 
         [HttpPost]
-        public async Task<IActionResult> Delete(DelleteUserModel_Request request)
+        public async Task<IActionResult> Delete(DelleteUserModel_Request model)
         {
-            return Json(await _removeUserServices_Admin.Execute(request.currentItemId));
+            return Json(await _removeUserServices_Admin.Execute(model.Id));
         }
 
         [HttpGet]
-        public async Task<IActionResult> Edit(string id)
+        public async Task<IActionResult> Edit(string Id)
         {
-            var rolls = await _getAllRolls.Execute();
-            ViewBag.Rolls=new SelectList(rolls.Data, "Id", "Title");
-            var result =await _getUserDetailServices.Execute(id);
+            var rolse = await _getAllRolls.Execute();
+            ViewBag.Role=new SelectList(rolse.Data, "Name", "Name");
+            var result = await _getUserDetailServices.Execute(Id);
             UserModel_Edit user = new UserModel_Edit()
             {
                 Id=result.Data.Id,
                 Name=result.Data.Name,
                 LastName=result.Data.LastName,
-                Rols=result.Data.Rols,
+                Role=result.Data.Rols,
                 Gender=result.Data.Gender.Value,
-                LockoutEnabled=result.Data.LockoutEnabled,
+                LockoutEnabled=!result.Data.LockoutEnabled,
                 Mobile=result.Data.Mobile,
                 Email=result.Data.Email,
             };
@@ -120,26 +120,25 @@ namespace EndPoint.Site.Areas.Admin.Controllers
                 return Json(new ResultDto
                 {
                     IsSuccess=false,
-                    Message=Messages.ErrorsMessage.RegisterFeaild
+                    Message=Messages.ErrorsMessage.ModelInvalid
                 });
             }
-               var result=await _editeUserServicess.Execute(new UserEditeDetailDto
-               {
-                   Id=request.Id,
-                   Name=request.Name,
-                   LastName=request.LastName,
-                   Rols=request.Rols,
-                   Gender=request.Gender,
-                   LockoutEnabled=request.LockoutEnabled,
-                   Mobile=request.Mobile,
-                   Email=request.Email,
-               });
-                return Json(new ResultDto
-                {
-                    IsSuccess=result.IsSuccess,
-                    Message=result.Message
-                });
+            var result = await _editeUserServicess.Execute(new UserEditeDetailDto
+            {
+                Id=request.Id,
+                Name=request.Name,
+                LastName=request.LastName,
+                Rols=request.Role,
+                Gender=request.Gender,
+                LockoutEnabled=request.LockoutEnabled,
+                Mobile=request.Mobile,
+                Email=request.Email,
+            });
+            return Json(new ResultDto
+            {
+                IsSuccess=result.IsSuccess,
+                Message=result.Message
+            });
         }
     }
-  
 }

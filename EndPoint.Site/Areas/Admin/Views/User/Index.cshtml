@@ -58,7 +58,7 @@
                             <div class="lg:ml-4 text-center lg:text-left mt-3 lg:mt-0">
                                 <a href="~/Admin/User/Edit/@item.Id" class="font-medium">@item.FullName</a>
                                 <div class="text-slate-500 text-xs mt-0.5">
-                                    <span class="text-xs px-1 rounded-full @(item.LockoutEnabled? "bg-danger":"bg-success") text-white mr-1">@(item.LockoutEnabled ? "Inactive" : "Active")</span>
+                                    <span class="text-xs px-1 rounded-full @(item.LockoutEnabled==true? "bg-danger":"bg-success") text-white mr-1">@(item.LockoutEnabled==true ? "Inactive" : "Active")</span>
                                 </div>
                             </div>
                         </div>
@@ -170,7 +170,7 @@
     <script src="~/AdminTemplate/js/main.js"></script>
     <script>
         $(document).on('click', '#remove-user', function () {
-           let currentItemId = $(this).attr('data-itemid');
+           let Id = $(this).attr('data-itemid');
             Swal.fire({
                 title: 'Do you want to remove?',
                 showDenyButton: true,
@@ -179,8 +179,8 @@
             }).then((result) => {
                 /* Read more about isConfirmed, isDenied below */
                 if (result.isConfirmed) {
-                    let data = /*;*/{ currentItemId, };
-                    ajaxFunc("Delete", data, "POST",
+                    let model ={ Id };
+                    ajaxFunc("/Admin/User/Delete", model, "POST",
                         function (result) {
                             if (result.isSuccess) {
                                 successToastify.showToast();

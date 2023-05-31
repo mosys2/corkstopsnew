@@ -91,6 +91,7 @@
                             <span id="show-error" class="pristine-error text-danger mt-2"></span>
 
                             <button type="submit" class="btn btn-primary mt-5 frm-register-user">Register</button>
+                            <span id="error-login" class="error"></span>
 
                             <!-- END: Validation Form -->
                             <!-- BEGIN: Success Notification Content -->
@@ -140,7 +141,7 @@
                 let LastName = elementItems.LastName.value
                 let Role = rolseItem
                 let Gender = elementItems.Gender.value
-                let LockoutEnabled = $('#LockoutEnabled').is(':checked') ? false : true
+                let LockoutEnabled = !($('#LockoutEnabled').is(':checked') ? true : false)
                 let Mobile = elementItems.Mobile.value
                 let Email = elementItems.Email.value
                 let Password = elementItems.Password.value
@@ -149,22 +150,22 @@
                     Name, LastName, Role, Gender, LockoutEnabled, Mobile, Email, Password
                 }
                 console.log(model);
-                ajaxFunc("Create", model, "POST",
-                    function (result) {
-                        if (result.isSuccess) {
-                            $("#UserForm").trigger("reset");
-                            successToastify.showToast();
-                        } else {
-                            dangerToastify.showToast();
-                            $('#show-error').text(result.Message);
-                            console.log(result.Message);
-                                }
-                    },
-                    function (error) {
-                        dangerToastify.showToast();
-                        console.log(error);
-                    }
-                );
+                //ajaxFunc("Create", model, "POST",
+                //    function (result) {
+                //        if (result.isSuccess) {
+                //            $("#UserForm").trigger("reset");
+                //            successToastify.showToast();
+                //        } else {
+                //            dangerToastify.showToast();
+                //            $("#error-login").text(result.message);
+                //            console.log(result.message);
+                //                }
+                //    },
+                //    function (error) {
+                //        dangerToastify.showToast();
+                //        console.log(error);
+                //    }
+                //);
             }
         });
     </script>

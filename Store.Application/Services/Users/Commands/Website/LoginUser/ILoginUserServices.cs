@@ -1,8 +1,13 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+
 using Store.Application.Interfaces.Contexts;
+using Store.Application.Services.Users.Commands.Website.RegisterUser;
+using Store.Common.Constant;
 using Store.Common.Constant.Enum;
 using Store.Common.ResultDto;
 using Store.Common.Security;
+using Store.Domain.Entities.Users;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,102 +18,65 @@ namespace Mst_Cms.Application.Services.Users.Command.LoginUser
 {
     public interface ILoginUserService
     {
-        Task<ResultDto<ResultUserloginDto>> Execute(string email, string password);
+        Task<ResultDto<LoginData>> Execute(string EmailOrMobile, string Password, bool IsPersistent);
     }
     public class LoginUserService : ILoginUserService
     {
-        private readonly IDataBaseContext _context;
-        public LoginUserService(IDataBaseContext context)
+        private readonly UserManager<User> _userManager;
+        private readonly SignInManager<User> _signInManager;
+        public LoginUserService(UserManager<User> userManager, SignInManager<User> signInManager)
         {
-            _context = context;
+            _userManager = userManager;
+            _signInManager=signInManager;
+        }
+        public async Task<ResultDto<LoginData>> Execute(string EmailOrMobile, string Password, bool IsPersistent)
+        {
+            try
+            {
+                var result = await _signInManager.PasswordSignInAsync(EmailOrMobile,
+                          Password, IsPersistent, false);
+                if (result.Succeeded)
+                {
+                    var user = await _userManager.FindByEmailAsync(EmailOrMobile);
+                    var rollsResult = await _userManager.GetRolesAsync(user);
+                    List<string> roles = new List<string>();
+                    foreach (var item in rollsResult)
+                    {
+                        roles.Add(item);
+                    }
+                    return new ResultDto<LoginData>
+                    {
+                        Data=new LoginData()
+                        {
+                            roles=roles,
+                        },
+                        IsSuccess=true,
+                        Message=Messages.Message.LoginSuccess
+                    };
+                }
+                else
+                {
+                    return new ResultDto<LoginData>
+                    {
+                        IsSuccess=false,
+                        Message=Messages.ErrorsMessage.WrongEmailOrPass
+                    };
+                }
+            }
+            catch (Exception ex)
+            {
+                return new ResultDto<LoginData>
+                {
+                    IsSuccess=false,
+                    Message=ex.Message
+                };
+            }
         }
 
-        public async Task<ResultDto<ResultUserloginDto>> Execute(string email, string password)
-        {
-            throw new NotImplementedException();
-        }
-        //public async Task<ResultDto<ResultUserloginDto>> Execute(string EmailOrMobile, string password)
-        //{
-        //    var user = await _context.Contacts
-        //         .Include(c => c.User)
-        //         .ThenInclude(r => r.UserInRolls)
-        //         .ThenInclude(r => r.Roll)
-        //         .Where(p => p.Value==EmailOrMobile &&
-        //         (p.ContactTypeId==(long)ContactTypeEnum.Email ||
-        //         p.ContactTypeId==(long)ContactTypeEnum.Mobile))
-        //         .FirstOrDefaultAsync();
-
-        //    if (user==null)
-        //    {
-        //        return new ResultDto<ResultUserloginDto>()
-        //        {
-        //            IsSuccess = false,
-        //            Message = "username or password is false!",
-        //        };
-
-        //    }
-        //    if (user.User.IsActive!=true)
-        //    {
-        //        return new ResultDto<ResultUserloginDto>()
-        //        {
-        //            IsSuccess = false,
-        //            Message = "Yor account is suspend!",
-        //        };
-
-        //    }
-        //    var passwordhasher = new PasswordHasher();
-        //    var signinUser =await _context.Logins.Where(s => s.UserId==user.UserId).FirstOrDefaultAsync();
-        //    if (signinUser==null)
-        //    {
-        //        return new ResultDto<ResultUserloginDto>()
-        //        {
-        //            IsSuccess = false,
-        //            Message = "dont register login for you!",
-        //        };
-        //    }
-        //    bool resultverifypassword = passwordhasher.VerifyPassword(signinUser.Password, password);
-        //    if (resultverifypassword==false)
-        //    {
-        //        return new ResultDto<ResultUserloginDto>()
-        //        {
-
-        //            IsSuccess = false,
-        //            Message = "username or password is false!"
-        //        };
-        //    }
-
-
-        //    //List<string> userRoles = _context.UserInRoles.Where(p => p.UserId == user.Id)
-        //    // .ToList().Select(p => p.Role.Name).ToList();
-
-        //    List<string> roles = new List<string>();
-        //    foreach (var item in user.User.UserInRolls)
-        //    {
-        //        roles.Add(item.Roll.RollName);
-        //    }
-        //    return new ResultDto<ResultUserloginDto>()
-        //    {
-        //        Data = new ResultUserloginDto()
-        //        {
-        //            Roles = roles,
-        //            UserId = user.User.Id,
-        //            Name=user.User.FullName,
-        //            Password=signinUser.Password,
-        //        },
-        //        IsSuccess=true,
-        //        Message="you are logged in!"
-        //    };
-
-
-        //}
     }
-    public class ResultUserloginDto
+    public class LoginData
     {
-        public long UserId { get; set; }
-        public List<string> Roles { get; set; }
-        public string Name { get; set; }
-        public string Email { get; set; }
-        public string Password { get; set; }
+        public List<string> roles { get; set; }
     }
 }
 

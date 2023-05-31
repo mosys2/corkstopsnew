@@ -25,39 +25,33 @@ namespace Store.Application.Services.Common
             _context = context;
         }
 
-        public Task<List<FindedUserDetailByEmailDto>> Excute(string Email, string Id)
+        public async Task<List<FindedUserDetailByEmailDto>> Excute(string Email, string Id)
         {
-            throw new NotImplementedException();
+            var user = await _context.Users
+                .Where(p => p.Email==Email)
+                .ToListAsync();
+            if (String.IsNullOrEmpty(Id))
+            {
+                var userList1 = user.Select(p => new FindedUserDetailByEmailDto()
+                {
+                    Id=p.Id,
+                    FullName=p.FullName,
+                    IsActive=p.LockoutEnabled
+                }).ToList();
+                return userList1;
+            }
+            else
+            {
+                var userList1 = user.Where(p => p.Id!=Id).Select(p => new FindedUserDetailByEmailDto()
+                {
+                    Id=p.Id,
+                    FullName=p.FullName,
+                    IsActive=p.LockoutEnabled
+                }).ToList();
+                return userList1;
+            }
+
         }
-
-
-        //public async Task<List<FindedUserDetailByEmailDto>> Excute(string Email, string Id)
-        //{
-        //    var user = await _context.Users
-        //        .Where(p => p.Email==Email)
-        //        .ToListAsync();
-        //    if (String.IsNullOrEmpty(Id))
-        //    {
-        //        var userList1 = user.Select(p => new FindedUserDetailByEmailDto()
-        //        {
-        //            Id=p.Id,
-        //            FullName=p.FullName,
-        //            IsActive=p.LockoutEnabled
-        //        }).ToList();
-        //        return userList1;
-        //    }
-        //    else
-        //    {
-        //        var userList1 = user.Where(p => p.Id!=Id).Select(p => new FindedUserDetailByEmailDto()
-        //        {
-        //            Id=p.Id,
-        //            FullName=p.FullName,
-        //            IsActive=p.LockoutEnabled
-        //        }).ToList();
-        //        return userList1;
-        //    }
-
-        //}
     }
     public class FindedUserDetailByEmailDto
     {

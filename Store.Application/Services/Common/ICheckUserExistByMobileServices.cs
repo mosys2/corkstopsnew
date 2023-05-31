@@ -25,40 +25,32 @@ namespace Store.Application.Services.Common
             _context = context;
         }
 
-        public Task<List<FindedUserDetailByMobileDto>> Excute(string Mobile, string Id)
+        public async Task<List<FindedUserDetailByMobileDto>> Excute(string Mobile, string Id)
         {
-            throw new NotImplementedException();
+            var user = await _context.Users
+                .Where(p => p.PhoneNumber==Mobile)
+                .ToListAsync();
+            if (String.IsNullOrEmpty(Id))
+            {
+                var userList1 = user.Select(p => new FindedUserDetailByMobileDto()
+                {
+                    Id=p.Id,
+                    FullName=p.FullName,
+                    IsActive=p.LockoutEnabled
+                }).ToList();
+                return userList1;
+            }
+            else
+            {
+                var userList1 = user.Where(p => p.Id!=Id).Select(p => new FindedUserDetailByMobileDto()
+                {
+                    Id=p.Id,
+                    FullName=p.FullName,
+                    IsActive=p.LockoutEnabled
+                }).ToList();
+                return userList1;
+            }
         }
-
-
-        //public async Task<List<FindedUserDetailByMobileDto>> Excute(string Mobile, string Id)
-        //{
-
-        //    var user =await _context.Users
-        //        .Where(p => p.PhoneNumber==Mobile)
-        //        .ToListAsync();
-        //    if (String.IsNullOrEmpty(Id))
-        //    {
-        //        var userList1 = user.Select(p => new FindedUserDetailByMobileDto()
-        //        {
-        //            Id=p.Id,
-        //            FullName=p.FullName,
-        //            IsActive=p.LockoutEnabled
-        //        }).ToList();
-        //        return userList1;
-        //    }
-        //    else
-        //    {
-        //        var userList1 = user.Where(p => p.Id!=Id).Select(p => new FindedUserDetailByMobileDto()
-        //        {
-        //            Id=p.Id,
-        //            FullName=p.FullName,
-        //            IsActive=p.LockoutEnabled
-        //        }).ToList();
-        //        return userList1;
-        //    }
-
-        //}
     }
     public class FindedUserDetailByMobileDto
     {

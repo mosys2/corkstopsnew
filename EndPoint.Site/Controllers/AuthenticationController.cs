@@ -16,8 +16,6 @@ namespace EndPoint.Site.Controllers
     {
         private readonly IRegisterUser_Website _registerUser;
         private readonly ILoginUserService _loginUserService;
-        private readonly UserManager<User> _userManager;
-        private readonly SignInManager<User> _signInManager;
         public AuthenticationController(IRegisterUser_Website registerUser,
             ILoginUserService loginUserService,
             UserManager<User> userManager,
@@ -25,8 +23,6 @@ namespace EndPoint.Site.Controllers
         {
             _registerUser = registerUser;
             _loginUserService = loginUserService;
-            _userManager = userManager;
-            _signInManager=signInManager;
         }
         [HttpGet]
         public IActionResult SignUp()
@@ -67,7 +63,6 @@ namespace EndPoint.Site.Controllers
         [HttpPost]
         public async Task<IActionResult> SignIn(LoginUserModel model)
         {
-
             if (!ModelState.IsValid)
             {
                 return Json(new ResultDto
@@ -76,26 +71,12 @@ namespace EndPoint.Site.Controllers
                     Message=Messages.ErrorsMessage.ValidationError
                 });
             }
-
-            var result = await _signInManager.PasswordSignInAsync(model.Username,
-                          model.Password, false, false);
-
-            if (result.Succeeded)
+            var login = await _loginUserService.Execute(model.Username, model.Password, false);
+            return Json(new ResultDto
             {
-                return Json(new ResultDto
-                {
-                    IsSuccess=true,
-                    Message="You are logined!"
-                });
-            }
-            else
-            {
-                return Json(new ResultDto
-                {
-                    IsSuccess=true,
-                    Message="nooo"
-                });
-            }
+                IsSuccess= login.IsSuccess,
+                Message=login.Message,
+            });
 
 
         }
