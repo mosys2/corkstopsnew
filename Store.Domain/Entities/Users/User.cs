@@ -18,6 +18,7 @@ namespace Store.Domain.Entities.Users
         public DateTime? Birthday { get; set; }
         public int? Gender { get; set; } = 0;
         public string? ProfileImage { get; set; }
+        public bool IsActive { get; set; }
 
         //Base Entity
         public DateTime? InsertTime { get; set; }

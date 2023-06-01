@@ -5,10 +5,38 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Store.Persistence.Migrations
 {
-    public partial class MyMigratin1 : Migration
+    public partial class Categories_Add : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "Categories",
+                columns: table => new
+                {
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    ParrentId = table.Column<string>(type: "nvarchar(450)", nullable: true),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Icon = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CssClass = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    IsActive = table.Column<bool>(type: "bit", nullable: false),
+                    Sort = table.Column<int>(type: "int", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    InsertTime = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    UpdateTime = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    IsRemoved = table.Column<bool>(type: "bit", nullable: false),
+                    RemoveTime = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    RowVersion = table.Column<byte[]>(type: "rowversion", rowVersion: true, nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Categories", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Categories_Categories_ParrentId",
+                        column: x => x.ParrentId,
+                        principalTable: "Categories",
+                        principalColumn: "Id");
+                });
+
             migrationBuilder.CreateTable(
                 name: "Rolse",
                 columns: table => new
@@ -18,7 +46,7 @@ namespace Store.Persistence.Migrations
                     NormalizedName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     ConcurrencyStamp = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Discriminator = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    PersianTitle = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    MyTitle = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     InsertTime = table.Column<DateTime>(type: "datetime2", nullable: true),
                     UpdateTime = table.Column<DateTime>(type: "datetime2", nullable: true),
@@ -42,6 +70,7 @@ namespace Store.Persistence.Migrations
                     Birthday = table.Column<DateTime>(type: "datetime2", nullable: true),
                     Gender = table.Column<int>(type: "int", nullable: true),
                     ProfileImage = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    IsActive = table.Column<bool>(type: "bit", nullable: false),
                     InsertTime = table.Column<DateTime>(type: "datetime2", nullable: true),
                     UpdateTime = table.Column<DateTime>(type: "datetime2", nullable: true),
                     IsRemoved = table.Column<bool>(type: "bit", nullable: false),
@@ -175,13 +204,18 @@ namespace Store.Persistence.Migrations
 
             migrationBuilder.InsertData(
                 table: "Rolse",
-                columns: new[] { "Id", "ConcurrencyStamp", "Description", "Discriminator", "InsertTime", "IsRemoved", "Name", "NormalizedName", "PersianTitle", "RemoveTime", "UpdateTime" },
-                values: new object[] { "169f06f6-60f4-4e10-9216-24e6da210d73", "6b490883-3337-4046-92ea-8bbe6d7e6e88", null, "Role", null, false, "Customer", "CUSTOMER", null, null, null });
+                columns: new[] { "Id", "ConcurrencyStamp", "Description", "Discriminator", "InsertTime", "IsRemoved", "MyTitle", "Name", "NormalizedName", "RemoveTime", "UpdateTime" },
+                values: new object[] { "3de71ca0-b962-49f4-b3bb-1bc66506dfff", null, null, "Role", null, false, null, "Admin", "ADMIN", null, null });
 
             migrationBuilder.InsertData(
                 table: "Rolse",
-                columns: new[] { "Id", "ConcurrencyStamp", "Description", "Discriminator", "InsertTime", "IsRemoved", "Name", "NormalizedName", "PersianTitle", "RemoveTime", "UpdateTime" },
-                values: new object[] { "bec13b71-a126-4be8-b33d-ba698bdebfc4", "d1b53657-4117-4186-a403-68f0f2df5b54", null, "Role", null, false, "Admin", "ADMIN", null, null, null });
+                columns: new[] { "Id", "ConcurrencyStamp", "Description", "Discriminator", "InsertTime", "IsRemoved", "MyTitle", "Name", "NormalizedName", "RemoveTime", "UpdateTime" },
+                values: new object[] { "714d7f60-feb1-4eb9-92e1-8c96e01965b7", null, null, "Role", null, false, null, "Customer", "CUSTOMER", null, null });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Categories_ParrentId",
+                table: "Categories",
+                column: "ParrentId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_RoleClaims_RoleId",
@@ -225,6 +259,9 @@ namespace Store.Persistence.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "Categories");
+
             migrationBuilder.DropTable(
                 name: "RoleClaims");
 

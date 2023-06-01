@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     Layout = null;
 }
 <!DOCTYPE html>
@@ -902,10 +901,34 @@ License: You must have a valid license purchased only from themeforest(the above
                     </a>
                 </li>
                 <li>
-                    <a href="/Admin/User/" class="side-menu">
+                    <a href="~/Admin/User/" class="side-menu">
                         <div class="side-menu__icon"> <i data-lucide="users"></i> </div>
                         <div class="side-menu__title"> Users </div>
                     </a>
+                </li>
+                <li>
+                    <a href="javascript:;.html" class="side-menu">
+                        <div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="shopping-bag" data-lucide="shopping-bag" class="lucide lucide-shopping-bag"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 01-8 0"></path></svg> </div>
+                        <div class="side-menu__title">
+                            E-Commerce
+                            <div class="side-menu__sub-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="chevron-down" data-lucide="chevron-down" class="lucide lucide-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg> </div>
+                        </div>
+                    </a>
+                    <ul class="" style="display: none;">
+                        <li>
+                            <a href="~/Admin/Category" class="side-menu">
+                                <div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="activity" data-lucide="activity" class="lucide lucide-activity"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg> </div>
+                                <div class="side-menu__title"> Categories </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="side-menu-light-add-product.html" class="side-menu">
+                                <div class="side-menu__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="activity" data-lucide="activity" class="lucide lucide-activity"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg> </div>
+                                <div class="side-menu__title"> Add Product </div>
+                            </a>
+                        </li>
+                        
+                    </ul>
                 </li>
 
                 <li class="side-nav__devider my-6"></li>
@@ -926,6 +949,24 @@ License: You must have a valid license purchased only from themeforest(the above
         <div class="dark-mode-switcher__toggle border"></div>
     </div>
     <!-- END: Dark Mode Switcher-->
+    <!-- BEGIN: Success Notification Content -->
+    <div id="success-notification-content" class="toastify-content hidden flex">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="check-circle" class="lucide lucide-check-circle text-success" data-lucide="check-circle"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+        <div class="ml-4 mr-4">
+            <div class="font-medium color-black">Registration success!</div>
+            <div class="text-slate-500 mt-1"> Please check your e-mail for further info! </div>
+        </div>
+    </div>
+    <!-- END: Success Notification Content -->
+    <!-- BEGIN: Failed Notification Content -->
+    <div id="failed-notification-content" class="toastify-content hidden flex">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="x-circle" class="lucide lucide-x-circle text-danger" data-lucide="x-circle"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+        <div class="ml-4 mr-4">
+            <div class="font-medium color color-black">Registration failed!</div>
+            <div class="text-slate-500 mt-1"> Please check the fileld form. </div>
+        </div>
+    </div>
+    <!-- END: Failed Notification Content -->
     <!-- BEGIN: JS Assets-->
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
 

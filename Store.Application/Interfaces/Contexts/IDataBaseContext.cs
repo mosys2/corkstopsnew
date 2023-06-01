@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Store.Domain.Entities.Contacts;
+using Store.Domain.Entities.Products;
 using Store.Domain.Entities.Users;
 using System;
 using System.Collections.Generic;
@@ -12,6 +13,7 @@ namespace Store.Application.Interfaces.Contexts
 {
     public interface IDataBaseContext
     {
+        DbSet<Category> Categories { get; set; }
 
         int SaveChanges(bool acceptAllChangeOnSuccess);
         int SaveChanges();

@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Mst_Cms.Application.Services.Users.Command.LoginUser;
 using Store.Application.Interfaces.Contexts;
+using Store.Application.Services.Categuries.Commands.RegisterCategury;
+using Store.Application.Services.Categuries.Queries.GetAllCateguryForSelectList;
 using Store.Application.Services.Common;
 using Store.Application.Services.Users.Commands.EditeUser;
 using Store.Application.Services.Users.Commands.RegisterUser;
@@ -52,6 +54,8 @@ builder.Services.AddScoped<IEditeUserServicess, EditeUserServicess>();
 builder.Services.AddScoped<ICheckUserExistByEmailServices, CheckUserExistByEmailServices>();
 builder.Services.AddScoped<ICheckUserExistByMobileServices, CheckUserExistByMobileServices>();
 builder.Services.AddScoped<ICheckUserExistByUsernameServices, CheckUserExistByUsernameServices>();
+builder.Services.AddScoped<IRegisterCateguryServices, RegisterCateguryServices>();
+builder.Services.AddScoped<IGetAllCateguriesForSelectListServices,GetAllCateguriesForSelectListServices>();
 
 //Scopded Website
 builder.Services.AddScoped<IRegisterUser_Website, RegisterUser_Website>();

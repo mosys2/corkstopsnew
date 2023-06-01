@@ -1,6 +1,5 @@
 ﻿@using EndPoint.Site.Areas.Admin.Models.ContollerModels.User;
 @addTagHelper *,LazZiya.TagHelpers
-
 @addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
 @model UserModel_Request
 @{
@@ -94,24 +93,6 @@
                             <span id="error-login" class="error"></span>
 
                             <!-- END: Validation Form -->
-                            <!-- BEGIN: Success Notification Content -->
-                            <div id="success-notification-content" class="toastify-content hidden flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="check-circle" class="lucide lucide-check-circle text-success" data-lucide="check-circle"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                                <div class="ml-4 mr-4">
-                                    <div class="font-medium color-black">Registration success!</div>
-                                    <div class="text-slate-500 mt-1"> Please check your e-mail for further info! </div>
-                                </div>
-                            </div>
-                            <!-- END: Success Notification Content -->
-                            <!-- BEGIN: Failed Notification Content -->
-                            <div id="failed-notification-content" class="toastify-content hidden flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="x-circle" class="lucide lucide-x-circle text-danger" data-lucide="x-circle"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
-                                <div class="ml-4 mr-4">
-                                    <div class="font-medium color color-black">Registration failed!</div>
-                                    <div class="text-slate-500 mt-1"> Please check the fileld form. </div>
-                                </div>
-                            </div>
-                            <!-- END: Failed Notification Content -->
                         </form>
                     </div>
 
@@ -150,22 +131,22 @@
                     Name, LastName, Role, Gender, LockoutEnabled, Mobile, Email, Password
                 }
                 console.log(model);
-                //ajaxFunc("Create", model, "POST",
-                //    function (result) {
-                //        if (result.isSuccess) {
-                //            $("#UserForm").trigger("reset");
-                //            successToastify.showToast();
-                //        } else {
-                //            dangerToastify.showToast();
-                //            $("#error-login").text(result.message);
-                //            console.log(result.message);
-                //                }
-                //    },
-                //    function (error) {
-                //        dangerToastify.showToast();
-                //        console.log(error);
-                //    }
-                //);
+                ajaxFunc("Create", model, "POST",
+                    function (result) {
+                        if (result.isSuccess) {
+                            $("#UserForm").trigger("reset");
+                            successToastify.showToast();
+                        } else {
+                            dangerToastify.showToast();
+                            $("#error-login").text(result.message);
+                            console.log(result.message);
+                                }
+                    },
+                    function (error) {
+                        dangerToastify.showToast();
+                        console.log(error);
+                    }
+                );
             }
         });
     </script>

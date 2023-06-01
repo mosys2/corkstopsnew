@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore.Storage;
 using Store.Application.Interfaces.Contexts;
 using Store.Common.Constant;
 using Store.Domain.Entities.Contacts;
+using Store.Domain.Entities.Products;
 using Store.Domain.Entities.Users;
 
 using System;
@@ -21,6 +22,7 @@ namespace Store.Persistence.Contexts
         {
            
         }
+        public DbSet<Category> Categories { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

@@ -1,0 +1,146 @@
+﻿@using EndPoint.Site.Areas.Admin.Models.ContollerModels.Category;
+@model CategoryModelClass
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Category";
+    Layout = "~/Areas/Admin/Views/Shared/_Adminlayout.cshtml";
+}
+@section Head{
+    <link rel="stylesheet" href="~/AdminTemplate/lib/toastify-js/toastify.min.css" />
+}
+<div class="content">
+    <div class="intro-y flex flex-col sm:flex-row items-center mt-8">
+        <h2 class="text-lg font-medium mr-auto">
+            Category
+        </h2>
+        <div class="w-full sm:w-auto flex mt-4 sm:mt-0">
+        </div>
+    </div>
+    <div class="pos intro-y grid grid-cols-12 gap-5 mt-5">
+        <!-- BEGIN: Post Content -->
+        <div class="intro-y col-span-12 lg:col-span-8">
+            <!-- BEGIN: Small Table -->
+            <div class="intro-y box ">
+                <div class="p-5" id="small-table">
+                    <div class="preview">
+                        <div class="overflow-x-auto">
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th class="whitespace-nowrap">#</th>
+                                        <th class="whitespace-nowrap">First Name</th>
+                                        <th class="whitespace-nowrap">Last Name</th>
+                                        <th class="whitespace-nowrap">Username</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Angelina</td>
+                                        <td>Jolie</td>
+                                        <td>angelinajolie</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Brad</td>
+                                        <td>Pitt</td>
+                                        <td>bradpitt</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Charlie</td>
+                                        <td>Hunnam</td>
+                                        <td>charliehunnam</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END: Small Table -->
+        </div>
+        <!-- END: Post Content -->
+        <!-- BEGIN: Post Info -->
+        <div class="col-span-12 lg:col-span-4">
+            <div class="intro-y box p-5">
+                <form id="Category-Form">
+                    <div class="input-form mt-3">
+                        <label asp-for="Name" class="form-label w-full flex flex-col sm:flex-row"> Name </label>
+                        <input asp-for="Name" type="text" class="form-control mb-1" placeholder="Name">
+                        <span asp-validation-for="Name" class="pristine-error text-danger mt-2"></span>
+                    </div>
+                    <div class="input-form mt-3">
+                        <label class="form-label w-full flex flex-col sm:flex-row"> Caegory </label>
+                        @*<select asp-for="Category" data-placeholder="Select Caegory" asp-items="ViewBag.Categury" class="tom-select w-full" multiple>
+                        </select>*@
+                        <select asp-for="Category" asp-items="ViewBag.Categury" class="form-select mt-2 sm:mr-2" aria-label="Default select example">
+                        </select>
+
+                    </div>
+                    <div class="input-form mt-3">
+                        <label class="form-label w-full mt-5 flex flex-col sm:flex-row"> Status  </label>
+                        <div class="w-full mt-3 xl:mt-0 flex-1">
+                            <div class="form-check form-switch">
+                                <input asp-for="IsActive" class="form-check-input" type="checkbox">
+                                <label class="form-check-label leading-relaxed text-slate-500 text-xs" for="preorder-active"> Select status 'Active' or 'Inactive'' </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-form mt-3">
+                        <label asp-for="Description" class="form-label w-full flex flex-col sm:flex-row"> Description </label>
+                        <textarea asp-for="Description" row="4" class="form-control mb-1" placeholder="Description"></textarea>
+                        <span asp-validation-for="Description" class="pristine-error text-danger mt-2"></span>
+                    </div>
+                    <div class="input-form mt-3">
+                        <button type="submit" class="btn py-3 btn-primary w-full">Create</button>
+                    </div>
+                    <span id="error-category" class="error"></span>
+                </form>
+            </div>
+        </div>
+        <!-- END: Post Info -->
+    </div>
+</div>
+@section Scripts{
+    <script src="~/AdminTemplate/lib/jquery/jquery.min.js"></script>
+    <script src="~/AdminTemplate/lib/jquery-validate/jquery.validate.min.js"></script>
+    <script src="~/AdminTemplate/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/AdminTemplate/lib/toastify-js/toastify.min.js"></script>
+    <script src="~/AdminTemplate/js/main.js"></script>
+    <script>
+        //create
+        $('#Category-Form').on("submit", function (e) {
+            event.preventDefault();
+            if ($(this).valid()) {                
+                let elementItems = e.target;
+                let Name = elementItems.Name.value
+                let Category = $('#Category :selected').val();
+                let IsActive = $('#IsActive').is(':checked') ? true : false
+                let Description = elementItems.Description.value
+                
+                var model = {
+                    Name, Category, IsActive, Description
+                }
+                console.log(model);
+                ajaxFunc("/Admin/Category/Create", model, "POST",
+                    function (result) {
+                        if (result.isSuccess) {
+                            $("#Category-Form").trigger("reset");
+                            successToastify.showToast();
+                        } else {
+                            dangerToastify.showToast();
+                            $("#error-category").text(result.message);
+                            console.log(result.message);
+                                }
+                    },
+                    function (error) {
+                        dangerToastify.showToast();
+                        console.log(error);
+                    }
+                );
+            }
+        });
+    </script>
+}
+

@@ -12,8 +12,8 @@ using Store.Persistence.Contexts;
 namespace Store.Persistence.Migrations
 {
     [DbContext(typeof(DataBaseContext))]
-    [Migration("20230529083046_MyMigratin1")]
-    partial class MyMigratin1
+    [Migration("20230531080251_Categories_Add")]
+    partial class Categories_Add
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -165,6 +165,56 @@ namespace Store.Persistence.Migrations
                     b.ToTable("UserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("Store.Domain.Entities.Products.Category", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("CssClass")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Icon")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("InsertTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsRemoved")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ParrentId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime?>("RemoveTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<byte[]>("RowVersion")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("rowversion");
+
+                    b.Property<int>("Sort")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("UpdateTime")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ParrentId");
+
+                    b.ToTable("Categories");
+                });
+
             modelBuilder.Entity("Store.Domain.Entities.Users.User", b =>
                 {
                     b.Property<string>("Id")
@@ -195,6 +245,9 @@ namespace Store.Persistence.Migrations
 
                     b.Property<DateTime?>("InsertTime")
                         .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
 
                     b.Property<bool>("IsRemoved")
                         .HasColumnType("bit");
@@ -278,7 +331,7 @@ namespace Store.Persistence.Migrations
                     b.Property<bool>("IsRemoved")
                         .HasColumnType("bit");
 
-                    b.Property<string>("PersianTitle")
+                    b.Property<string>("MyTitle")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("RemoveTime")
@@ -297,16 +350,14 @@ namespace Store.Persistence.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "bec13b71-a126-4be8-b33d-ba698bdebfc4",
-                            ConcurrencyStamp = "d1b53657-4117-4186-a403-68f0f2df5b54",
+                            Id = "3de71ca0-b962-49f4-b3bb-1bc66506dfff",
                             Name = "Admin",
                             NormalizedName = "ADMIN",
                             IsRemoved = false
                         },
                         new
                         {
-                            Id = "169f06f6-60f4-4e10-9216-24e6da210d73",
-                            ConcurrencyStamp = "6b490883-3337-4046-92ea-8bbe6d7e6e88",
+                            Id = "714d7f60-feb1-4eb9-92e1-8c96e01965b7",
                             Name = "Customer",
                             NormalizedName = "CUSTOMER",
                             IsRemoved = false
@@ -362,6 +413,20 @@ namespace Store.Persistence.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Store.Domain.Entities.Products.Category", b =>
+                {
+                    b.HasOne("Store.Domain.Entities.Products.Category", "Parrent")
+                        .WithMany("SubCategories")
+                        .HasForeignKey("ParrentId");
+
+                    b.Navigation("Parrent");
+                });
+
+            modelBuilder.Entity("Store.Domain.Entities.Products.Category", b =>
+                {
+                    b.Navigation("SubCategories");
                 });
 #pragma warning restore 612, 618
         }
