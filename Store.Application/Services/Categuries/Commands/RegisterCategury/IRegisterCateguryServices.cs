@@ -10,14 +10,14 @@ using System.Threading.Tasks;
 
 namespace Store.Application.Services.Categuries.Commands.RegisterCategury
 {
-    public interface IRegisterCateguryServices
+    public interface IRegisterCategoryServices
     {
         Task<ResultDto> Execute(RequestRegisterCateguryDto request);
     }
-    public class RegisterCateguryServices : IRegisterCateguryServices
+    public class RegisterCategoryServices : IRegisterCategoryServices
     {
         private readonly IDataBaseContext _context;
-        public RegisterCateguryServices(IDataBaseContext context)
+        public RegisterCategoryServices(IDataBaseContext context)
         {
             _context=context;
         }

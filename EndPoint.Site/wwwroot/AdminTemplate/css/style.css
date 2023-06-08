@@ -49,3 +49,9 @@
     --tw-text-opacity: 1;
     color: rgb(var(--color-slate-900) / var(--tw-text-opacity));
 }
+.btn-table-delete, .btn-table-edit {
+    padding: 3px !important;
+    border-radius: 50% !important;
+    margin: 0px !important;
+    color:#fff
+}

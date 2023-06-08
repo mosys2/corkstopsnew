@@ -28,19 +28,13 @@ namespace Store.Application.Services.Categuries.Queries.GetAllCateguryForSelectL
             categury.Clear();
             allCategury.Clear();
 
-            categury.Add(new AllCateguriesSelectListDto
-            {
-                Id=null,
-                Name="Uncategorized",
-                ParrentId=null
-            });
-
             var result = await _context.Categories.Select(p => new AllCateguriesSelectListDto()
             {
                 Id=p.Id,
                 Name=p.Name,
                 ParrentId=p.ParrentId,
-                InsertTime=p.InsertTime
+                InsertTime=p.InsertTime,
+                IsActive=p.IsActive
             }).OrderBy(o =>o.InsertTime)
             .ToListAsync();
 
@@ -53,7 +47,10 @@ namespace Store.Application.Services.Categuries.Queries.GetAllCateguryForSelectL
                 {
                     Id=item.Id,
                     Name=item.Name,
+                    OrginalName=item.Name,
                     ParrentId=item.ParrentId,
+                    ParrentName="Master",
+                    IsActive=item.IsActive
                 });
 
                 var childe = result.Where(p => p.ParrentId==item.Id).ToList();
@@ -73,7 +70,11 @@ namespace Store.Application.Services.Categuries.Queries.GetAllCateguryForSelectL
                     {
                         Id=itemchild.Id,
                         Name=DashGnrator(level)+" "+itemchild.Name,
-                        ParrentId=itemchild.ParrentId
+                        OrginalName=itemchild.Name,
+                        ParrentId=itemchild.ParrentId,
+                        IsActive=itemchild.IsActive,
+                        Description=itemchild.Description,
+                        ParrentName=allCategury.Where(c=>c.Id==itemchild.ParrentId).FirstOrDefault()?.Name
                     });
                     listGnrator(childN, level);
                 }
@@ -83,7 +84,11 @@ namespace Store.Application.Services.Categuries.Queries.GetAllCateguryForSelectL
                     {
                         Id=itemchild.Id,
                         Name=DashGnrator(level)+" "+itemchild.Name,
-                        ParrentId=itemchild.ParrentId
+                        ParrentId=itemchild.ParrentId,
+                        OrginalName=itemchild.Name,
+                        IsActive=itemchild.IsActive,
+                        Description=itemchild.Description,
+                        ParrentName=allCategury.Where(c => c.Id==itemchild.ParrentId).FirstOrDefault()?.Name
                     });
                 }
             }
@@ -106,7 +111,11 @@ namespace Store.Application.Services.Categuries.Queries.GetAllCateguryForSelectL
     {
         public string? Id { get; set; }
         public string? Name { get; set; }
+        public string? OrginalName { get; set; }
+        public string? ParrentName { get; set; }
         public string? ParrentId { get; set; }
         public DateTime? InsertTime { get; set; }
+        public bool IsActive { get; set; }
+        public string? Description { get; set; }
     }
 }

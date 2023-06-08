@@ -4,8 +4,10 @@ using Microsoft.EntityFrameworkCore;
 using Mst_Cms.Application.Services.Users.Command.LoginUser;
 using Store.Application.Interfaces.Contexts;
 using Store.Application.Services.Categuries.Commands.RegisterCategury;
+using Store.Application.Services.Categuries.Commands.RemoveCategory;
 using Store.Application.Services.Categuries.Queries.GetAllCateguryForSelectList;
 using Store.Application.Services.Common;
+using Store.Application.Services.FileManager.Queries.ListDirectories;
 using Store.Application.Services.Users.Commands.EditeUser;
 using Store.Application.Services.Users.Commands.RegisterUser;
 using Store.Application.Services.Users.Commands.RemoveUser;
@@ -54,8 +56,12 @@ builder.Services.AddScoped<IEditeUserServicess, EditeUserServicess>();
 builder.Services.AddScoped<ICheckUserExistByEmailServices, CheckUserExistByEmailServices>();
 builder.Services.AddScoped<ICheckUserExistByMobileServices, CheckUserExistByMobileServices>();
 builder.Services.AddScoped<ICheckUserExistByUsernameServices, CheckUserExistByUsernameServices>();
-builder.Services.AddScoped<IRegisterCateguryServices, RegisterCateguryServices>();
+builder.Services.AddScoped<IRegisterCategoryServices, RegisterCategoryServices>();
 builder.Services.AddScoped<IGetAllCateguriesForSelectListServices,GetAllCateguriesForSelectListServices>();
+builder.Services.AddScoped<IRemoveCategoryServices, RemoveCategoryServices>();
+//filemanager
+builder.Services.AddScoped<IGetListDirectoryServices, GetListDirectoryServices>();
+
 
 //Scopded Website
 builder.Services.AddScoped<IRegisterUser_Website, RegisterUser_Website>();

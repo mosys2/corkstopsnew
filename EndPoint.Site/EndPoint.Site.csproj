@@ -14,6 +14,7 @@
   <ItemGroup>
     <Folder Include="Areas/Admin/Data/" />
     <Folder Include="wwwroot/AdminTemplate/lib/" />
+    <Folder Include="wwwroot\Uploads\" />
   </ItemGroup>
 
   <ItemGroup>

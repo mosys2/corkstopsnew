@@ -285,3 +285,4 @@ C:\projects\corkstops\EndPoint.Site\obj\Debug\net7.0\refint\EndPoint.Site.dll
 C:\projects\corkstops\EndPoint.Site\obj\Debug\net7.0\EndPoint.Site.pdb
 C:\projects\corkstops\EndPoint.Site\obj\Debug\net7.0\EndPoint.Site.genruntimeconfig.cache
 C:\projects\corkstops\EndPoint.Site\obj\Debug\net7.0\ref\EndPoint.Site.dll
+C:\projects\corkstops\EndPoint.Site\bin\Debug\net7.0\FluentFTP.dll

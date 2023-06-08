@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Build.Framework;
+using Store.Application.Services.FileManager.Queries.ListDirectories;
 using Store.Application.Services.Users.Commands.EditeUser;
 using Store.Application.Services.Users.Commands.RegisterUser;
 using Store.Application.Services.Users.Commands.RemoveUser;
@@ -23,12 +24,14 @@ namespace EndPoint.Site.Areas.Admin.Controllers
         private readonly IRemoveUserServices_Admin _removeUserServices_Admin;
         private readonly IGetUserDetailServices _getUserDetailServices;
         private readonly IEditeUserServicess _editeUserServicess;
+        private readonly IGetListDirectoryServices _getListDirectory;
         public UserController(IGetUsersServices getUsers,
             IGetAllRolls_ForAdmin getAllRolls,
             IRegisterUser_Admin registerUser_Admin,
             IRemoveUserServices_Admin removeUserServices_Admin,
             IGetUserDetailServices getUserDetailServices,
-            IEditeUserServicess editeUserServicess)
+            IEditeUserServicess editeUserServicess,
+            IGetListDirectoryServices getListDirectory)
         {
             _getUsers=getUsers;
             _getAllRolls=getAllRolls;
@@ -36,10 +39,12 @@ namespace EndPoint.Site.Areas.Admin.Controllers
             _removeUserServices_Admin=removeUserServices_Admin;
             _getUserDetailServices=getUserDetailServices;
             _editeUserServicess=editeUserServicess;
+            _getListDirectory=getListDirectory; 
         }
         [HttpGet]
         public IActionResult Index(string SearchKey = "", int Page = 1, int PageSize = 20)
         {
+            var a = _getListDirectory.Execut("uploads");
             var result = _getUsers.Execute(new RequestGetUserDto()
             {
                 Page= Page,

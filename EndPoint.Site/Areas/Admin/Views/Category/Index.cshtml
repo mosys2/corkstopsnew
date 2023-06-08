@@ -1,12 +1,14 @@
-﻿@using EndPoint.Site.Areas.Admin.Models.ContollerModels.Category;
-@model CategoryModelClass
+﻿@using EndPoint.Site.Areas.Admin.Models.ViewModel;
+@addTagHelper *,LazZiya.TagHelpers
 @addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@model CategoryViewModel
 @{
     ViewData["Title"] = "Category";
     Layout = "~/Areas/Admin/Views/Shared/_Adminlayout.cshtml";
 }
 @section Head{
     <link rel="stylesheet" href="~/AdminTemplate/lib/toastify-js/toastify.min.css" />
+    <link rel="stylesheet" href="~/AdminTemplate/lib/sweetalert2/sweetalert2.min.css" />
 }
 <div class="content">
     <div class="intro-y flex flex-col sm:flex-row items-center mt-8">
@@ -27,31 +29,25 @@
                             <table class="table table-sm">
                                 <thead>
                                     <tr>
-                                        <th class="whitespace-nowrap">#</th>
-                                        <th class="whitespace-nowrap">First Name</th>
-                                        <th class="whitespace-nowrap">Last Name</th>
-                                        <th class="whitespace-nowrap">Username</th>
+                                        <th class="whitespace-nowrap">Category Name</th>
+                                        <th class="whitespace-nowrap">Parrent Name</th>
+                                        <th class="whitespace-nowrap">Status</th>
+                                        <th class="whitespace-nowrap"></th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Angelina</td>
-                                        <td>Jolie</td>
-                                        <td>angelinajolie</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Brad</td>
-                                        <td>Pitt</td>
-                                        <td>bradpitt</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Charlie</td>
-                                        <td>Hunnam</td>
-                                        <td>charliehunnam</td>
-                                    </tr>
+                                    @foreach (var item in Model.allCateguries)
+                                    {
+                                        <tr>
+                                            <td>@item.Name</td>
+                                            <td>@item.ParrentName</td>
+                                            <td><span class="px-2 py-1 rounded-full @(item.IsActive ? "bg-success":"bg-danger")  text-white mr-1">@(item.IsActive ? "Active" : "InActive")</span></td>
+                                            <td>
+                                                <button class="btn btn-danger btn-table-delete" id="@item.Id"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="trash" data-lucide="trash" class="lucide lucide-trash w-5 h-5"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"></path></svg> </button>
+                                                <button class="btn btn-pending  mr-1 btn-table-edit" data-description="@item.Description" data-isActive="@item.IsActive" data-name="@item.OrginalName" data-parrentId="@item.ParrentId" data-id="@item.Id"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" icon-name="edit" data-lucide="edit" class="lucide lucide-edit"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg> </button>
+                                            </td>
+                                        </tr>
+                                    }
                                 </tbody>
                             </table>
                         </div>
@@ -65,16 +61,17 @@
         <div class="col-span-12 lg:col-span-4">
             <div class="intro-y box p-5">
                 <form id="Category-Form">
+                    <input asp-for="categoryModel.Id" type="hidden" class="form-control mb-1" placeholder="Name">
+
                     <div class="input-form mt-3">
-                        <label asp-for="Name" class="form-label w-full flex flex-col sm:flex-row"> Name </label>
-                        <input asp-for="Name" type="text" class="form-control mb-1" placeholder="Name">
-                        <span asp-validation-for="Name" class="pristine-error text-danger mt-2"></span>
+                        <label asp-for="categoryModel.Name" class="form-label w-full flex flex-col sm:flex-row"> Name </label>
+                        <input asp-for="categoryModel.Name" type="text" class="form-control mb-1" placeholder="Name">
+                        <span asp-validation-for="categoryModel.Name" class="pristine-error text-danger mt-2"></span>
                     </div>
                     <div class="input-form mt-3">
                         <label class="form-label w-full flex flex-col sm:flex-row"> Caegory </label>
-                        @*<select asp-for="Category" data-placeholder="Select Caegory" asp-items="ViewBag.Categury" class="tom-select w-full" multiple>
-                        </select>*@
-                        <select asp-for="Category" asp-items="ViewBag.Categury" class="form-select mt-2 sm:mr-2" aria-label="Default select example">
+
+                        <select asp-for="categoryModel.Category" asp-items="ViewBag.Category" class="form-select mt-2 sm:mr-2" aria-label="Default select example">
                         </select>
 
                     </div>
@@ -82,18 +79,18 @@
                         <label class="form-label w-full mt-5 flex flex-col sm:flex-row"> Status  </label>
                         <div class="w-full mt-3 xl:mt-0 flex-1">
                             <div class="form-check form-switch">
-                                <input asp-for="IsActive" class="form-check-input" type="checkbox">
+                                <input asp-for="categoryModel.IsActive" class="form-check-input" type="checkbox">
                                 <label class="form-check-label leading-relaxed text-slate-500 text-xs" for="preorder-active"> Select status 'Active' or 'Inactive'' </label>
                             </div>
                         </div>
                     </div>
                     <div class="input-form mt-3">
-                        <label asp-for="Description" class="form-label w-full flex flex-col sm:flex-row"> Description </label>
-                        <textarea asp-for="Description" row="4" class="form-control mb-1" placeholder="Description"></textarea>
-                        <span asp-validation-for="Description" class="pristine-error text-danger mt-2"></span>
+                        <label asp-for="categoryModel.Description" class="form-label w-full flex flex-col sm:flex-row"> Description </label>
+                        <textarea asp-for="categoryModel.Description" row="4" class="form-control mb-1" placeholder="Description"></textarea>
+                        <span asp-validation-for="categoryModel.Description" class="pristine-error text-danger mt-2"></span>
                     </div>
                     <div class="input-form mt-3">
-                        <button type="submit" class="btn py-3 btn-primary w-full">Create</button>
+                        <button type="submit" id="btn-register" class="btn py-3 btn-primary w-full">Create</button>
                     </div>
                     <span id="error-category" class="error"></span>
                 </form>
@@ -107,20 +104,21 @@
     <script src="~/AdminTemplate/lib/jquery-validate/jquery.validate.min.js"></script>
     <script src="~/AdminTemplate/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
     <script src="~/AdminTemplate/lib/toastify-js/toastify.min.js"></script>
+    <script src="~/AdminTemplate/lib/sweetalert2/sweetalert2.min.js"></script>
     <script src="~/AdminTemplate/js/main.js"></script>
     <script>
         //create
         $('#Category-Form').on("submit", function (e) {
             event.preventDefault();
-            if ($(this).valid()) {                
-                let elementItems = e.target;
-                let Name = elementItems.Name.value
-                let Category = $('#Category :selected').val();
-                let IsActive = $('#IsActive').is(':checked') ? true : false
-                let Description = elementItems.Description.value
-                
+            if ($(this).valid()) {
+                let Id = $('#categoryModel_Id').val();
+                let Name = $('#categoryModel_Name').val();
+                let Category = $('#categoryModel_Category :selected').val();
+                let IsActive = $('#categoryModel_IsActive').is(':checked') ? true : false
+                let Description = $('#categoryModel_Description').val();
+
                 var model = {
-                    Name, Category, IsActive, Description
+                   Id, Name, Category, IsActive, Description
                 }
                 console.log(model);
                 ajaxFunc("/Admin/Category/Create", model, "POST",
@@ -128,11 +126,14 @@
                         if (result.isSuccess) {
                             $("#Category-Form").trigger("reset");
                             successToastify.showToast();
+                            setTimeout(function () {
+                                window.location.reload();
+                            }, 2000);
                         } else {
                             dangerToastify.showToast();
                             $("#error-category").text(result.message);
                             console.log(result.message);
-                                }
+                        }
                     },
                     function (error) {
                         dangerToastify.showToast();
@@ -140,6 +141,62 @@
                     }
                 );
             }
+        });
+
+        //Delete
+        $(document).on('click', '.btn-table-delete', function () {
+            let Id = $(this).attr('id');
+            console.log(Id);
+            Swal.fire({
+                title: 'Do you want to remove?',
+                Text:'Delete This and all chilren.',
+                showDenyButton: true,
+                confirmButtonText: 'Yes',
+                denyButtonText: `No`,
+            }).then((result) => {
+                /* Read more about isConfirmed, isDenied below */
+                if (result.isConfirmed) {
+                    let model = { Id };
+                    ajaxFunc("/Admin/Category/Delete", model, "POST",
+                        function (result) {
+                            if (result.isSuccess) {
+                                successToastify.showToast();
+                                setTimeout(function () {
+                                    window.location.reload();
+                                }, 2000);
+                            } else {
+                                dangerToastify.showToast();
+                            }
+                        },
+                        function (error) {
+                            dangerToastify.showToast();
+                            console.log(error);
+                        }
+                    );
+                } else if (result.isDenied) {
+                }
+            });
+        });
+        $(document).on('click', '.btn-table-edit',function(){
+            $('#btn-register').text('Edit');
+            let currentItem = $(this);
+            $('#categoryModel_Id').val(currentItem.attr("data-id"));
+            $('#categoryModel_Name').val(currentItem.attr("data-name"));
+            $('#categoryModel_Description').val(currentItem.attr("data-description"));
+            if (currentItem.attr("data-isactive") == "True"){
+                $('#categoryModel_IsActive').attr("checked","true");
+            }else{
+                $('#categoryModel_IsActive').removeAttr("checked");
+            }
+            var option=$('#categoryModel_Category').children();
+            let parrentId = currentItem.attr("data-parrentId")
+            let valueOption="";
+            option.map((index,item)=>{
+                let selected = (parrentId==item.value ? "selected":"");
+                valueOption += `<option ${selected} value="${item.value}">${item.text}</option>`;
+            });
+            $('#categoryModel_Category').children().remove();
+            $('#categoryModel_Category').append(valueOption);
         });
     </script>
 }

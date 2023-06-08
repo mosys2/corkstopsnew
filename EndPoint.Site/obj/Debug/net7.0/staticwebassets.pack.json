@@ -113,6 +113,22 @@
       "PackagePath": "staticwebassets\\AdminTemplate\\images\\error-illustration.svg"
     },
     {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\filemanager-icon\\audio-icon.png",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\filemanager-icon\\audio-icon.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\filemanager-icon\\file.png",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\filemanager-icon\\file.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\filemanager-icon\\folder.png",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\filemanager-icon\\folder.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\filemanager-icon\\video.png",
+      "PackagePath": "staticwebassets\\AdminTemplate\\images\\filemanager-icon\\video.png"
+    },
+    {
       "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\images\\food-beverage-1.jpg",
       "PackagePath": "staticwebassets\\AdminTemplate\\images\\food-beverage-1.jpg"
     },
@@ -3447,6 +3463,22 @@
     {
       "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\lib\\toastify-js\\toastify.min.js",
       "PackagePath": "staticwebassets\\SiteTemplate\\lib\\toastify-js\\toastify.min.js"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\Uploads\\7gf8fk.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\7gf8fk.jpg"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\Uploads\\_1050312_cropped.png",
+      "PackagePath": "staticwebassets\\Uploads\\_1050312_cropped.png"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\Uploads\\contract.pdf",
+      "PackagePath": "staticwebassets\\Uploads\\contract.pdf"
+    },
+    {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\Uploads\\ispplus.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\ispplus.jpg"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.EndPoint.Site.Microsoft.AspNetCore.StaticWebAssets.props",
