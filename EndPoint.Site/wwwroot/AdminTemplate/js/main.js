@@ -19,22 +19,22 @@ function ajaxFunc(url, model, type, callback, error, async) {
     });
 }
 
-var successToastify = Toastify({
-    node: $("#success-notification-content").clone().removeClass("hidden")[0],
-    duration: 3000,
-    newWindow: true,
-    close: true,
-    gravity: "top",
-    position: "right",
-    stopOnFocus: true
-});
+//var successToastify = Toastify({
+//    node: $("#success-notification-content").clone().removeClass("hidden")[0],
+//    duration: 3000,
+//    newWindow: true,
+//    close: true,
+//    gravity: "top",
+//    position: "right",
+//    stopOnFocus: true
+//});
 
-var dangerToastify = Toastify({
-    node: $("#failed-notification-content").clone().removeClass("hidden")[0],
-    duration: 3000,
-    newWindow: true,
-    close: true,
-    gravity: "top",
-    position: "right",
-    stopOnFocus: true
-});
+//var dangerToastify = Toastify({
+//    node: $("#failed-notification-content").clone().removeClass("hidden")[0],
+//    duration: 3000,
+//    newWindow: true,
+//    close: true,
+//    gravity: "top",
+//    position: "right",
+//    stopOnFocus: true
+//});

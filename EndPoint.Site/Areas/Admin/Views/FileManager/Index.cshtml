@@ -1,8 +1,208 @@
-﻿
+﻿@using Store.Application.Services.FileManager.Queries.ListDirectories
+@using Store.Common.Constant.Enum
+@model List<DirectoryItems>
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Areas/Admin/Views/Shared/_Adminlayout.cshtml";
 }
+@section Head{
+    <link rel="stylesheet" href="~/AdminTemplate/lib/toastify-js/toastify.min.css" />
+}
+<!-- BEGIN: Content -->
+<div class="content">
+    <div class="grid grid-cols-12 gap-6 mt-8">
+        <div class="col-span-12 lg:col-span-3 2xl:col-span-2">
+            <h2 class="intro-y text-lg font-medium mr-auto mt-2">
+                File Manager
+            </h2>
+            <!-- BEGIN: File Manager Menu -->
+            <div class="intro-y box p-5 mt-6">
+                <div class="mt-1">
+                    <a href="" class="flex items-center px-3 py-2 rounded-md bg-primary text-white font-medium"> <i class="w-4 h-4 mr-2" data-lucide="image"></i> Images </a>
+                    <a href="" class="flex items-center px-3 py-2 mt-2 rounded-md"> <i class="w-4 h-4 mr-2" data-lucide="video"></i> Videos </a>
+                    <a href="" class="flex items-center px-3 py-2 mt-2 rounded-md"> <i class="w-4 h-4 mr-2" data-lucide="file"></i> Documents </a>
+                    <a href="" class="flex items-center px-3 py-2 mt-2 rounded-md"> <i class="w-4 h-4 mr-2" data-lucide="users"></i> Shared </a>
+                    <a href="" class="flex items-center px-3 py-2 mt-2 rounded-md"> <i class="w-4 h-4 mr-2" data-lucide="trash"></i> Trash </a>
+                </div>
+            </div>
+            <!-- END: File Manager Menu -->
+        </div>
+        <div class="col-span-12 lg:col-span-9 2xl:col-span-10">
+            <!-- BEGIN: File Manager Filter -->
+            <div class="intro-y flex flex-col-reverse sm:flex-row items-center">
+                <div class="w-full sm:w-auto relative mr-auto mt-3 sm:mt-0">
+                    <button  onclick="goToRoot()" class="btn btn-secondary w-24 inline-block mr-1 mb-2">Root</button>
+                    <button id="back-button" onclick="backToLastDirectory()" class="btn btn-success w-24 inline-block mr-1 mb-2">Back</button>
 
-<h1>Index</h1>
+                </div>
+                <div class="w-full sm:w-auto flex">
+                    <button class="btn btn-primary shadow-md mr-2">Upload New Files</button>
+                    <div class="dropdown">
+                        <button class="dropdown-toggle btn px-2 box" aria-expanded="false" data-tw-toggle="dropdown">
+                            <span class="w-5 h-5 flex items-center justify-center"> <i class="w-4 h-4" data-lucide="plus"></i> </span>
+                        </button>
+                        <div class="dropdown-menu w-40">
+                            <ul class="dropdown-content">
+                                <li>
+                                    <div id="create-directory" class="dropdown-item"> <i data-lucide="folder" class="w-4 h-4 mr-2"></i> New Folder</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END: File Manager Filter -->
+            <!-- BEGIN: Directory & Files -->
+            <div id="directory-item" class="intro-y grid grid-cols-12 gap-3 sm:gap-6 mt-5">
+                <div class="intro-y col-span-12 sm:col-span-12 md:col-span-12 2xl:col-span-12">
+                <div class="col-span-6 sm:col-span-3 xl:col-span-2 flex flex-col justify-end items-center">
+                    <svg width="25" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" stroke="rgb(30, 41, 59)" class="w-8 h-8">
+                        <g fill="none" fill-rule="evenodd" stroke-width="4">
+                            <circle cx="22" cy="22" r="1">
+                                <animate attributeName="r" begin="0s" dur="1.8s" values="1; 20" calcMode="spline" keyTimes="0; 1" keySplines="0.165, 0.84, 0.44, 1" repeatCount="indefinite"></animate>
+                                <animate attributeName="stroke-opacity" begin="0s" dur="1.8s" values="1; 0" calcMode="spline" keyTimes="0; 1" keySplines="0.3, 0.61, 0.355, 1" repeatCount="indefinite"></animate>
+                            </circle>
+                            <circle cx="22" cy="22" r="1">
+                                <animate attributeName="r" begin="-0.9s" dur="1.8s" values="1; 20" calcMode="spline" keyTimes="0; 1" keySplines="0.165, 0.84, 0.44, 1" repeatCount="indefinite"></animate>
+                                <animate attributeName="stroke-opacity" begin="-0.9s" dur="1.8s" values="1; 0" calcMode="spline" keyTimes="0; 1" keySplines="0.3, 0.61, 0.355, 1" repeatCount="indefinite"></animate>
+                            </circle>
+                        </g>
+                    </svg>
+                    <div class="text-center text-xs mt-2">Please Wait...</div>
+                </div>
+                </div>
+            </div>
+            <!-- END: Directory & Files -->
+        </div>
+    </div>
+</div>
+<!-- END: Content -->
+@section Scripts{
+    <script src="~/AdminTemplate/lib/jquery/jquery.min.js"></script>
+    <script src="~/AdminTemplate/lib/toastify-js/toastify.min.js"></script>
+    <script src="~/AdminTemplate/js/main.js"></script>
+    <script>
+        let Directory = "";
+        let Directories=[""];
 
+        $(document).ready(function () {
+            getDirectoryList();
+        });
+        //Go To Root
+        function goToRoot(){
+            $("#directory-item").html(loading);
+            Directory="";
+            getDirectoryList();
+            Directories=[""];
+        }
+
+        //Back To Last Directory
+        function backToLastDirectory(){
+            $("#directory-item").html(loading);
+            Directories.pop();
+            if(Directories.length>0){
+                Directory = Directories.reduce(function (a, b) {
+                    return a + b
+                });
+            }
+            getDirectoryList();
+        }
+
+        //Open Folder
+        function openFile(path){
+            $("#directory-item").html(loading);
+            Directories.push(path);
+            Directory+=path;
+            getDirectoryList();
+        }
+
+        //create Directory
+        $('#create-directory').on('click',function(){
+            
+        })
+
+        //Get Files
+        function getDirectoryList() {
+            var model = {
+                Directory
+            }
+            console.log(Directories);
+            ajaxFunc("GetDirectory", model, "POST",
+                function (result) {
+                    if (result.isSuccess) {
+                        let html = "";
+                        if(result.data.length>0){
+                        result.data.map(item => {
+                            html += `<div class="intro-y col-span-6 sm:col-span-4 md:col-span-3 2xl:col-span-2">
+                                                <div  class="file box rounded-md px-5 pt-8 pb-5 px-3 sm:px-5 relative zoom-in">
+                                            <div class="absolute left-0 top-0 mt-3 ml-3">
+                                                <input class="form-check-input border border-slate-500" type="checkbox">
+                                            </div>`;
+                            if (item.fileType == 0) {
+                                html += `<div onclick="openFile('${item.directory}')"  class="w-3/5 file__icon file__icon--directory mx-auto"></div>`;
+
+                            }
+                            else if (item.fileType == 1) {
+                                html += `<a href="#" class="w-3/5 file__icon file__icon--image mx-auto">
+                                                        <div class="file__icon--image__preview image-fit">
+                                                            <img alt="${item.name}" src="${item.baseUrl}${item.path}">
+                                                        </div>
+                                                    </a>`;
+                            }
+                            else {
+                                html += `<a href="#" class="w-3/5 file__icon file__icon--file mx-auto">
+                                                        <div class="file__icon__file-name">${item.postfix}</div>
+                                                    </a>`;
+                            }
+
+
+                            html += `<a href="" class="block font-medium mt-4 text-center truncate">${item.name}</a>
+                                            <div class="text-slate-500 text-xs text-center mt-0.5">${item.size}</div>
+                                            <div class="absolute top-0 right-0 mr-2 mt-3 dropdown ml-auto">
+                                                <a class="dropdown-toggle w-5 h-5 block" href="javascript:;" aria-expanded="false" data-tw-toggle="dropdown"> <i data-lucide="more-vertical" class="w-5 h-5 text-slate-500"></i> </a>
+                                                <div class="dropdown-menu w-40">
+                                                    <ul class="dropdown-content">
+                                                        <li>
+                                                            <a href="" class="dropdown-item"> <i data-lucide="users" class="w-4 h-4 mr-2"></i> Share File </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="" class="dropdown-item"> <i data-lucide="trash" class="w-4 h-4 mr-2"></i> Delete </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>`;
+                        });
+                        }else{
+                            html = `<div class="intro-y text-center col-span-12 sm:col-span-12 md:col-span-12 2xl:col-span-12">This folder is empty</div>`;
+                        }
+                        $("#directory-item").html(html);
+                    } else {
+                        console.log("error load");
+                    }
+                },
+                function (error) {
+                    console.log(error);
+                }
+            );
+        }
+        let loading = `<div class="intro-y col-span-12 sm:col-span-12 md:col-span-12 2xl:col-span-12">
+                        <div class="col-span-6 sm:col-span-3 xl:col-span-2 flex flex-col justify-end items-center">
+                            <svg width="25" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" stroke="rgb(30, 41, 59)" class="w-8 h-8">
+                                <g fill="none" fill-rule="evenodd" stroke-width="4">
+                                    <circle cx="22" cy="22" r="1">
+                                        <animate attributeName="r" begin="0s" dur="1.8s" values="1; 20" calcMode="spline" keyTimes="0; 1" keySplines="0.165, 0.84, 0.44, 1" repeatCount="indefinite"></animate>
+                                        <animate attributeName="stroke-opacity" begin="0s" dur="1.8s" values="1; 0" calcMode="spline" keyTimes="0; 1" keySplines="0.3, 0.61, 0.355, 1" repeatCount="indefinite"></animate>
+                                    </circle>
+                                    <circle cx="22" cy="22" r="1">
+                                        <animate attributeName="r" begin="-0.9s" dur="1.8s" values="1; 20" calcMode="spline" keyTimes="0; 1" keySplines="0.165, 0.84, 0.44, 1" repeatCount="indefinite"></animate>
+                                        <animate attributeName="stroke-opacity" begin="-0.9s" dur="1.8s" values="1; 0" calcMode="spline" keyTimes="0; 1" keySplines="0.3, 0.61, 0.355, 1" repeatCount="indefinite"></animate>
+                                    </circle>
+                                </g>
+                            </svg>
+                            <div class="text-center text-xs mt-2">Please Wait...</div>
+                        </div>
+                        </div>`;
+    </script>
+}

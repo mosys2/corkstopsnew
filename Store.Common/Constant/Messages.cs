@@ -27,6 +27,8 @@ namespace Store.Common.Constant
             public const string LoginSuccess = "Login successed.";
             public const string RemovedSuccess = "Removed successed.";
             public const string UpdateSuccess = "Update successed.";
+            public const string Created = "Created successed.";
+
 
 
 

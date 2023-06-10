@@ -10,6 +10,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Net.WebRequestMethods;
+using Store.Common.Constant.Enum;
 
 namespace Store.Application.Services.FileManager.Queries.ListDirectories
 {
@@ -36,6 +37,7 @@ namespace Store.Application.Services.FileManager.Queries.ListDirectories
                 string username = _configuration.GetSection("FtpUsername").Value;
                 string password = _configuration.GetSection("FtpPassword").Value;
                 string ftpRoot = _configuration.GetSection("FtpRoot").Value;
+                string BaseUrl = _configuration.GetSection("BaseUrl").Value;
                 string url = ftpRoot+directoryPath;
 
                 client.Host=ftpServer;
@@ -49,9 +51,12 @@ namespace Store.Application.Services.FileManager.Queries.ListDirectories
                         {
                             directoryItems.Add(new DirectoryItems
                             {
-                                Icon="/AdminTemplate/images/filemanager-icon/folder.png",
+                                fileType=FileType.Directory,
                                 Name=item.Name,
-                                Path=$"/{url}/{item.Name}"
+                                Path=$"/{url}/{item.Name}",
+                                Directory=$"/{item.Name}",
+                                BaseUrl=BaseUrl
+                                
                             });
                         }
                         else
@@ -61,36 +66,23 @@ namespace Store.Application.Services.FileManager.Queries.ListDirectories
                             {
                                 directoryItems.Add(new DirectoryItems
                                 {
-                                    Icon=$"/{url}/{item.Name}",
+                                    fileType=FileType.Image,
+                                    Size=item.Size / 1024 + "KB", 
                                     Name=item.Name,
-                                    Path=$"/{url}/{item.Name}"
-                                });
-                            }
-                            else if (postfix=="mp3" || postfix=="wma" || postfix=="aac" || postfix=="ac3" || postfix=="wav")
-                            {
-                                directoryItems.Add(new DirectoryItems
-                                {
-                                    Icon="/AdminTemplate/images/filemanager-icon/audio-icon.png",
-                                    Name=item.Name,
-                                    Path=$"/{url}/{item.Name}"
-                                });
-                            }
-                            else if (postfix=="avi" || postfix=="mp4" || postfix=="mkv" || postfix=="wma" || postfix=="mpeg" || postfix=="mov")
-                            {
-                                directoryItems.Add(new DirectoryItems
-                                {
-                                    Icon="/AdminTemplate/images/filemanager-icon/video.png",
-                                    Name=item.Name,
-                                    Path=$"/{url}/{item.Name}"
+                                    Path=$"/{url}/{item.Name}",
+                                    BaseUrl=BaseUrl
                                 });
                             }
                             else
                             {
                                 directoryItems.Add(new DirectoryItems
                                 {
-                                    Icon="/AdminTemplate/images/filemanager-icon/file.png",
+                                    fileType=FileType.Other,
+                                    Postfix=postfix,
+                                    Size=item.Size /1024 +"KB",
                                     Name=item.Name,
-                                    Path=$"/{url}/{item.Name}"
+                                    Path=$"/{url}/{item.Name}",
+                                    BaseUrl=BaseUrl
                                 });
                             }
                         }
@@ -110,7 +102,11 @@ namespace Store.Application.Services.FileManager.Queries.ListDirectories
     public class DirectoryItems
     {
         public string? Name { get; set; }
+        public string? Directory { get; set; }
         public string? Path { get; set; }
-        public string? Icon { get; set; }
+        public string? Size { get; set; }
+        public string? Postfix { get; set; }
+        public string? BaseUrl { get; set; }
+        public FileType fileType { get; set; }
     }
 }

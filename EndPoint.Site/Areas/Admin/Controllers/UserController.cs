@@ -44,7 +44,7 @@ namespace EndPoint.Site.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult Index(string SearchKey = "", int Page = 1, int PageSize = 20)
         {
-            var a = _getListDirectory.Execut("uploads");
+            //var a = _getListDirectory.Execut("uploads");
             var result = _getUsers.Execute(new RequestGetUserDto()
             {
                 Page= Page,

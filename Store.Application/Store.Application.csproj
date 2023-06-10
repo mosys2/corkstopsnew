@@ -21,7 +21,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Services\FileManager\Commands\" />
     <Folder Include="Services\Users\Queries\Website\NewFolder\" />
   </ItemGroup>
 
