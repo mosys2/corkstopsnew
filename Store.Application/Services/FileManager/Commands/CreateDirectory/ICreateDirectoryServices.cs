@@ -16,7 +16,7 @@ namespace Store.Application.Services.FileManager.Commands.CreateDirectory
 {
     public interface ICreateDirectoryServices
     {
-        Task<ResultDto> Execute(string directoryPath, string Name);
+        Task<ResultDto> Execut(string? directoryPath, string? Name);
     }
     public class CreateDirectoryServices : ICreateDirectoryServices
     {
@@ -29,7 +29,7 @@ namespace Store.Application.Services.FileManager.Commands.CreateDirectory
             _configuration = configuration;
         }
 
-        public async Task<ResultDto> Execute(string directoryPath, string Name)
+        public async Task<ResultDto> Execut(string? directoryPath, string? Name)
         {
             // اتصال به سرور FTP
             try
@@ -40,17 +40,30 @@ namespace Store.Application.Services.FileManager.Commands.CreateDirectory
                     string username = _configuration.GetSection("FtpUsername").Value;
                     string password = _configuration.GetSection("FtpPassword").Value;
                     string ftpRoot = _configuration.GetSection("FtpRoot").Value;
-                    string url = ftpRoot+directoryPath;
+                    string url = ftpRoot+directoryPath+"/"+Name;
 
                     client.Host=ftpServer;
                     client.Credentials = new NetworkCredential(username, password);
-                    client.CreateDirectory(directoryPath+"/"+Name);
-                    client.Disconnect();
-                    return new ResultDto
+                    if (!client.DirectoryExists(url))
                     {
-                        IsSuccess = true,
-                        Message=Messages.Message.Created
-                    };
+                        client.CreateDirectory(url);
+                        client.Disconnect();
+                        return new ResultDto
+                        {
+                            IsSuccess = true,
+                            Message=Messages.Message.CreatedDirectorySuccess
+                        };
+
+                    }
+                    else
+                    {
+                        client.Disconnect();
+                        return new ResultDto
+                        {
+                            IsSuccess = false,
+                            Message=Messages.ErrorsMessage.AlreadyExist
+                        };
+                    }
                 }
             }
             catch (Exception ex)

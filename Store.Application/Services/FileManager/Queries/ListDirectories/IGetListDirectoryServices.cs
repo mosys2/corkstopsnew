@@ -16,7 +16,7 @@ namespace Store.Application.Services.FileManager.Queries.ListDirectories
 {
     public interface IGetListDirectoryServices
     {
-        Task<List<DirectoryItems>> Execut(string directoryPath);
+        Task<List<DirectoryItems>> Execut(string? directoryPath);
     }
     public class GetListDirectoryServices : IGetListDirectoryServices
     {
@@ -28,7 +28,7 @@ namespace Store.Application.Services.FileManager.Queries.ListDirectories
             _environment = environment;
             _configuration = configuration;
         }
-        public async Task<List<DirectoryItems>> Execut(string directoryPath)
+        public async Task<List<DirectoryItems>> Execut(string? directoryPath)
         {
             // اتصال به سرور FTP
             using (var client = new FtpClient())
@@ -89,11 +89,11 @@ namespace Store.Application.Services.FileManager.Queries.ListDirectories
 
                     }
                     client.Disconnect();
-                    return directoryItems;
+                    return directoryItems.OrderByDescending(p=>p.fileType==FileType.Directory).ToList();
                 }
                 catch (WebException ex)
                 {
-                    Console.WriteLine($"خطا در دریافت لیست فایل‌ها: {ex.Message}");
+                    Console.WriteLine($"Error: {ex.Message}");
                     return directoryItems;
                 }
             }

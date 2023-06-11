@@ -17,6 +17,8 @@ namespace Store.Common.Constant
             public const string WrongEmailOrPass = "Wrong email or password!";
             public const string WrongRemove = "Wrong remove!";
             public const string UpdateField = "Update field!";
+            public const string AlreadyExist = "already exist!";
+            public const string UploadField = "Uploaded field!";
 
 
 
@@ -27,10 +29,8 @@ namespace Store.Common.Constant
             public const string LoginSuccess = "Login successed.";
             public const string RemovedSuccess = "Removed successed.";
             public const string UpdateSuccess = "Update successed.";
-            public const string Created = "Created successed.";
-
-
-
+            public const string CreatedDirectorySuccess = "Created successed.";
+            public const string UploadSuccess = "Uploaded successed.";
 
 
         }
