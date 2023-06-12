@@ -60,7 +60,7 @@ namespace EndPoint.Site.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> RemoveFiles(InputRemoveModel model)
         {
-            var result=await _removeFiles.Execut(model.Names, model.DirectoryPath);
+            var result=await _removeFiles.Execute(model.ArryRemoveItem, model.Directory);
             return Json(result);
         }
     }
@@ -76,7 +76,7 @@ namespace EndPoint.Site.Areas.Admin.Controllers
     }
     public class InputRemoveModel
     {
-        public List<string>? Names { get; set; }
-        public string? DirectoryPath { get; set; }
+        public List<string>? ArryRemoveItem { get; set; }
+        public string? Directory { get; set; }
     }
 }

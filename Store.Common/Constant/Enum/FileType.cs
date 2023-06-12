@@ -10,6 +10,7 @@ namespace Store.Common.Constant.Enum
     {
         Directory,
         Image,
+        video,
         Other
     }
 }

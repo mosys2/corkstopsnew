@@ -19,14 +19,6 @@ namespace EndPoint.Site.Areas.Admin.Controllers
 
             return View();
         }
-        public async Task<IActionResult> GetDirectoryList(string url="")
-        {
-            var list=await  _getListDirectory.Execut(url);
-            return Json(new ResultDto<List<DirectoryItems>>
-            {
-                Data=list,
-                IsSuccess=true,
-            });
-        }
+      
     }
 }

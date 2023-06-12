@@ -7,15 +7,17 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using System.IO;
 
 namespace Store.Application.Services.FileManager.Commands.RemoveFiles
 {
     public interface IRemoveFilesOrDirectoriesServices
     {
-        Task<ResultDto> Execut(List<string> names, string directoryPath);
+        Task<ResultDto> Execute(List<string> names, string directoryPath);
     }
     public class RemoveFilesOrDirectoriesServices : IRemoveFilesOrDirectoriesServices
     {
@@ -27,7 +29,7 @@ namespace Store.Application.Services.FileManager.Commands.RemoveFiles
             _environment = environment;
             _configuration = configuration;
         }
-        public async Task<ResultDto> Execut(List<string> names, string directoryPath)
+        public async Task<ResultDto> Execute(List<string> names, string directoryPath)
         {
             // اتصال به سرور FTP
             try
@@ -42,11 +44,18 @@ namespace Store.Application.Services.FileManager.Commands.RemoveFiles
 
                     client.Host=ftpServer;
                     client.Credentials = new NetworkCredential(username, password);
-
+                    client.Connect();
                     foreach(var item in names)
                     {
-                        client.DeleteDirectory(url+item);
-                        client.DeleteFile(url+item);
+                        string directory = "/"+url+"/"+item;
+                        var fileInfo = client.GetObjectInfo(directory);
+                        if (fileInfo.Type==FtpObjectType.File)
+                        {
+                            client.DeleteFile(directory);
+                        }else if(fileInfo.Type == FtpObjectType.Directory)
+                        {
+                            client.DeleteDirectory(directory);
+                        }
                     }
                     client.Disconnect();
                     return new ResultDto
