@@ -65,3 +65,9 @@
 .d-flex{
     display:flex!important;
 }
+.w-45percent{
+    width:45%!important;
+}
+.w-10percent{
+    width:10%!important;
+}

@@ -14,6 +14,14 @@ namespace Store.Application.Interfaces.Contexts
     public interface IDataBaseContext
     {
         DbSet<Category> Categories { get; set; }
+        DbSet<Brand> Brands { get; set; }
+        DbSet<Feature> Features { get; set; }
+        DbSet<ItemTag> ItemTags { get; set; }
+        DbSet<Product> Products { get; set; }
+        DbSet<Rate> Rates { get; set; }
+        DbSet<Tag> Tags { get; set; }
+        DbSet<Comment> Comments { get; set; }
+
 
         int SaveChanges(bool acceptAllChangeOnSuccess);
         int SaveChanges();

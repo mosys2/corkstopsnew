@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Store.Domain.Entities.Commons;
+using Store.Domain.Entities.Products;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -27,5 +28,11 @@ namespace Store.Domain.Entities.Users
         public DateTime? RemoveTime { get; set; }
         [Timestamp]
         public byte[]? RowVersion { get; set; }
+
+        public virtual ICollection<Product> Products { get; set; }
+        public virtual ICollection<Rate> Rates { get; set; }
+        public virtual ICollection<Comment> Comments { get; set; }
+
+
     }
 }

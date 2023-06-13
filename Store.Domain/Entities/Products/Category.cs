@@ -18,6 +18,8 @@ namespace Store.Domain.Entities.Products
         public int Sort { get; set; }
         public string? Description { get; set; }
 
-        public virtual ICollection<Category> SubCategories { get; set; }   
+        public virtual ICollection<Category> SubCategories { get; set; }
+        public virtual ICollection<Product> Products { get; set; }
+
     }
 }

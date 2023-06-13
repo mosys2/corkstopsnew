@@ -1,4 +1,6 @@
-﻿using Store.Domain.Entities.Commons;
+﻿using Microsoft.EntityFrameworkCore.Metadata;
+using Store.Domain.Entities.Commons;
+using Store.Domain.Entities.Users;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +13,33 @@ namespace Store.Domain.Entities.Products
     {
         public string? Name { get; set; }
         public string? Description { get; set; }
+        public double Price { get; set; }
+        public double LastPrice { get; set; }
+        public int Quantity { get; set; }
+        public string? Slag { get; set; }
+        public bool IsActive { get; set; }
+        public string? MinPic { get; set; }
+        public string? Pic { get; set; }
+        public decimal PostageFee { get; set; }
+        public decimal PostageFeeBasedQuantity { get; set; }
+        public string? Content { get; set; }
+
+        //Relation To Category
+        public virtual Category Category { get; set; }
+        public string CategoryId { get; set; }
+
+        public virtual Brand Brand { get; set; }
+        public string BrandId { get; set; }
+
+        public virtual User User { get; set; }
+        public string UserId { get; set; }
+
+        
+        public virtual ICollection<ItemTag> ItemTags { get; set; }
+        public virtual ICollection<Feature> Features { get; set; }
+        public virtual ICollection<Rate> Rates { get; set; }
+        public virtual ICollection<Comment> Comments { get; set; }
+
 
     }
 }

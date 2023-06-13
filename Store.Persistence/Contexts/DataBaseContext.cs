@@ -23,10 +23,33 @@ namespace Store.Persistence.Contexts
            
         }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Brand> Brands { get; set; }
+        public DbSet<Feature> Features { get; set; }
+        public DbSet<ItemTag> ItemTags { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Rate> Rates { get; set; }
+        public DbSet<Tag> Tags { get; set; }
+        public DbSet<Comment> Comments { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.Entity<Category>(b => b.HasQueryFilter(p => !p.IsRemoved));
+            builder.Entity<Rate>(b =>
+            {
+                b.HasOne(r => r.User)
+                .WithMany(r => r.Rates)
+                .HasForeignKey(r => r.UserId)
+                .OnDelete(deleteBehavior: DeleteBehavior.NoAction);
+            });
+
+            builder.Entity<Comment>(b =>
+            {
+                b.HasOne(r => r.User)
+                .WithMany(r => r.Comments)
+                .HasForeignKey(r => r.UserId)
+                .OnDelete(deleteBehavior: DeleteBehavior.NoAction);
+            });
 
             builder.Entity<User>(b =>
             {

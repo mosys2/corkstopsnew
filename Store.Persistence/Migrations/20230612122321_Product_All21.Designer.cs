@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Store.Persistence.Contexts;
 
@@ -11,9 +12,10 @@ using Store.Persistence.Contexts;
 namespace Store.Persistence.Migrations
 {
     [DbContext(typeof(DataBaseContext))]
-    partial class DataBaseContextModelSnapshot : ModelSnapshot
+    [Migration("20230612122321_Product_All21")]
+    partial class Product_All21
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -267,7 +269,6 @@ namespace Store.Persistence.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("ParrentId")
-                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ProductId")
@@ -666,14 +667,14 @@ namespace Store.Persistence.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "e5e44d27-25d8-4af7-ba7f-38943240039e",
+                            Id = "90a2fab7-1b90-42da-ac78-4d02301c9b3d",
                             Name = "Admin",
                             NormalizedName = "ADMIN",
                             IsRemoved = false
                         },
                         new
                         {
-                            Id = "d02340a6-b2cd-4775-a310-94fab231d211",
+                            Id = "605b0e51-0317-4c03-b382-ceb275be5739",
                             Name = "Customer",
                             NormalizedName = "CUSTOMER",
                             IsRemoved = false
@@ -743,10 +744,8 @@ namespace Store.Persistence.Migrations
             modelBuilder.Entity("Store.Domain.Entities.Products.Comment", b =>
                 {
                     b.HasOne("Store.Domain.Entities.Products.Comment", "Parrent")
-                        .WithMany("SubCategories")
-                        .HasForeignKey("ParrentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .WithMany("SubComments")
+                        .HasForeignKey("ParrentId");
 
                     b.HasOne("Store.Domain.Entities.Products.Product", "Product")
                         .WithMany("Comments")
@@ -855,7 +854,7 @@ namespace Store.Persistence.Migrations
 
             modelBuilder.Entity("Store.Domain.Entities.Products.Comment", b =>
                 {
-                    b.Navigation("SubCategories");
+                    b.Navigation("SubComments");
                 });
 
             modelBuilder.Entity("Store.Domain.Entities.Products.Product", b =>
