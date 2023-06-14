@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "uRkeqXkcKT4uHPmClcjWyxI9YW4nEa1Wdo+5XDia264=",
+  "Hash": "WckXRWX6abu/2iH7STiQ78lVlEArdwZVl+hLWdrQAls=",
   "Source": "EndPoint.Site",
   "BasePath": "_content/EndPoint.Site",
   "Mode": "Default",
@@ -2004,6 +2004,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\AdminTemplate\\js\\ckeditor-inline.js.LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\js\\file-manager.js",
+      "SourceId": "EndPoint.Site",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\",
+      "BasePath": "_content/EndPoint.Site",
+      "RelativePath": "AdminTemplate/js/file-manager.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\AdminTemplate\\js\\file-manager.js"
     },
     {
       "Identity": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\js\\main.js",

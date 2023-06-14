@@ -465,6 +465,10 @@
       "PackagePath": "staticwebassets\\AdminTemplate\\js\\ckeditor-inline.js.LICENSE.txt"
     },
     {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\js\\file-manager.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\file-manager.js"
+    },
+    {
       "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\js\\main.js",
       "PackagePath": "staticwebassets\\AdminTemplate\\js\\main.js"
     },
