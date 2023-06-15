@@ -21,6 +21,7 @@ function backToLastDirectory() {
     $("#directory-item").html(loading);
     $('#remove-files').addClass("d-none");
     Directories.pop();
+    //fill new directory
     if (Directories.length > 0) {
         Directory = Directories.reduce(function (a, b) {
             return a + b

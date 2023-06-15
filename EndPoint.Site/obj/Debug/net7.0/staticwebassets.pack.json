@@ -473,6 +473,10 @@
       "PackagePath": "staticwebassets\\AdminTemplate\\js\\main.js"
     },
     {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\js\\select-files.js",
+      "PackagePath": "staticwebassets\\AdminTemplate\\js\\select-files.js"
+    },
+    {
       "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\json\\location.json",
       "PackagePath": "staticwebassets\\AdminTemplate\\json\\location.json"
     },

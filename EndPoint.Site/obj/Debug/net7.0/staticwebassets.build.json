@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WckXRWX6abu/2iH7STiQ78lVlEArdwZVl+hLWdrQAls=",
+  "Hash": "ODOLC18/rgZD0iRDKClgLa8iZViCvskG0akfK/D7EN0=",
   "Source": "EndPoint.Site",
   "BasePath": "_content/EndPoint.Site",
   "Mode": "Default",
@@ -2038,6 +2038,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\AdminTemplate\\js\\main.js"
+    },
+    {
+      "Identity": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\js\\select-files.js",
+      "SourceId": "EndPoint.Site",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\",
+      "BasePath": "_content/EndPoint.Site",
+      "RelativePath": "AdminTemplate/js/select-files.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\AdminTemplate\\js\\select-files.js"
     },
     {
       "Identity": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\AdminTemplate\\json\\location.json",
