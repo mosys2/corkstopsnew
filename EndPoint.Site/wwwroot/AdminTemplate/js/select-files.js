@@ -142,7 +142,7 @@ function getDirectoryList() {
                             if (selectMultiple) {
                                 let isChecked = selectedFiles.includes(item.path) ? "checked" : "";
                                 html += `<div class="absolute left-0 top-0 mt-3 ml-3">
-                                                                        <input data-path="${item.path}" ${isChecked} name="checkbox-file" class="form-check-input border border-slate-500 selected-image-multiple" type="checkbox">
+                                                       <input data-path="${item.path}" ${isChecked} name="checkbox-file" class="form-check-input border border-slate-500 selected-image-multiple" type="checkbox">
                                                         </div>
                                                         <a href="#" class="w-3/5 file__icon file__icon--image mx-auto">
                                                              <div class="file__icon--image__preview image-fit">

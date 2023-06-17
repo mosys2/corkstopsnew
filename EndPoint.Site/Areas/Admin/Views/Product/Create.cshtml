@@ -1,4 +1,8 @@
-﻿@{
+﻿@using EndPoint.Site.Areas.Admin.Models.ViewModel;
+@addTagHelper *,LazZiya.TagHelpers
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@model ProductViewModel
+@{
     ViewData["Title"] = "Create";
     Layout = "~/Areas/Admin/Views/Shared/_Adminlayout.cshtml";
 }
@@ -133,16 +137,8 @@
                                 </div>
                             </div>
                             <div class="w-full mt-3 xl:mt-0 flex-1">
-                                <select id="category" class="form-select">
-                                    <option value="PC &amp; Laptop">PC &amp; Laptop</option>
-                                    <option value="Kids &amp; Baby">Kids &amp; Baby</option>
-                                    <option value="Smartphone &amp; Tablet">Smartphone &amp; Tablet</option>
-                                    <option value="PC &amp; Laptop">PC &amp; Laptop</option>
-                                    <option value="Hobby">Hobby</option>
-                                    <option value="Smartphone &amp; Tablet">Smartphone &amp; Tablet</option>
-                                    <option value="Fashion &amp; Make Up">Fashion &amp; Make Up</option>
-                                    <option value="Photography">Photography</option>
-                                    <option value="Hobby">Hobby</option>
+                                <select asp-items="ViewBag.Categories" id="category" class="form-select">
+                                   
                                 </select>
                             </div>
                         </div>

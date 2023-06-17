@@ -267,7 +267,6 @@ namespace Store.Persistence.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("ParrentId")
-                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ProductId")
@@ -378,13 +377,51 @@ namespace Store.Persistence.Migrations
                     b.ToTable("ItemTags");
                 });
 
+            modelBuilder.Entity("Store.Domain.Entities.Products.Media", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime?>("InsertTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsRemoved")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("MediaType")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ProductId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime?>("RemoveTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<byte[]>("RowVersion")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("rowversion");
+
+                    b.Property<DateTime?>("UpdateTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Url")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("Medias");
+                });
+
             modelBuilder.Entity("Store.Domain.Entities.Products.Product", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("BrandId")
-                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("CategoryId")
@@ -438,7 +475,7 @@ namespace Store.Persistence.Migrations
                         .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("rowversion");
 
-                    b.Property<string>("Slag")
+                    b.Property<string>("Slug")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("UpdateTime")
@@ -666,14 +703,14 @@ namespace Store.Persistence.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "e5e44d27-25d8-4af7-ba7f-38943240039e",
+                            Id = "5fb47c1d-3957-4922-a8b5-8c07cf00d9e3",
                             Name = "Admin",
                             NormalizedName = "ADMIN",
                             IsRemoved = false
                         },
                         new
                         {
-                            Id = "d02340a6-b2cd-4775-a310-94fab231d211",
+                            Id = "322f4ac3-9e1c-4f53-919b-4e7d43c30065",
                             Name = "Customer",
                             NormalizedName = "CUSTOMER",
                             IsRemoved = false
@@ -743,10 +780,8 @@ namespace Store.Persistence.Migrations
             modelBuilder.Entity("Store.Domain.Entities.Products.Comment", b =>
                 {
                     b.HasOne("Store.Domain.Entities.Products.Comment", "Parrent")
-                        .WithMany("SubCategories")
-                        .HasForeignKey("ParrentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .WithMany("SubComments")
+                        .HasForeignKey("ParrentId");
 
                     b.HasOne("Store.Domain.Entities.Products.Product", "Product")
                         .WithMany("Comments")
@@ -797,13 +832,22 @@ namespace Store.Persistence.Migrations
                     b.Navigation("Tag");
                 });
 
+            modelBuilder.Entity("Store.Domain.Entities.Products.Media", b =>
+                {
+                    b.HasOne("Store.Domain.Entities.Products.Product", "Product")
+                        .WithMany("Medias")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+                });
+
             modelBuilder.Entity("Store.Domain.Entities.Products.Product", b =>
                 {
                     b.HasOne("Store.Domain.Entities.Products.Brand", "Brand")
                         .WithMany("Products")
-                        .HasForeignKey("BrandId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("BrandId");
 
                     b.HasOne("Store.Domain.Entities.Products.Category", "Category")
                         .WithMany("Products")
@@ -855,7 +899,7 @@ namespace Store.Persistence.Migrations
 
             modelBuilder.Entity("Store.Domain.Entities.Products.Comment", b =>
                 {
-                    b.Navigation("SubCategories");
+                    b.Navigation("SubComments");
                 });
 
             modelBuilder.Entity("Store.Domain.Entities.Products.Product", b =>
@@ -865,6 +909,8 @@ namespace Store.Persistence.Migrations
                     b.Navigation("Features");
 
                     b.Navigation("ItemTags");
+
+                    b.Navigation("Medias");
 
                     b.Navigation("Rates");
                 });

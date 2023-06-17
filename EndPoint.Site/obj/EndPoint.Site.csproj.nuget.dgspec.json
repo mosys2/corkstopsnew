@@ -289,7 +289,11 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\projects\\corkstops\\Store.Common\\Store.Common.csproj": {
+                "projectPath": "C:\\projects\\corkstops\\Store.Common\\Store.Common.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

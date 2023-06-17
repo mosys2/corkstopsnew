@@ -21,6 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Services\FacadPattern\" />
     <Folder Include="Services\Users\Queries\Website\NewFolder\" />
   </ItemGroup>
 

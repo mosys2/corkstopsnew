@@ -13,6 +13,7 @@ namespace Store.Application.Interfaces.Contexts
 {
     public interface IDataBaseContext
     {
+        DbSet<User> Users { get; set; }
         DbSet<Category> Categories { get; set; }
         DbSet<Brand> Brands { get; set; }
         DbSet<Feature> Features { get; set; }
@@ -21,6 +22,8 @@ namespace Store.Application.Interfaces.Contexts
         DbSet<Rate> Rates { get; set; }
         DbSet<Tag> Tags { get; set; }
         DbSet<Comment> Comments { get; set; }
+        DbSet<Media> Medias { get; set; }
+
 
 
         int SaveChanges(bool acceptAllChangeOnSuccess);

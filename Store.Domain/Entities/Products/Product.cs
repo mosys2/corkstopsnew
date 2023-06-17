@@ -16,12 +16,12 @@ namespace Store.Domain.Entities.Products
         public double Price { get; set; }
         public double LastPrice { get; set; }
         public int Quantity { get; set; }
-        public string? Slag { get; set; }
+        public string? Slug { get; set; }
         public bool IsActive { get; set; }
         public string? MinPic { get; set; }
         public string? Pic { get; set; }
-        public decimal PostageFee { get; set; }
-        public decimal PostageFeeBasedQuantity { get; set; }
+        public double PostageFee { get; set; }
+        public double PostageFeeBasedQuantity { get; set; }
         public string? Content { get; set; }
 
         //Relation To Category
@@ -29,7 +29,7 @@ namespace Store.Domain.Entities.Products
         public string CategoryId { get; set; }
 
         public virtual Brand Brand { get; set; }
-        public string BrandId { get; set; }
+        public string? BrandId { get; set; }
 
         public virtual User User { get; set; }
         public string UserId { get; set; }
@@ -39,6 +39,7 @@ namespace Store.Domain.Entities.Products
         public virtual ICollection<Feature> Features { get; set; }
         public virtual ICollection<Rate> Rates { get; set; }
         public virtual ICollection<Comment> Comments { get; set; }
+        public virtual ICollection<Media> Medias { get; set; }
 
 
     }
