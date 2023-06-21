@@ -1725,6 +1725,10 @@
       "PackagePath": "staticwebassets\\SiteTemplate\\img\\menu\\product\\menu-product-img-2.jpg"
     },
     {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\no-image.svg",
+      "PackagePath": "staticwebassets\\SiteTemplate\\img\\no-image.svg"
+    },
+    {
       "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\2\\prodcut-1.jpg",
       "PackagePath": "staticwebassets\\SiteTemplate\\img\\product\\2\\prodcut-1.jpg"
     },

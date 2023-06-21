@@ -9,6 +9,7 @@ using Store.Application.Services.Products.Commands.AddNewTagServices;
 using Store.Application.Services.Products.Queries.GetAllBrands;
 using Store.Application.Services.Products.Queries.GetAllProducts;
 using Store.Application.Services.Products.Queries.GetAllTags;
+using Store.Application.Services.Products.Queries.GetProductDetail;
 using Store.Common.Constant;
 using Store.Common.ResultDto;
 using Store.Domain.Entities.Products;
@@ -22,6 +23,7 @@ namespace EndPoint.Site.Areas.Admin.Controllers
         public ProductController(IProductFacad productFacad)
         {
             _productFacad= productFacad;
+
         }
 
         public async Task<IActionResult> Index(string SearchKey = "", int Page = 1, int PageSize = 20)
@@ -76,6 +78,26 @@ namespace EndPoint.Site.Areas.Admin.Controllers
                 UserId="08b1edd4-4da3-424b-ad6c-4cafaf047ffb"
             });
             return Json(result);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Edit(string Id)
+        {
+            var categories = await _productFacad.GetAllCategoriesServices.Execute();
+            var tags = await _productFacad.GetAllTagsServices.Execute();
+            var brands = await _productFacad.GetAllBrandsServices.Execute();
+            ViewBag.Categories=new SelectList(categories, "Id", "Name");
+            ViewBag.Tags=new SelectList(tags, "Id", "Name");
+            ViewBag.Brands=new SelectList(brands, "Id", "Name");
+            var product=await _productFacad.GetProductDetailServices.Execute(Id);
+            return View(product.Data);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(RequestEditProductDto request)
+        {
+
+            return Json(new ResultDto() { IsSuccess=true });
         }
 
         [HttpGet]

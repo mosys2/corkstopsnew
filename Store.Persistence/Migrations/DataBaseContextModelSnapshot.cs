@@ -455,11 +455,11 @@ namespace Store.Persistence.Migrations
                     b.Property<string>("Pic")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("PostageFee")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<double>("PostageFee")
+                        .HasColumnType("float");
 
-                    b.Property<decimal>("PostageFeeBasedQuantity")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<double>("PostageFeeBasedQuantity")
+                        .HasColumnType("float");
 
                     b.Property<double>("Price")
                         .HasColumnType("float");
@@ -703,14 +703,14 @@ namespace Store.Persistence.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "5fb47c1d-3957-4922-a8b5-8c07cf00d9e3",
+                            Id = "7157ee61-943b-40b9-bd3f-6506b902e112",
                             Name = "Admin",
                             NormalizedName = "ADMIN",
                             IsRemoved = false
                         },
                         new
                         {
-                            Id = "322f4ac3-9e1c-4f53-919b-4e7d43c30065",
+                            Id = "f764ad3c-bbdb-4cbd-a594-a7bf9a7164ef",
                             Name = "Customer",
                             NormalizedName = "CUSTOMER",
                             IsRemoved = false

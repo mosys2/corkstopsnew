@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ODOLC18/rgZD0iRDKClgLa8iZViCvskG0akfK/D7EN0=",
+  "Hash": "0PAXZOD4X6G/qnnItwkeVABCVAv329m4ekeeeSduYzQ=",
   "Source": "EndPoint.Site",
   "BasePath": "_content/EndPoint.Site",
   "Mode": "Default",
@@ -7359,6 +7359,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\SiteTemplate\\img\\menu\\product\\menu-product-img-2.jpg"
+    },
+    {
+      "Identity": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\no-image.svg",
+      "SourceId": "EndPoint.Site",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\",
+      "BasePath": "_content/EndPoint.Site",
+      "RelativePath": "SiteTemplate/img/no-image.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\SiteTemplate\\img\\no-image.svg"
     },
     {
       "Identity": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\img\\product\\2\\prodcut-1.jpg",

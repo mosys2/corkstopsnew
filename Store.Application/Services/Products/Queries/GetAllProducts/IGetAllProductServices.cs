@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Store.Application.Interfaces.Contexts;
+using Store.Common.Constant;
+using Store.Common.Pagination;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,22 +23,30 @@ namespace Store.Application.Services.Products.Queries.GetAllProducts
         }
         public async Task<ProducstList_Dto> Execute(RequestGetProductsDto request)
         {
-          var products= await _context.Products.Include(c=>c.Category).Select(p=>new GetProductDto()
-           {
-              Id=p.Id,
-              IsActive=p.IsActive,
-              MinPic=p.MinPic,
-              Name=p.Name,
-              Price=p.Price,
-              Quantity=p.Quantity,
-              Category=p.Category.Name
-           }).AsQueryable()
-           .ToListAsync();
-            return new ProducstList_Dto {
-                Products = products,
+            int rowsCount = 0;
+            var products = _context.Products.Include(c => c.Category).AsQueryable();
+            if (!string.IsNullOrEmpty(request.SerachKey))
+            {
+                products=products.Where(p => p.Name.Contains(request.SerachKey)).AsQueryable();
+            }
+            var productsList = products
+                    .ToPaged(request.Page, request.PageSize, out rowsCount)
+                    .Select(p => new GetProductDto()
+                    {
+                        Id=p.Id,
+                        IsActive=p.IsActive,
+                        MinPic=string.IsNullOrEmpty(p.MinPic) ? PublicConst.NoImageUrl : p.MinPic,
+                        Name=p.Name,
+                        Price=p.Price,
+                        Quantity=p.Quantity,
+                        Category=p.Category.Name
+                    }).ToList();
+            return new ProducstList_Dto
+            {
+                Products = productsList,
                 CurentPage=request.Page,
                 PageSize=request.PageSize,
-                RowCount=products.Count
+                RowCount=rowsCount
             };
         }
     }
@@ -56,7 +66,7 @@ namespace Store.Application.Services.Products.Queries.GetAllProducts
         public int Quantity { get; set; }
         public double Price { get; set; }
         public bool IsActive { get; set; }
-        public string Category { get; set; }
+        public string? Category { get; set; }
     }
 
 

@@ -28,7 +28,6 @@ namespace Store.Application.Services.Users.Queries.GetUsers
         public ResultDto<UsersForAdmin_Dto> Execute(RequestGetUserDto request)
         {
             var users = _userManager.Users.AsQueryable();
-
             int rowsCount = 0;
             if (!string.IsNullOrWhiteSpace(request.SerachKey))
             {

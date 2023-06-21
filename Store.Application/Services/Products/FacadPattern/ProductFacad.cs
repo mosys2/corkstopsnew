@@ -6,6 +6,7 @@ using Store.Application.Services.Products.Queries.GetAllBrands;
 using Store.Application.Services.Products.Queries.GetAllCategories;
 using Store.Application.Services.Products.Queries.GetAllProducts;
 using Store.Application.Services.Products.Queries.GetAllTags;
+using Store.Application.Services.Products.Queries.GetProductDetail;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -67,6 +68,15 @@ namespace Store.Application.Services.Products.FacadPattern
             get
             {
                 return _getAllProductServices = _getAllProductServices ?? new GetAllProductServices(_context);
+            }
+        }
+
+        private IGetProductDetailServices _getProductDetailServices;
+        public IGetProductDetailServices GetProductDetailServices
+        {
+            get
+            {
+                return _getProductDetailServices = _getProductDetailServices ?? new GetProductDetailServices(_context);
             }
         }
 

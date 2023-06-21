@@ -10,6 +10,7 @@ namespace Store.Common.Constant
     {
         public static int PageSize = 2;
         public static int Page = 1;
-        public static string FtpUrl = "https://corkstops.com/";
+        public static string FtpUrl = "https://corkstops.com";
+        public static string NoImageUrl = @"\SiteTemplate\img\no-image.svg";
     }
 }
