@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Store.Application.Interfaces.Contexts;
+using Store.Application.Services.Products.Queries.GetProductDetail;
 using Store.Common.Constant;
 using Store.Common.Constant.Enum;
 using Store.Common.ResultDto;
@@ -29,22 +30,24 @@ namespace Store.Application.Services.Products.Commands.EditProduct
             try
             {
                 var product = _context.Products.Find(request.Id);
-                if (product==null) { return new ResultDto { IsSuccess=false, Message="Product not fount!" }; }
+                if (product==null) { return new ResultDto { IsSuccess=false, Message="Product not found!" }; }
 
                 var brand = await _context.Brands.FindAsync(request.BrandId);
                 var category = await _context.Categories.FindAsync(request.CategoryId);
                 var user = await _context.Users.FindAsync(request.UserId);
                 var slug = await _context.Products.Where(s => s.Slug==request.Slug && s.Slug!=product.Slug).ToListAsync();
 
-
                 if (category==null) { return new ResultDto { IsSuccess=false, Message="Please Select Category!" }; }
                 if (user==null) { return new ResultDto { IsSuccess=false, Message="Please Select User!" }; }
                 if (slug.Any()) { return new ResultDto { IsSuccess=false, Message="Please Change Slug!" }; }
 
-
                 //Tags
-                _context.ItemTags.RemoveRange(product.ItemTags.ToList());
-                _context.SaveChanges();
+                var itemTags = await _context.ItemTags.Where(p => p.ProductId==product.Id).ToListAsync();
+                if (itemTags.Any())
+                {
+                    _context.ItemTags.RemoveRange(itemTags);
+                    await _context.SaveChangesAsync();
+                }
 
                 List<ItemTag> itemTagsList = new List<ItemTag>();
                 if (request.TagsId!=null)
@@ -72,8 +75,12 @@ namespace Store.Application.Services.Products.Commands.EditProduct
                 }
 
                 //Feater
-                _context.Features.RemoveRange(product.Features.ToList());
-                _context.SaveChanges();
+                var features = await _context.Features.Where(p => p.ProductId==product.Id).ToListAsync();
+                if (itemTags.Any())
+                {
+                    _context.Features.RemoveRange(features);
+                    await _context.SaveChangesAsync();
+                }
 
                 if (request.FeatureList!=null)
                 {
@@ -97,8 +104,13 @@ namespace Store.Application.Services.Products.Commands.EditProduct
                 }
 
                 //Mediya
-                _context.Medias.RemoveRange(product.Medias.ToList());
-                _context.SaveChanges();
+                var medias = await _context.Medias.Where(p => p.ProductId==product.Id).ToListAsync();
+                if (itemTags.Any())
+                {
+                    _context.Medias.RemoveRange(medias);
+                    await _context.SaveChangesAsync();
+                }
+
                 List<Media> mediaList = new List<Media>();
                 if (request.Media!=null)
                 {
@@ -165,7 +177,6 @@ namespace Store.Application.Services.Products.Commands.EditProduct
         public string? Content { get; set; }
         public string? Description { get; set; }
         public double Price { get; set; }
-        public double LastPrice { get; set; }
         public int Quantity { get; set; }
         public double PostageFee { get; set; }
         public double PostageFeeBasedQuantity { get; set; }
@@ -173,15 +184,10 @@ namespace Store.Application.Services.Products.Commands.EditProduct
         public string UserId { get; set; }
         public bool IsActive { get; set; }
         public string? Pic { get; set; }
-        public string? NameTag { get; set; }
         public string? MinPic { get; set; }
         public string[]? TagsId { get; set; }
         public string[]? Media { get; set; }
         public List<FeatureListEditDto>? FeatureList { get; set; }
     }
-    public class FeatureListEditDto
-    {
-        public string? Title { get; set; }
-        public string? Value { get; set; }
-    }
+
 }

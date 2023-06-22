@@ -6,6 +6,7 @@ using Store.Application.Interfaces.FacadPattern;
 using Store.Application.Services.FileManager.Queries.ListDirectories;
 using Store.Application.Services.Products.Commands.AddNewProduct;
 using Store.Application.Services.Products.Commands.AddNewTagServices;
+using Store.Application.Services.Products.Commands.EditProduct;
 using Store.Application.Services.Products.Queries.GetAllBrands;
 using Store.Application.Services.Products.Queries.GetAllProducts;
 using Store.Application.Services.Products.Queries.GetAllTags;
@@ -96,8 +97,36 @@ namespace EndPoint.Site.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Edit(RequestEditProductDto request)
         {
+            await _productFacad.EditProductServices.Execute(new RequestEditRegisterProductDto
+            {
+                Id = request.Id,
+                BrandId=request.BrandId,
+                CategoryId=request.CategoryId,
+                Content= request.Content,
+                Description= request.Description,
+                FeatureList=request.FeatureList,
+                IsActive=request.IsActive,
+                Media=request.Media,
+                MinPic=request.MinPic,
+                Name=request.Name,
+                Pic=request.Pic,
+                PostageFee=request.PostageFee,
+                PostageFeeBasedQuantity=request.PostageFeeBasedQuantity,
+                Price=request.Price,
+                Quantity=request.Quantity,
+                Slug=request.Slug,
+                TagsId=request.TagsId,
+                UserId="08b1edd4-4da3-424b-ad6c-4cafaf047ffb"
 
+            });
             return Json(new ResultDto() { IsSuccess=true });
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Delete(string itemId)
+        {
+           var result=await _productFacad.RemoveProductServices.Execute(itemId);
+            return Json(new ResultDto { IsSuccess=result.IsSuccess,Message=result.Message});
         }
 
         [HttpGet]

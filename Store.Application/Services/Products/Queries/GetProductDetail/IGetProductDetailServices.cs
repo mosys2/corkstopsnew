@@ -89,9 +89,8 @@ namespace Store.Application.Services.Products.Queries.GetProductDetail
         public string? Description { get; set; }
         [Required]
         public double Price { get; set; }
-        public double LastPrice { get; set; }
         [Required]
-        public long Quantity { get; set; }
+        public int Quantity { get; set; }
         [Required]
         public double PostageFee { get; set; }
         [Required]

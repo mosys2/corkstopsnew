@@ -1,5 +1,7 @@
 ﻿using Store.Application.Services.Products.Commands.AddNewProduct;
 using Store.Application.Services.Products.Commands.AddNewTagServices;
+using Store.Application.Services.Products.Commands.EditProduct;
+using Store.Application.Services.Products.Commands.RemoveProduct;
 using Store.Application.Services.Products.Queries.GetAllBrands;
 using Store.Application.Services.Products.Queries.GetAllCategories;
 using Store.Application.Services.Products.Queries.GetAllProducts;
@@ -22,6 +24,8 @@ namespace Store.Application.Interfaces.FacadPattern
         IGetAllBrandsServices GetAllBrandsServices { get; }
         IGetAllProductServices GetAllProductServices { get; }
         IGetProductDetailServices GetProductDetailServices { get; }
+        IEditProductServices EditProductServices { get; }
+        IRemoveProductServices RemoveProductServices { get; }
 
     }
 }

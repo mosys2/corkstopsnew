@@ -2,6 +2,8 @@
 using Store.Application.Interfaces.FacadPattern;
 using Store.Application.Services.Products.Commands.AddNewProduct;
 using Store.Application.Services.Products.Commands.AddNewTagServices;
+using Store.Application.Services.Products.Commands.EditProduct;
+using Store.Application.Services.Products.Commands.RemoveProduct;
 using Store.Application.Services.Products.Queries.GetAllBrands;
 using Store.Application.Services.Products.Queries.GetAllCategories;
 using Store.Application.Services.Products.Queries.GetAllProducts;
@@ -77,6 +79,24 @@ namespace Store.Application.Services.Products.FacadPattern
             get
             {
                 return _getProductDetailServices = _getProductDetailServices ?? new GetProductDetailServices(_context);
+            }
+        }
+
+        private IEditProductServices _editProductServices;
+        public IEditProductServices EditProductServices
+        {
+            get
+            {
+                return _editProductServices = _editProductServices ?? new EditProductServices(_context);
+            }
+        }
+
+        private IRemoveProductServices _removeProductServices;
+        public IRemoveProductServices RemoveProductServices
+        {
+            get
+            {
+                return _removeProductServices = _removeProductServices ?? new RemoveProductServices(_context);
             }
         }
 
