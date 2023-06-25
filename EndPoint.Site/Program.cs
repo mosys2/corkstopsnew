@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Mst_Cms.Application.Services.Users.Command.LoginUser;
 using Store.Application.Interfaces.Contexts;
 using Store.Application.Interfaces.FacadPattern;
+using Store.Application.Interfaces.FacadPatternSite;
 using Store.Application.Services.Categuries.Commands.RegisterCategury;
 using Store.Application.Services.Categuries.Commands.RemoveCategory;
 using Store.Application.Services.Categuries.Queries.GetAllCateguryForSelectList;
@@ -13,6 +14,7 @@ using Store.Application.Services.FileManager.Commands.RemoveFiles;
 using Store.Application.Services.FileManager.Commands.UploadFiles;
 using Store.Application.Services.FileManager.Queries.ListDirectories;
 using Store.Application.Services.Products.FacadPattern;
+using Store.Application.Services.Products.FacadpatternSite;
 using Store.Application.Services.Users.Commands.EditeUser;
 using Store.Application.Services.Users.Commands.RegisterUser;
 using Store.Application.Services.Users.Commands.RemoveUser;
@@ -72,6 +74,9 @@ builder.Services.AddScoped<IRemoveFilesOrDirectoriesServices, RemoveFilesOrDirec
 
 //Facad
 builder.Services.AddScoped<IProductFacad, ProductFacad>();
+
+//Facad Site
+builder.Services.AddScoped<IProductFacadSite, ProductFacadSite>();
 
 
 //Scopded Website

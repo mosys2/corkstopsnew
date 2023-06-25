@@ -26,13 +26,13 @@ namespace Store.Domain.Entities.Products
 
         //Relation To Category
         public virtual Category Category { get; set; }
-        public string CategoryId { get; set; }
+        public string? CategoryId { get; set; }
 
         public virtual Brand Brand { get; set; }
         public string? BrandId { get; set; }
 
         public virtual User User { get; set; }
-        public string UserId { get; set; }
+        public string? UserId { get; set; }
 
         
         public virtual ICollection<ItemTag> ItemTags { get; set; }

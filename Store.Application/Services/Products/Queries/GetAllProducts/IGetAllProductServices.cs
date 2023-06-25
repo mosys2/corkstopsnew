@@ -35,11 +35,11 @@ namespace Store.Application.Services.Products.Queries.GetAllProducts
                     {
                         Id=p.Id,
                         IsActive=p.IsActive,
-                        MinPic=string.IsNullOrEmpty(p.MinPic) ? PublicConst.NoImageUrl : p.MinPic,
+                        MinPic=string.IsNullOrEmpty(p.MinPic) ? PublicConst.NoImageUrl :PublicConst.FtpUrl+p.MinPic,
                         Name=p.Name,
                         Price=p.Price,
                         Quantity=p.Quantity,
-                        Category=p.Category.Name
+                        Category=p.Category?.Name
                     }).ToList();
             return new ProducstList_Dto
             {

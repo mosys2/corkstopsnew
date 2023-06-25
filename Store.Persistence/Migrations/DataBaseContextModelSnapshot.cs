@@ -703,14 +703,14 @@ namespace Store.Persistence.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "7157ee61-943b-40b9-bd3f-6506b902e112",
+                            Id = "2cddcf97-6535-4971-9946-389db55a75f8",
                             Name = "Admin",
                             NormalizedName = "ADMIN",
                             IsRemoved = false
                         },
                         new
                         {
-                            Id = "f764ad3c-bbdb-4cbd-a594-a7bf9a7164ef",
+                            Id = "6c972e57-e696-4bcf-afb3-09efcd8e626d",
                             Name = "Customer",
                             NormalizedName = "CUSTOMER",
                             IsRemoved = false

@@ -37,7 +37,7 @@ namespace Store.Application.Services.Products.Commands.EditProduct
                 var user = await _context.Users.FindAsync(request.UserId);
                 var slug = await _context.Products.Where(s => s.Slug==request.Slug && s.Slug!=product.Slug).ToListAsync();
 
-                if (category==null) { return new ResultDto { IsSuccess=false, Message="Please Select Category!" }; }
+                //if (category==null) { return new ResultDto { IsSuccess=false, Message="Please Select Category!" }; }
                 if (user==null) { return new ResultDto { IsSuccess=false, Message="Please Select User!" }; }
                 if (slug.Any()) { return new ResultDto { IsSuccess=false, Message="Please Change Slug!" }; }
 
@@ -149,7 +149,7 @@ namespace Store.Application.Services.Products.Commands.EditProduct
                 product.PostageFeeBasedQuantity=request.PostageFeeBasedQuantity;
                 product.Quantity=request.Quantity;
                 product.UserId=request.UserId;
-
+                product.CategoryId=category?.Id.ToString();
                 await _context.SaveChangesAsync();
                 return new ResultDto
                 {
