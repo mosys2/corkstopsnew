@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 using Store.Application.Interfaces.Contexts;
 using Store.Common.Constant;
+using Store.Domain.Entities.Carts;
 using Store.Domain.Entities.Contacts;
 using Store.Domain.Entities.Products;
 using Store.Domain.Entities.Users;
@@ -32,6 +33,9 @@ namespace Store.Persistence.Contexts
         public DbSet<Tag> Tags { get; set; }
         public DbSet<Comment> Comments { get; set; }
         public DbSet<Media> Medias { get; set; }
+        public DbSet<Cart> Carts { get; set; }
+        public DbSet<CartItem> CartItems { get; set; }
+
 
 
         protected override void OnModelCreating(ModelBuilder builder)

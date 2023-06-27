@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using FluentFTP.Helpers;
+using Microsoft.EntityFrameworkCore;
 using Store.Application.Interfaces.Contexts;
 using Store.Common.Constant;
 using Store.Common.ResultDto;
@@ -46,7 +47,7 @@ namespace Store.Application.Services.Products.Queries.GetProductDetailForSite
                                         Title=p.DisplayName,
                                         Value=p.DisplayValue
                                     }).ToList(),
-                                    Media=p.Medias.Select(p => PublicConst.FtpUrl+ p.Url).ToArray<string>(),
+                                    Media=p.Medias.Select(m=> PublicConst.FtpUrl+ m.Url).ToArray<string>(),
                                     MinPic=p.MinPic,
                                     Name=p.Name,
                                     Pic=p.Pic,
@@ -55,7 +56,15 @@ namespace Store.Application.Services.Products.Queries.GetProductDetailForSite
                                     Tags=p.ItemTags.Select(p => p.Tag.Name).ToArray<string>(),
                                 })
                                 .FirstOrDefaultAsync();
-
+                if (!string.IsNullOrEmpty(product?.Pic))
+                {
+                    var media = product?.Media;
+                    if (media != null)
+                    {
+                        media.Append(PublicConst.FtpUrl+product?.Pic.ToString());
+                        product.Media=media;
+                    }
+                }
                 return new ResultDto<ProductDetailForSiteDto>()
                 {
                     Data=product,

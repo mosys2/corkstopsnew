@@ -19,8 +19,8 @@ namespace Store.Common.Constant
             public const string UpdateField = "Update field!";
             public const string AlreadyExist = "already exist!";
             public const string UploadField = "Uploaded field!";
-
-
+            public const string NotFound = "Not Found!";
+            public const string InvalidValue = "Invalid value!";
 
         }
         public class Message
@@ -31,6 +31,10 @@ namespace Store.Common.Constant
             public const string UpdateSuccess = "Update successed.";
             public const string CreatedDirectorySuccess = "Created successed.";
             public const string UploadSuccess = "Uploaded successed.";
+            public const string AddSuccess = "Added successed.";
+            public const string Decreased = "Decreased successed.";
+
+
 
 
         }
