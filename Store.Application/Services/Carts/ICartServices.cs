@@ -13,12 +13,12 @@ namespace Store.Application.Services.Carts
 {
     public interface ICartServices
     {
-        Task<ResultDto> AddToCart(Guid ProductId, Guid BrowserId, int? count);
-        Task<ResultDto>RemoveFromCart(Guid ProductId, Guid BrowserId);
-        Task<ResultDto<CartDto>> GetMyCart(Guid BrowserId, Guid? UserId, bool? Forpay = false);
-        Task<ResultDto>AddCount(Guid Id);
-        Task<ResultDto>MinCount(Guid Id);
-        Task<ResultDto>Remove(Guid Id);
+        Task<ResultDto>AddToCart(string ProductId, Guid BrowserId, int? count);
+        Task<ResultDto>RemoveFromCart(string ProductId, Guid BrowserId);
+        Task<ResultDto<CartDto>> GetMyCart(Guid BrowserId, string? UserId, bool? Forpay = false);
+        Task<ResultDto>AddCount(string Id);
+        Task<ResultDto>MinCount(string Id);
+        Task<ResultDto>Remove(string Id);
     }
     public class CartServices : ICartServices
     {
@@ -28,7 +28,7 @@ namespace Store.Application.Services.Carts
             _context = context;
         }
 
-        public async Task<ResultDto> AddCount(Guid Id)
+        public async Task<ResultDto> AddCount(string Id)
         {
             var result =await _context.CartItems.FindAsync(Id);
             if (result==null)
@@ -50,54 +50,62 @@ namespace Store.Application.Services.Carts
             };
         }
 
-        public async Task<ResultDto> AddToCart(Guid ProductId, Guid BrowserId, int? count)
+        public async Task<ResultDto> AddToCart(string ProductId, Guid BrowserId, int? count)
         {
-            var cart =await _context.Carts
-                  .Where(p => p.BrowserId == BrowserId && p.Finished == false)
-                  .FirstOrDefaultAsync();
-            if (cart == null)
+            try
             {
-                Cart newCart = new Cart()
+                var cart = await _context.Carts
+                      .Where(p => p.BrowserId == BrowserId && p.Finished == false)
+                      .FirstOrDefaultAsync();
+                if (cart == null)
                 {
-                    Finished = false,
-                    BrowserId = BrowserId,
-                    InsertTime=DateTime.Now,
-
-
-                };
-                _context.Carts.Add(newCart);
-                _context.SaveChanges();
-                cart = newCart;
-            }
-            var product =await _context.Products.FindAsync(ProductId);
-            var cartItem =await _context.CartItems
-                .Where(p => p.ProductId == ProductId.ToString() && p.CartId == cart.Id)
-                .FirstOrDefaultAsync();
-            if (cartItem!=null)
-            {
-                cartItem.Count++;
-            }
-            else
-            {
-                CartItem newCartItem = new CartItem()
+                    Cart newCart = new Cart()
+                    {
+                        Id=Guid.NewGuid().ToString(),
+                        Finished = false,
+                        BrowserId = BrowserId,
+                        InsertTime=DateTime.Now,
+                        IsRemoved=false
+                    };
+                   await _context.Carts.AddAsync(newCart);
+                   await _context.SaveChangesAsync();
+                    cart = newCart;
+                }
+                var product = await _context.Products.FindAsync(ProductId);
+                var cartItem = await _context.CartItems
+                    .Where(p => p.ProductId == ProductId.ToString() && p.CartId == cart.Id)
+                    .FirstOrDefaultAsync();
+                if (cartItem!=null)
                 {
-                    Cart = cart,
-                    Count = count.HasValue ? count.Value : 1,
-                    Price = product.Price,
-                    Product = product,
-                    InsertTime=DateTime.Now,
+                    cartItem.Count++;
+                }
+                else
+                {
+                    CartItem newCartItem = new CartItem()
+                    {
+                        Id = Guid.NewGuid().ToString(),
+                        Cart = cart,
+                        Count = count.HasValue ? count.Value : 1,
+                        Price = product.Price,
+                        Product = product,
+                        InsertTime=DateTime.Now,
+                    };
+                   await _context.CartItems.AddAsync(newCartItem);
+                }
+               await _context.SaveChangesAsync();
+                return new ResultDto()
+                {
+                    IsSuccess = true,
+                    Message=$"Added to backet {product?.Name}",
                 };
-                _context.CartItems.Add(newCartItem);
-            }
-            _context.SaveChanges();
-            return new ResultDto()
+            }catch(Exception ex)
             {
-                IsSuccess = true,
-                Message=$"Added to backet {product?.Name}",
-            };
+                var ee = ex.Message;
+                return new ResultDto() { IsSuccess=false };
+            }
         }
 
-        public async Task<ResultDto<CartDto>> GetMyCart(Guid BrowserId, Guid? UserId, bool? Forpay = false)
+        public async Task<ResultDto<CartDto>> GetMyCart(Guid BrowserId, string? UserId, bool? Forpay = false)
         {
             var cart =await _context.Carts
               .Include(p => p.CartItems)
@@ -148,7 +156,7 @@ namespace Store.Application.Services.Carts
             }
         }
 
-        public async Task<ResultDto> MinCount(Guid Id)
+        public async Task<ResultDto> MinCount(string Id)
         {
             var result =await _context.CartItems.FindAsync(Id);
             if (result.Count<=1)
@@ -178,7 +186,7 @@ namespace Store.Application.Services.Carts
             };
         }
 
-        public async Task<ResultDto> Remove(Guid Id)
+        public async Task<ResultDto> Remove(string Id)
         {
             var result =await _context.CartItems.FindAsync(Id);
             if (result==null)
@@ -200,7 +208,7 @@ namespace Store.Application.Services.Carts
             };
         }
 
-        public async Task<ResultDto> RemoveFromCart(Guid ProductId, Guid BrowserId)
+        public async Task<ResultDto> RemoveFromCart(string ProductId, Guid BrowserId)
         {
             var cartitem =await _context.CartItems.Where(p => p.Cart.BrowserId == BrowserId).FirstOrDefaultAsync();
             if (cartitem !=null)

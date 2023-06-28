@@ -2813,6 +2813,10 @@
       "PackagePath": "staticwebassets\\SiteTemplate\\js\\btnloadmore.js"
     },
     {
+      "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\cart.js",
+      "PackagePath": "staticwebassets\\SiteTemplate\\js\\cart.js"
+    },
+    {
       "Id": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\countdown.js",
       "PackagePath": "staticwebassets\\SiteTemplate\\js\\countdown.js"
     },

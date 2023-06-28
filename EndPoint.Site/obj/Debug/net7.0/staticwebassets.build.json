@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0PAXZOD4X6G/qnnItwkeVABCVAv329m4ekeeeSduYzQ=",
+  "Hash": "+RMk5hxvDN8CpKTZN2hI5yJanj1mw2UyVqogQlc4L8k=",
   "Source": "EndPoint.Site",
   "BasePath": "_content/EndPoint.Site",
   "Mode": "Default",
@@ -11983,6 +11983,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\SiteTemplate\\js\\btnloadmore.js"
+    },
+    {
+      "Identity": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\cart.js",
+      "SourceId": "EndPoint.Site",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\",
+      "BasePath": "_content/EndPoint.Site",
+      "RelativePath": "SiteTemplate/js/cart.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\SiteTemplate\\js\\cart.js"
     },
     {
       "Identity": "C:\\projects\\corkstops\\EndPoint.Site\\wwwroot\\SiteTemplate\\js\\countdown.js",

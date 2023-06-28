@@ -5,6 +5,7 @@ using Mst_Cms.Application.Services.Users.Command.LoginUser;
 using Store.Application.Interfaces.Contexts;
 using Store.Application.Interfaces.FacadPattern;
 using Store.Application.Interfaces.FacadPatternSite;
+using Store.Application.Services.Carts;
 using Store.Application.Services.Categuries.Commands.RegisterCategury;
 using Store.Application.Services.Categuries.Commands.RemoveCategory;
 using Store.Application.Services.Categuries.Queries.GetAllCateguryForSelectList;
@@ -71,7 +72,7 @@ builder.Services.AddScoped<IGetListDirectoryServices, GetListDirectoryServices>(
 builder.Services.AddScoped<ICreateDirectoryServices, CreateDirectoryServices>();
 builder.Services.AddScoped<IUploadFilesServices, UploadFilesServices>();
 builder.Services.AddScoped<IRemoveFilesOrDirectoriesServices, RemoveFilesOrDirectoriesServices>();
-
+builder.Services.AddScoped<ICartServices, CartServices>();
 //Facad
 builder.Services.AddScoped<IProductFacad, ProductFacad>();
 
