@@ -1,0 +1,63 @@
+﻿@using Store.Application.Services.Carts;
+@model CartDto
+
+@{
+    Layout = null;
+}
+<!-- cart mini area start -->
+<div class="cartmini__area cartmini__style-darkRed">
+    <div class="cartmini__wrapper d-flex justify-content-between flex-column">
+        <div class="cartmini__top-wrapper">
+            <div class="cartmini__top p-relative">
+                <div class="cartmini__top-title">
+                    <h4>Shopping cart</h4>
+                </div>
+                <div class="cartmini__close">
+                    <button type="button" class="cartmini__close-btn cartmini-close-btn"><i class="fal fa-times"></i></button>
+                </div>
+            </div>
+            
+            <div class="cartmini__widget">
+                @if (Model.CartItems != null)
+                {
+                    @foreach (var item in @Model.CartItems)
+                    {
+                        <div class="cartmini__widget-item">
+                            <div class="cartmini__thumb">
+                                <a href="product-details.html">
+                                    <img src="@item.imageSrc" alt="@item.ProductName">
+                                </a>
+                            </div>
+                            <div class="cartmini__content">
+                                <h5 class="cartmini__title"><a href="product-details.html">@item.ProductName</a></h5>
+                                <div class="cartmini__price-wrapper">
+                                    <span class="cartmini__price">@item.Price</span>
+                                    <span class="cartmini__quantity">X @item.Count</span>
+                                </div>
+                            </div>
+                            <a href="#" class="cartmini__del"><i class="fa-regular fa-xmark"></i></a>
+                        </div>
+                    }
+                }
+            </div>
+            <!-- for wp -->
+            <!-- if no item in cart -->
+            <div class="cartmini__empty text-center d-none">
+                <img src="~/SiteTemplate/img/product/cartmini/empty-cart.png" alt="">
+                <p>Your Cart is empty</p>
+                <a href="shop.html" class="tp-btn">Go to Shop</a>
+            </div>
+        </div>
+        <div class="cartmini__checkout">
+            <div class="cartmini__checkout-title mb-30">
+                <h4>Subtotal:</h4>
+                <span>$@Model.sumAmount</span>
+            </div>
+            <div class="cartmini__checkout-btn">
+                <a href="cart.html" class="tp-btn mb-10 w-100"> view cart</a>
+                <a href="checkout.html" class="tp-btn tp-btn-border w-100"> checkout</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- cart mini area end -->

@@ -16,6 +16,7 @@ namespace Store.Application.Services.Carts
         Task<ResultDto>AddToCart(string ProductId, Guid BrowserId, int? count);
         Task<ResultDto>RemoveFromCart(string ProductId, Guid BrowserId);
         Task<ResultDto<CartDto>> GetMyCart(Guid BrowserId, string? UserId, bool? Forpay = false);
+        Task<int> CartCount(Guid BrowserId, string? UserId);
         Task<ResultDto>AddCount(string Id);
         Task<ResultDto>MinCount(string Id);
         Task<ResultDto>Remove(string Id);
@@ -54,9 +55,9 @@ namespace Store.Application.Services.Carts
         {
             try
             {
-                var cart = await _context.Carts
+                var cart =  _context.Carts
                       .Where(p => p.BrowserId == BrowserId && p.Finished == false)
-                      .FirstOrDefaultAsync();
+                      .FirstOrDefault();
                 if (cart == null)
                 {
                     Cart newCart = new Cart()
@@ -67,14 +68,14 @@ namespace Store.Application.Services.Carts
                         InsertTime=DateTime.Now,
                         IsRemoved=false
                     };
-                   await _context.Carts.AddAsync(newCart);
-                   await _context.SaveChangesAsync();
+                    _context.Carts.Add(newCart);
+                    _context.SaveChanges();
                     cart = newCart;
                 }
-                var product = await _context.Products.FindAsync(ProductId);
-                var cartItem = await _context.CartItems
+                var product = _context.Products.Find(ProductId);
+                var cartItem =  _context.CartItems
                     .Where(p => p.ProductId == ProductId.ToString() && p.CartId == cart.Id)
-                    .FirstOrDefaultAsync();
+                    .FirstOrDefault();
                 if (cartItem!=null)
                 {
                     cartItem.Count++;
@@ -90,9 +91,9 @@ namespace Store.Application.Services.Carts
                         Product = product,
                         InsertTime=DateTime.Now,
                     };
-                   await _context.CartItems.AddAsync(newCartItem);
+                    _context.CartItems.Add(newCartItem);
                 }
-               await _context.SaveChangesAsync();
+                _context.SaveChanges();
                 return new ResultDto()
                 {
                     IsSuccess = true,
@@ -100,9 +101,17 @@ namespace Store.Application.Services.Carts
                 };
             }catch(Exception ex)
             {
-                var ee = ex.Message;
-                return new ResultDto() { IsSuccess=false };
+                return new ResultDto() { IsSuccess=false, Message=ex.Message };
             }
+        }
+
+        public async Task<int> CartCount(Guid BrowserId, string? UserId)
+        {
+            var cart = await _context.Carts
+             .Include(p => p.CartItems)
+             .Where(p => p.BrowserId == BrowserId  && p.Finished == false)
+             .FirstOrDefaultAsync();
+            return cart.CartItems.Count;
         }
 
         public async Task<ResultDto<CartDto>> GetMyCart(Guid BrowserId, string? UserId, bool? Forpay = false)
