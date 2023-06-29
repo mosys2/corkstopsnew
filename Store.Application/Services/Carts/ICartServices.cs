@@ -107,11 +107,22 @@ namespace Store.Application.Services.Carts
 
         public async Task<int> CartCount(Guid BrowserId, string? UserId)
         {
-            var cart = await _context.Carts
+            try
+            {
+              var cart = await _context.Carts
              .Include(p => p.CartItems)
              .Where(p => p.BrowserId == BrowserId  && p.Finished == false)
              .FirstOrDefaultAsync();
-            return cart.CartItems.Count;
+                if (cart==null)
+                {
+                    return 0;
+                }
+                return cart.CartItems.Count;
+            }catch(Exception ex)
+            {
+                return 0;
+            }
+            
         }
 
         public async Task<ResultDto<CartDto>> GetMyCart(Guid BrowserId, string? UserId, bool? Forpay = false)

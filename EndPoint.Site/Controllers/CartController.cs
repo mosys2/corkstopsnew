@@ -34,15 +34,24 @@ namespace EndPoint.Site.Controllers
         {
 
             var userId = ClaimUtility.GetUserId(User);
-
-
             var result = _cartServices.GetMyCart(cookiemanager.GetBrowserId(HttpContext), userId);
             return Json(new ResultDto{ IsSuccess=true,});
         }
-
+        [HttpPost]
+        public async Task<IActionResult> Remove(string Id)
+        {
+            return Json(await _cartServices.Remove(Id));
+        }
         public IActionResult CartViewComponent()
         {
             return ViewComponent("Cart");
         }
+
+        public IActionResult BacketViewComponent()
+        {
+            return ViewComponent("Backet");
+        }
+
+        
     }
 }

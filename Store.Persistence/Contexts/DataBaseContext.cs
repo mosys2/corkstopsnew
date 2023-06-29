@@ -40,6 +40,9 @@ namespace Store.Persistence.Contexts
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            builder.Entity<Cart>(b => b.HasQueryFilter(p => !p.IsRemoved));
+            builder.Entity<CartItem>(b => b.HasQueryFilter(p => !p.IsRemoved));
+
             builder.Entity<Product>(b => b.HasQueryFilter(p => !p.IsRemoved));
 
             builder.Entity<Category>(b => b.HasQueryFilter(p => !p.IsRemoved));
