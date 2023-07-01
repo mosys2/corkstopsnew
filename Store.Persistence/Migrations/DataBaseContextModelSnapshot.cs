@@ -784,14 +784,14 @@ namespace Store.Persistence.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "21d0cf74-ce83-4e4e-872f-14c630f20f4f",
+                            Id = "6c6a17ac-01ee-46c3-976b-5761c7365dc2",
                             Name = "Admin",
                             NormalizedName = "ADMIN",
                             IsRemoved = false
                         },
                         new
                         {
-                            Id = "0301d1d8-e124-4da0-843a-e1dddbacbed8",
+                            Id = "3cabb961-c544-47af-afdd-ea79a6b765f4",
                             Name = "Customer",
                             NormalizedName = "CUSTOMER",
                             IsRemoved = false
