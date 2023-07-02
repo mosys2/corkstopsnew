@@ -51,7 +51,10 @@ namespace EndPoint.Site.Controllers
         {
             return ViewComponent("Backet");
         }
+        public IActionResult CartTableViewComponent()
+        {
+            return ViewComponent("CartTable");
+        }
 
-        
     }
 }

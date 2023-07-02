@@ -24,12 +24,12 @@
                     {
                         <div class="cartmini__widget-item">
                             <div class="cartmini__thumb">
-                                <a href="product-details.html">
+                                <a href="~/Product/Details/@item.ProductId">
                                     <img src="@item.imageSrc" alt="@item.ProductName">
                                 </a>
                             </div>
                             <div class="cartmini__content">
-                                <h5 class="cartmini__title"><a href="product-details.html">@item.ProductName</a></h5>
+                                <h5 class="cartmini__title"><a href="~/Product/Details/@item.ProductId">@item.ProductName</a></h5>
                                 <div class="cartmini__price-wrapper">
                                     <span class="cartmini__price">@item.Price</span>
                                     <span class="cartmini__quantity">X @item.Count</span>
@@ -45,7 +45,7 @@
             <div class="cartmini__empty text-center d-none">
                 <img src="~/SiteTemplate/img/product/cartmini/empty-cart.png" alt="">
                 <p>Your Cart is empty</p>
-                <a href="shop.html" class="tp-btn">Go to Shop</a>
+                <a href="~/Products" class="tp-btn">Go to Shop</a>
             </div>
         </div>
         <div class="cartmini__checkout">
@@ -54,8 +54,8 @@
                 <span>$@Model.sumAmount</span>
             </div>
             <div class="cartmini__checkout-btn">
-                <a href="cart.html" class="tp-btn mb-10 w-100"> view cart</a>
-                <a href="checkout.html" class="tp-btn tp-btn-border w-100"> checkout</a>
+                <a href="~/Cart" class="tp-btn mb-10 w-100"> view cart</a>
+                <a href="~/Checkout" class="tp-btn tp-btn-border w-100"> checkout</a>
             </div>
         </div>
     </div>

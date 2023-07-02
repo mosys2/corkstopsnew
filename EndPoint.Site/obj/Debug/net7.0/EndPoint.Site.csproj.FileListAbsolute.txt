@@ -1,3 +1,11 @@
+C:\projects\corkstops\EndPoint.Site\obj\Debug\net7.0\EndPoint.Site.csproj.AssemblyReference.cache
+C:\projects\corkstops\EndPoint.Site\obj\Debug\net7.0\EndPoint.Site.GeneratedMSBuildEditorConfig.editorconfig
+C:\projects\corkstops\EndPoint.Site\obj\Debug\net7.0\EndPoint.Site.AssemblyInfoInputs.cache
+C:\projects\corkstops\EndPoint.Site\obj\Debug\net7.0\EndPoint.Site.AssemblyInfo.cs
+C:\projects\corkstops\EndPoint.Site\obj\Debug\net7.0\EndPoint.Site.csproj.CoreCompileInputs.cache
+C:\projects\corkstops\EndPoint.Site\obj\Debug\net7.0\EndPoint.Site.MvcApplicationPartsAssemblyInfo.cache
+C:\projects\corkstops\EndPoint.Site\obj\Debug\net7.0\EndPoint.Site.RazorAssemblyInfo.cache
+C:\projects\corkstops\EndPoint.Site\obj\Debug\net7.0\EndPoint.Site.RazorAssemblyInfo.cs
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net7.0\appsettings.Development.json
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net7.0\appsettings.json
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net7.0\libman.json
@@ -239,15 +247,7 @@ C:\projects\corkstops\EndPoint.Site\bin\Debug\net7.0\Store.Application.pdb
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net7.0\Store.Persistence.pdb
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net7.0\Store.Common.pdb
 C:\projects\corkstops\EndPoint.Site\bin\Debug\net7.0\Store.Domain.pdb
-C:\projects\corkstops\EndPoint.Site\obj\Debug\net7.0\EndPoint.Site.csproj.AssemblyReference.cache
-C:\projects\corkstops\EndPoint.Site\obj\Debug\net7.0\EndPoint.Site.GeneratedMSBuildEditorConfig.editorconfig
-C:\projects\corkstops\EndPoint.Site\obj\Debug\net7.0\EndPoint.Site.AssemblyInfoInputs.cache
-C:\projects\corkstops\EndPoint.Site\obj\Debug\net7.0\EndPoint.Site.AssemblyInfo.cs
-C:\projects\corkstops\EndPoint.Site\obj\Debug\net7.0\EndPoint.Site.csproj.CoreCompileInputs.cache
 C:\projects\corkstops\EndPoint.Site\obj\Debug\net7.0\EndPoint.Site.MvcApplicationPartsAssemblyInfo.cs
-C:\projects\corkstops\EndPoint.Site\obj\Debug\net7.0\EndPoint.Site.MvcApplicationPartsAssemblyInfo.cache
-C:\projects\corkstops\EndPoint.Site\obj\Debug\net7.0\EndPoint.Site.RazorAssemblyInfo.cache
-C:\projects\corkstops\EndPoint.Site\obj\Debug\net7.0\EndPoint.Site.RazorAssemblyInfo.cs
 C:\projects\corkstops\EndPoint.Site\obj\Debug\net7.0\staticwebassets\msbuild.EndPoint.Site.Microsoft.AspNetCore.StaticWebAssets.props
 C:\projects\corkstops\EndPoint.Site\obj\Debug\net7.0\staticwebassets\msbuild.build.EndPoint.Site.props
 C:\projects\corkstops\EndPoint.Site\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.EndPoint.Site.props
