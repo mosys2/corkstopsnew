@@ -19,6 +19,7 @@ namespace EndPoint.Site.ViewComponents
             var userId = ClaimUtility.GetUserId(HttpContext.User);
             var cart = _cartService.GetMyCart(cookiesManager.GetBrowserId(HttpContext), userId).Result.Data;
             return View(viewName: "Cart",cart);
+            
         }
     }
 }

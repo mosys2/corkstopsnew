@@ -11,26 +11,24 @@ namespace EndPoint.Site.ViewComponents
     {
         private readonly ICartServices _cartService;
         private readonly CookiesManager cookiesManager;
-        private readonly IGetCityForPayServices _getCityForPay;
-        private readonly IGetCityService _getCityService;
-        private readonly IGetProvinceServices _getProvinceService;
+        //private readonly IGetCityForPayServices _getCityForPay;
+        //private readonly IGetCityService _getCityService;
+        //private readonly IGetProvinceServices _getProvinceService;
 
-        public Bills(ICartServices cartService,
-            IGetCityForPayServices getCityForPay,
-            IGetProvinceServices getProvinceService,
-            IGetCityService getCityService)
+        public Bills(ICartServices cartService
+            //IGetCityForPayServices getCityForPay,
+            //IGetProvinceServices getProvinceService,
+            /*IGetCityService getCityService*/)
         {
             _cartService = cartService;
-            _getCityForPay = getCityForPay;
-            _getCityService = getCityService;
-            _getProvinceService = getProvinceService;
+            //_getCityForPay = getCityForPay;
+            //_getCityService = getCityService;
+            //_getProvinceService = getProvinceService;
             cookiesManager = new CookiesManager();
 
         }
         public IViewComponentResult Invoke(string? cityId)
         {
-           
-
             double costAllItem = 0;
             double costPost = 0;
             var userId = ClaimUtility.GetUserId(HttpContext.User);
@@ -43,9 +41,10 @@ namespace EndPoint.Site.ViewComponents
                     costAllItem += costitem;
                 }
             }
-            ViewBag.costAllItem = costAllItem;
-            ViewBag.costPost = costPost;
-            ViewBag.costAll = costAllItem + costPost;
+            ViewBag.carts=carts.CartItems;
+            ViewBag.costAllItem = costAllItem.ToString("n0");
+            ViewBag.costPost = costPost.ToString("n0");
+            ViewBag.costAll = (costAllItem + costPost).ToString("n0");
             return View(viewName: "Bills");
         }
 

@@ -11,14 +11,22 @@ namespace EndPoint.Site.Controllers
     {
         private readonly ICartServices _cartServices;
         private readonly CookiesManager cookiemanager;
-
-        public CartController(ICartServices cartServices)
+        private readonly SignInManager<User> _signInManager;
+        public CartController(ICartServices cartServices, SignInManager<User> signInManager)
         {
             _cartServices= cartServices;
             cookiemanager=new CookiesManager();
+            _signInManager=signInManager;
         }
         public async Task<IActionResult> Index()
         {
+            return View();
+        }
+        public async Task<IActionResult> Checkout() {
+            if (!_signInManager.IsSignedIn(User))
+            {
+                Response.Redirect("/Authentication/SignIn");
+            }
             return View();
         }
 
@@ -54,6 +62,10 @@ namespace EndPoint.Site.Controllers
         public IActionResult CartTableViewComponent()
         {
             return ViewComponent("CartTable");
+        }
+        public IActionResult BillsViewComponent(int cityId)
+        {
+            return ViewComponent("Bills", cityId);
         }
 
     }

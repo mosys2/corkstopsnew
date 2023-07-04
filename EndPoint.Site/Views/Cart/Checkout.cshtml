@@ -1,0 +1,131 @@
+﻿
+@{
+    ViewData["Title"] = "Checkout";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+
+<main>
+
+    <!-- breadcrumb area start -->
+    <section class="breadcrumb__area include-bg pt-95 pb-50" data-bg-color="#EFF1F5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-12">
+                    <div class="breadcrumb__content p-relative z-index-1">
+                        <h3 class="breadcrumb__title">Checkout</h3>
+                        <div class="breadcrumb__list">
+                            <span><a href="#">Home</a></span>
+                            <span>Checkout</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb area end -->
+    <!-- checkout area start -->
+    <section class="tp-checkout-area pb-120" data-bg-color="#EFF1F5">
+        <div class="container">
+            <div class="row">
+               
+                <div class="col-lg-7">
+                    <div class="tp-checkout-bill-area">
+                        <h3 class="tp-checkout-bill-title">Billing Details</h3>
+
+                        <div class="tp-checkout-bill-form">
+                            <form action="#">
+                                <div class="tp-checkout-bill-inner">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="tp-checkout-input">
+                                                <label>First Name <span>*</span></label>
+                                                <input type="text" placeholder="First Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="tp-checkout-input">
+                                                <label>Last Name <span>*</span></label>
+                                                <input type="text" placeholder="Last Name">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-12">
+                                            <div class="tp-checkout-input">
+                                                <label>Street address</label>
+                                                <input type="text" placeholder="House number and street name">
+                                            </div>
+
+                                            <div class="tp-checkout-input">
+                                                <input type="text" placeholder="Apartment, suite, unit, etc. (optional)">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="tp-checkout-input">
+                                                <label>Street address</label>
+                                                <input type="text" placeholder="House number and street name">
+                                            </div>
+
+                                            <div class="tp-checkout-input">
+                                                <input type="text" placeholder="Apartment, suite, unit, etc. (optional)">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="tp-checkout-input">
+                                                <label>State</label>
+                                                <select>
+                                                    <option>New York</option>
+                                                    <option>Berlin Germany</option>
+                                                    <option>Paris France</option>
+                                                    <option>Tokiyo Japan</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="tp-checkout-input">
+                                                <label>County</label>
+                                                <select>
+                                                    <option>new</option>
+                                                    <option>Berlin Germany</option>
+                                                    <option>Paris France</option>
+                                                    <option>Tokiyo Japan</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="tp-checkout-input">
+                                                <label>Postcode ZIP</label>
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="tp-checkout-input">
+                                                <label>Mobile <span>*</span></label>
+                                                <input type="text" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="tp-checkout-input">
+                                                <label>Email address <span>*</span></label>
+                                                <input type="email" placeholder="">
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                @await Component.InvokeAsync("Bills")
+            </div>
+        </div>
+    </section>
+    <!-- checkout area end -->
+
+
+</main>
+
+
