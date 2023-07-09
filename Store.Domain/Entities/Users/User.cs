@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Store.Domain.Entities.Commons;
+using Store.Domain.Entities.Orders;
 using Store.Domain.Entities.Products;
 using System;
 using System.Collections.Generic;
@@ -32,6 +33,8 @@ namespace Store.Domain.Entities.Users
         public virtual ICollection<Product> Products { get; set; }
         public virtual ICollection<Rate> Rates { get; set; }
         public virtual ICollection<Comment> Comments { get; set; }
+        public virtual ICollection<Order> Orders { get; set; }
+
 
 
     }

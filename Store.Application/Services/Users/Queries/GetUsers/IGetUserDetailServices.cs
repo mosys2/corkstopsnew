@@ -41,6 +41,7 @@ namespace Store.Application.Services.Users.Queries.GetUsers
                             Id=user.Id,
                             Name=user?.Name,
                             LastName=user?.LastName,
+                            Fullname=user?.FullName,
                             Gender=user?.Gender==null ? 0 : user.Gender,
                             LockoutEnabled=user.LockoutEnabled,
                             Mobile=user.PhoneNumber,
@@ -68,6 +69,7 @@ namespace Store.Application.Services.Users.Queries.GetUsers
         public string Id { get; set; }
         public string? Name { get; set; }
         public string? LastName { get; set; }
+        public string? Fullname { get; set; }
         public int? Gender { get; set; }
         public bool LockoutEnabled { get; set; }
         public string? Mobile { get; set; }

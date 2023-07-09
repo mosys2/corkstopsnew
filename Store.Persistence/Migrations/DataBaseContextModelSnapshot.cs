@@ -246,6 +246,47 @@ namespace Store.Persistence.Migrations
                     b.ToTable("CartItems");
                 });
 
+            modelBuilder.Entity("Store.Domain.Entities.Post.Province", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("CityName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double>("Cost")
+                        .HasColumnType("float");
+
+                    b.Property<int>("DeliverDay")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("InsertTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsRemoved")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("ParrentId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime?>("RemoveTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<byte[]>("RowVersion")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("rowversion");
+
+                    b.Property<DateTime?>("UpdateTime")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ParrentId");
+
+                    b.ToTable("Provinces");
+                });
+
             modelBuilder.Entity("Store.Domain.Entities.Products.Brand", b =>
                 {
                     b.Property<string>("Id")
@@ -784,14 +825,14 @@ namespace Store.Persistence.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "6c6a17ac-01ee-46c3-976b-5761c7365dc2",
+                            Id = "c524455f-3039-43c5-8208-e231331dc79c",
                             Name = "Admin",
                             NormalizedName = "ADMIN",
                             IsRemoved = false
                         },
                         new
                         {
-                            Id = "3cabb961-c544-47af-afdd-ea79a6b765f4",
+                            Id = "9c4b5ffa-5023-4dbb-8936-bb1b1f3051ad",
                             Name = "Customer",
                             NormalizedName = "CUSTOMER",
                             IsRemoved = false
@@ -875,6 +916,15 @@ namespace Store.Persistence.Migrations
                     b.Navigation("Cart");
 
                     b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("Store.Domain.Entities.Post.Province", b =>
+                {
+                    b.HasOne("Store.Domain.Entities.Post.Province", "Parrent")
+                        .WithMany("SubCategories")
+                        .HasForeignKey("ParrentId");
+
+                    b.Navigation("Parrent");
                 });
 
             modelBuilder.Entity("Store.Domain.Entities.Products.Category", b =>
@@ -993,6 +1043,11 @@ namespace Store.Persistence.Migrations
             modelBuilder.Entity("Store.Domain.Entities.Carts.Cart", b =>
                 {
                     b.Navigation("CartItems");
+                });
+
+            modelBuilder.Entity("Store.Domain.Entities.Post.Province", b =>
+                {
+                    b.Navigation("SubCategories");
                 });
 
             modelBuilder.Entity("Store.Domain.Entities.Products.Brand", b =>

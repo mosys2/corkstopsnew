@@ -20764,3 +20764,20 @@ product all slider
 .mr-1{
     margin-right:7px;
 }
+
+.select-custom{
+    margin-bottom:20px
+}
+
+    .select-custom label {
+        font-weight: 500 !important;
+        display: block !important;
+        color: #010F1C;
+    }
+.select-custom select {
+    height: 50px;
+    width: 100%;
+    border: 1px solid #D5D8DB;
+    padding: 0 10px;
+
+}

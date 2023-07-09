@@ -12,8 +12,8 @@ using Store.Persistence.Contexts;
 namespace Store.Persistence.Migrations
 {
     [DbContext(typeof(DataBaseContext))]
-    [Migration("20230627074710_Add_Cart_CartItem")]
-    partial class Add_Cart_CartItem
+    [Migration("20230705131447_Add_Province")]
+    partial class Add_Province
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -246,6 +246,47 @@ namespace Store.Persistence.Migrations
                     b.HasIndex("ProductId");
 
                     b.ToTable("CartItems");
+                });
+
+            modelBuilder.Entity("Store.Domain.Entities.Post.Province", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("CityName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double>("Cost")
+                        .HasColumnType("float");
+
+                    b.Property<int>("DeliverDay")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("InsertTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsRemoved")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("ParrentId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime?>("RemoveTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<byte[]>("RowVersion")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("rowversion");
+
+                    b.Property<DateTime?>("UpdateTime")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ParrentId");
+
+                    b.ToTable("Provinces");
                 });
 
             modelBuilder.Entity("Store.Domain.Entities.Products.Brand", b =>
@@ -786,14 +827,14 @@ namespace Store.Persistence.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "21d0cf74-ce83-4e4e-872f-14c630f20f4f",
+                            Id = "c524455f-3039-43c5-8208-e231331dc79c",
                             Name = "Admin",
                             NormalizedName = "ADMIN",
                             IsRemoved = false
                         },
                         new
                         {
-                            Id = "0301d1d8-e124-4da0-843a-e1dddbacbed8",
+                            Id = "9c4b5ffa-5023-4dbb-8936-bb1b1f3051ad",
                             Name = "Customer",
                             NormalizedName = "CUSTOMER",
                             IsRemoved = false
@@ -877,6 +918,15 @@ namespace Store.Persistence.Migrations
                     b.Navigation("Cart");
 
                     b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("Store.Domain.Entities.Post.Province", b =>
+                {
+                    b.HasOne("Store.Domain.Entities.Post.Province", "Parrent")
+                        .WithMany("SubCategories")
+                        .HasForeignKey("ParrentId");
+
+                    b.Navigation("Parrent");
                 });
 
             modelBuilder.Entity("Store.Domain.Entities.Products.Category", b =>
@@ -995,6 +1045,11 @@ namespace Store.Persistence.Migrations
             modelBuilder.Entity("Store.Domain.Entities.Carts.Cart", b =>
                 {
                     b.Navigation("CartItems");
+                });
+
+            modelBuilder.Entity("Store.Domain.Entities.Post.Province", b =>
+                {
+                    b.Navigation("SubCategories");
                 });
 
             modelBuilder.Entity("Store.Domain.Entities.Products.Brand", b =>

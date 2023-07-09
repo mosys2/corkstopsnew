@@ -14,6 +14,7 @@ using Store.Application.Services.FileManager.Commands.CreateDirectory;
 using Store.Application.Services.FileManager.Commands.RemoveFiles;
 using Store.Application.Services.FileManager.Commands.UploadFiles;
 using Store.Application.Services.FileManager.Queries.ListDirectories;
+using Store.Application.Services.Posts.FacadPatternSite;
 using Store.Application.Services.Products.FacadPattern;
 using Store.Application.Services.Products.FacadpatternSite;
 using Store.Application.Services.Users.Commands.EditeUser;
@@ -78,6 +79,7 @@ builder.Services.AddScoped<IProductFacad, ProductFacad>();
 
 //Facad Site
 builder.Services.AddScoped<IProductFacadSite, ProductFacadSite>();
+builder.Services.AddScoped<IPostFacadSite, PostFacadSite >();
 
 
 //Scopded Website

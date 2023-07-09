@@ -1,4 +1,5 @@
-﻿function AddToCart(productId) {
+﻿
+function AddToCart(productId) {
     let count = 1;
     let model = { productId, count }
     ajaxFunc("/Cart/AddToCart", model, "POST",
@@ -107,5 +108,27 @@ function GetListCartTable() {
             }
         });
 }
+function changeprovince() {
+    var selectedprovince = $("#State").val();
+    console.log(selectedprovince);
+    var provinceId = {
+        provinceId: selectedprovince
+    };
+    var base_url = window.location.origin;
+    $.ajax(base_url + '/Cart/CityViewComponent',
+        {
+            data: provinceId,
+            dataType: 'html', // type of response data
+            timeout: 500,     // timeout milliseconds
 
+            success: function (html, status, xhr) {   // success callback function
+                $("#CityComponentContainer").html(html);
+                $('.tp-checkout-input select').niceSelect();
+            },
+            error: function (jqXhr, textStatus, errorMessage) { // error callback
+
+            }
+        });
+
+}
 

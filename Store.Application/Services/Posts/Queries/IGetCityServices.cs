@@ -24,12 +24,11 @@ namespace Store.Application.Services.Posts.Queries
 
             var cities = _context.Provinces
                 .Where(p => p.ParrentId == provinceId)
-                .OrderBy(p => p.Id)
                 .ToList()
                 .Select(p => new GetCityDto
                 {
                     Id=p.Id,
-                    CityName=p.CityName,
+                    Name=p.CityName,
                     Cost=p.Cost,
                     Day=p.DeliverDay,
                     ProvinceId=p.ParrentId
@@ -44,7 +43,7 @@ namespace Store.Application.Services.Posts.Queries
     public class GetCityDto
     {
         public string Id { get; set; }
-        public string CityName { get; set; }
+        public string Name { get; set; }
         public double Cost { get; set; }
         public int Day { get; set; }
         public string ProvinceId { get; set; }

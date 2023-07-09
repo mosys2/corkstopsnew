@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Store.Persistence.Migrations
 {
-    public partial class Product_All21 : Migration
+    public partial class Add_Province : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -54,6 +54,31 @@ namespace Store.Persistence.Migrations
                         name: "FK_Categories_Categories_ParrentId",
                         column: x => x.ParrentId,
                         principalTable: "Categories",
+                        principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Provinces",
+                columns: table => new
+                {
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    ParrentId = table.Column<string>(type: "nvarchar(450)", nullable: true),
+                    CityName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Cost = table.Column<double>(type: "float", nullable: false),
+                    DeliverDay = table.Column<int>(type: "int", nullable: false),
+                    InsertTime = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    UpdateTime = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    IsRemoved = table.Column<bool>(type: "bit", nullable: false),
+                    RemoveTime = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    RowVersion = table.Column<byte[]>(type: "rowversion", rowVersion: true, nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Provinces", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Provinces_Provinces_ParrentId",
+                        column: x => x.ParrentId,
+                        principalTable: "Provinces",
                         principalColumn: "Id");
                 });
 
@@ -155,6 +180,30 @@ namespace Store.Persistence.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Carts",
+                columns: table => new
+                {
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: true),
+                    BrowserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Finished = table.Column<bool>(type: "bit", nullable: false),
+                    InsertTime = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    UpdateTime = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    IsRemoved = table.Column<bool>(type: "bit", nullable: false),
+                    RemoveTime = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    RowVersion = table.Column<byte[]>(type: "rowversion", rowVersion: true, nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Carts", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Carts_Users_UserId",
+                        column: x => x.UserId,
+                        principalTable: "Users",
+                        principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Products",
                 columns: table => new
                 {
@@ -164,16 +213,16 @@ namespace Store.Persistence.Migrations
                     Price = table.Column<double>(type: "float", nullable: false),
                     LastPrice = table.Column<double>(type: "float", nullable: false),
                     Quantity = table.Column<int>(type: "int", nullable: false),
-                    Slag = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Slug = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     IsActive = table.Column<bool>(type: "bit", nullable: false),
                     MinPic = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Pic = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    PostageFee = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    PostageFeeBasedQuantity = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    PostageFee = table.Column<double>(type: "float", nullable: false),
+                    PostageFeeBasedQuantity = table.Column<double>(type: "float", nullable: false),
                     Content = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    CategoryId = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    BrandId = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    CategoryId = table.Column<string>(type: "nvarchar(450)", nullable: true),
+                    BrandId = table.Column<string>(type: "nvarchar(450)", nullable: true),
+                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: true),
                     InsertTime = table.Column<DateTime>(type: "datetime2", nullable: true),
                     UpdateTime = table.Column<DateTime>(type: "datetime2", nullable: true),
                     IsRemoved = table.Column<bool>(type: "bit", nullable: false),
@@ -187,20 +236,17 @@ namespace Store.Persistence.Migrations
                         name: "FK_Products_Brands_BrandId",
                         column: x => x.BrandId,
                         principalTable: "Brands",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_Products_Categories_CategoryId",
                         column: x => x.CategoryId,
                         principalTable: "Categories",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_Products_Users_UserId",
                         column: x => x.UserId,
                         principalTable: "Users",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -284,6 +330,38 @@ namespace Store.Persistence.Migrations
                         name: "FK_UserTokens_Users_UserId",
                         column: x => x.UserId,
                         principalTable: "Users",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "CartItems",
+                columns: table => new
+                {
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    ProductId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Count = table.Column<int>(type: "int", nullable: false),
+                    Price = table.Column<double>(type: "float", nullable: false),
+                    CartId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    InsertTime = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    UpdateTime = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    IsRemoved = table.Column<bool>(type: "bit", nullable: false),
+                    RemoveTime = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    RowVersion = table.Column<byte[]>(type: "rowversion", rowVersion: true, nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_CartItems", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_CartItems_Carts_CartId",
+                        column: x => x.CartId,
+                        principalTable: "Carts",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_CartItems_Products_ProductId",
+                        column: x => x.ProductId,
+                        principalTable: "Products",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -380,6 +458,31 @@ namespace Store.Persistence.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Medias",
+                columns: table => new
+                {
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    ProductId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Url = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    MediaType = table.Column<int>(type: "int", nullable: false),
+                    InsertTime = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    UpdateTime = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    IsRemoved = table.Column<bool>(type: "bit", nullable: false),
+                    RemoveTime = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    RowVersion = table.Column<byte[]>(type: "rowversion", rowVersion: true, nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Medias", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Medias_Products_ProductId",
+                        column: x => x.ProductId,
+                        principalTable: "Products",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Rates",
                 columns: table => new
                 {
@@ -411,12 +514,27 @@ namespace Store.Persistence.Migrations
             migrationBuilder.InsertData(
                 table: "Rolse",
                 columns: new[] { "Id", "ConcurrencyStamp", "Description", "Discriminator", "InsertTime", "IsRemoved", "MyTitle", "Name", "NormalizedName", "RemoveTime", "UpdateTime" },
-                values: new object[] { "605b0e51-0317-4c03-b382-ceb275be5739", null, null, "Role", null, false, null, "Customer", "CUSTOMER", null, null });
+                values: new object[] { "9c4b5ffa-5023-4dbb-8936-bb1b1f3051ad", null, null, "Role", null, false, null, "Customer", "CUSTOMER", null, null });
 
             migrationBuilder.InsertData(
                 table: "Rolse",
                 columns: new[] { "Id", "ConcurrencyStamp", "Description", "Discriminator", "InsertTime", "IsRemoved", "MyTitle", "Name", "NormalizedName", "RemoveTime", "UpdateTime" },
-                values: new object[] { "90a2fab7-1b90-42da-ac78-4d02301c9b3d", null, null, "Role", null, false, null, "Admin", "ADMIN", null, null });
+                values: new object[] { "c524455f-3039-43c5-8208-e231331dc79c", null, null, "Role", null, false, null, "Admin", "ADMIN", null, null });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_CartItems_CartId",
+                table: "CartItems",
+                column: "CartId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_CartItems_ProductId",
+                table: "CartItems",
+                column: "ProductId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Carts_UserId",
+                table: "Carts",
+                column: "UserId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Categories_ParrentId",
@@ -454,6 +572,11 @@ namespace Store.Persistence.Migrations
                 column: "TagId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Medias_ProductId",
+                table: "Medias",
+                column: "ProductId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Products_BrandId",
                 table: "Products",
                 column: "BrandId");
@@ -467,6 +590,11 @@ namespace Store.Persistence.Migrations
                 name: "IX_Products_UserId",
                 table: "Products",
                 column: "UserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Provinces_ParrentId",
+                table: "Provinces",
+                column: "ParrentId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Rates_ProductId",
@@ -521,6 +649,9 @@ namespace Store.Persistence.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
+                name: "CartItems");
+
+            migrationBuilder.DropTable(
                 name: "Comments");
 
             migrationBuilder.DropTable(
@@ -528,6 +659,12 @@ namespace Store.Persistence.Migrations
 
             migrationBuilder.DropTable(
                 name: "ItemTags");
+
+            migrationBuilder.DropTable(
+                name: "Medias");
+
+            migrationBuilder.DropTable(
+                name: "Provinces");
 
             migrationBuilder.DropTable(
                 name: "Rates");
@@ -546,6 +683,9 @@ namespace Store.Persistence.Migrations
 
             migrationBuilder.DropTable(
                 name: "UserTokens");
+
+            migrationBuilder.DropTable(
+                name: "Carts");
 
             migrationBuilder.DropTable(
                 name: "Tags");

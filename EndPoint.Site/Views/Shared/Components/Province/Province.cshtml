@@ -1,0 +1,6 @@
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@model CheckOutAddress
+
+<label>State</label>
+<select asp-for="State" onchange="changeprovince()" asp-items="@ViewBag.province">
+</select>

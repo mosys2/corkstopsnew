@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata;
 using Store.Domain.Entities.Commons;
+using Store.Domain.Entities.Orders;
 using Store.Domain.Entities.Users;
 using System;
 using System.Collections.Generic;
@@ -40,7 +41,7 @@ namespace Store.Domain.Entities.Products
         public virtual ICollection<Rate> Rates { get; set; }
         public virtual ICollection<Comment> Comments { get; set; }
         public virtual ICollection<Media> Medias { get; set; }
-
+        public virtual ICollection<OrderDetail> OrderDetails { get; set; }
 
     }
 }

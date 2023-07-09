@@ -1,10 +1,9 @@
-﻿
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@model CheckOutAddress
 @{
     ViewData["Title"] = "Checkout";
     Layout = "~/Views/Shared/_Layout.cshtml";
-
 }
-
 
 <main>
 
@@ -38,18 +37,13 @@
                             <form action="#">
                                 <div class="tp-checkout-bill-inner">
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-md-12">
                                             <div class="tp-checkout-input">
-                                                <label>First Name <span>*</span></label>
-                                                <input type="text" placeholder="First Name">
+                                                <label>Full Name <span>*</span></label>
+                                                <input asp-for="FullName"  type="text" placeholder="First Name">
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
-                                            <div class="tp-checkout-input">
-                                                <label>Last Name <span>*</span></label>
-                                                <input type="text" placeholder="Last Name">
-                                            </div>
-                                        </div>
+                                       
                                         
                                         <div class="col-md-12">
                                             <div class="tp-checkout-input">
@@ -61,54 +55,33 @@
                                                 <input type="text" placeholder="Apartment, suite, unit, etc. (optional)">
                                             </div>
                                         </div>
-                                        <div class="col-md-12">
-                                            <div class="tp-checkout-input">
-                                                <label>Street address</label>
-                                                <input type="text" placeholder="House number and street name">
-                                            </div>
-
-                                            <div class="tp-checkout-input">
-                                                <input type="text" placeholder="Apartment, suite, unit, etc. (optional)">
+                                       
+                                        <div class="col-md-6">
+                                            <div class="select-custom">
+                                                @await Component.InvokeAsync("Province")
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="tp-checkout-input">
-                                                <label>State</label>
-                                                <select>
-                                                    <option>New York</option>
-                                                    <option>Berlin Germany</option>
-                                                    <option>Paris France</option>
-                                                    <option>Tokiyo Japan</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="tp-checkout-input">
-                                                <label>County</label>
-                                                <select>
-                                                    <option>new</option>
-                                                    <option>Berlin Germany</option>
-                                                    <option>Paris France</option>
-                                                    <option>Tokiyo Japan</option>
-                                                </select>
+                                            <div class="select-custom" id="CityComponentContainer">
+                                                @await Component.InvokeAsync("City")
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="tp-checkout-input">
                                                 <label>Postcode ZIP</label>
-                                                <input type="text" placeholder="">
+                                                <input asp-for="PostCode" type="text" placeholder="">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="tp-checkout-input">
                                                 <label>Mobile <span>*</span></label>
-                                                <input type="text" placeholder="">
+                                                <input asp-for="Mobile" type="text" placeholder="">
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="tp-checkout-input">
                                                 <label>Email address <span>*</span></label>
-                                                <input type="email" placeholder="">
+                                                <input asp-for="Email" type="email" placeholder="">
                                             </div>
                                         </div>
                                         

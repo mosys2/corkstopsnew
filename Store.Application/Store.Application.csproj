@@ -23,6 +23,7 @@
   <ItemGroup>
     <Folder Include="Services\FacadPattern\" />
     <Folder Include="Services\Posts\Commands\" />
+    <Folder Include="Services\Posts\FacadPattern\" />
     <Folder Include="Services\Users\Queries\Website\NewFolder\" />
   </ItemGroup>
 

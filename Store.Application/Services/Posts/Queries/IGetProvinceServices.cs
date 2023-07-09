@@ -29,7 +29,7 @@ namespace Store.Application.Services.Posts.Queries
                  .Select(p => new GetProvinceDto
                  {
                      Id = p.Id,
-                     ProvinceName = p.CityName,
+                     Name = p.CityName,
                  }).ToList();
             return new ResultDto<List<GetProvinceDto>>()
             {
@@ -42,7 +42,7 @@ namespace Store.Application.Services.Posts.Queries
     public class GetProvinceDto
     {
         public string Id { get; set; }
-        public string ProvinceName { get; set; }
+        public string Name { get; set; }
     }
 }
 

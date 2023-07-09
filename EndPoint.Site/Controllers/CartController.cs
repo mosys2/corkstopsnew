@@ -1,7 +1,12 @@
-﻿using EndPoint.Site.Utilities;
+﻿using EndPoint.Site.Models;
+using EndPoint.Site.Utilities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.Build.Framework;
+using Store.Application.Interfaces.FacadPatternSite;
 using Store.Application.Services.Carts;
+using Store.Application.Services.Users.Queries.GetUsers;
 using Store.Common.ResultDto;
 using Store.Domain.Entities.Users;
 
@@ -10,13 +15,20 @@ namespace EndPoint.Site.Controllers
     public class CartController : Controller
     {
         private readonly ICartServices _cartServices;
+        private readonly IPostFacadSite _postFacadSite;
         private readonly CookiesManager cookiemanager;
         private readonly SignInManager<User> _signInManager;
-        public CartController(ICartServices cartServices, SignInManager<User> signInManager)
+        private readonly IGetUserDetailServices _getUserDetailServices;
+        public CartController(ICartServices cartServices,
+            IPostFacadSite postFacadSite,
+            IGetUserDetailServices getUserDetailServices,
+            SignInManager<User> signInManager)
         {
             _cartServices= cartServices;
             cookiemanager=new CookiesManager();
             _signInManager=signInManager;
+            _getUserDetailServices=getUserDetailServices;
+            _postFacadSite=postFacadSite;
         }
         public async Task<IActionResult> Index()
         {
@@ -27,7 +39,17 @@ namespace EndPoint.Site.Controllers
             {
                 Response.Redirect("/Authentication/SignIn");
             }
-            return View();
+            var userId = ClaimUtility.GetUserId(User);
+            var result = await _getUserDetailServices.Execute(userId);
+
+            CheckOutAddress address = new CheckOutAddress()
+            {
+                Email=result.Data.Email,
+                FullName=result.Data.Fullname,
+                Mobile=result.Data.Mobile,
+            };
+
+            return View(address);
         }
 
         [HttpPost]
@@ -63,10 +85,20 @@ namespace EndPoint.Site.Controllers
         {
             return ViewComponent("CartTable");
         }
-        public IActionResult BillsViewComponent(int cityId)
+        public IActionResult provinceViewComponent()
+        {
+            return ViewComponent("Province");
+        }
+        public IActionResult CityViewComponent(string provinceId)
+        {
+            return ViewComponent("City", provinceId);
+        }
+        public IActionResult BillsViewComponent(string cityId)
         {
             return ViewComponent("Bills", cityId);
         }
+
+        
 
     }
 }

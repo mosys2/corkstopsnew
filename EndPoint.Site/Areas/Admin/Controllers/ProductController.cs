@@ -1,5 +1,6 @@
 ﻿using EndPoint.Site.Areas.Admin.Models.ContollerModels.Product;
 using EndPoint.Site.Areas.Admin.Models.ViewModel;
+using EndPoint.Site.Utilities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Store.Application.Interfaces.FacadPattern;
@@ -59,6 +60,15 @@ namespace EndPoint.Site.Areas.Admin.Controllers
                     Message = Messages.ErrorsMessage.ValidationError
                 });
             }
+            var userId = ClaimUtility.GetUserId(User);
+            if (userId == null)
+            {
+                return Json(new ResultDto
+                {
+                    IsSuccess = false,
+                    Message = Messages.ErrorsMessage.LoginField
+                });
+            }
             var result = await _productFacad.AddNewProductServices.Execute(new RequestAddProductDto
             {
                 BrandId= model.BrandId,
@@ -76,7 +86,7 @@ namespace EndPoint.Site.Areas.Admin.Controllers
                 PostageFee=model.PostageFee,
                 PostageFeeBasedQuantity=model.PostageFeeBasedQuantity,
                 Slug=model.Slug,
-                UserId="08b1edd4-4da3-424b-ad6c-4cafaf047ffb"
+                UserId=userId
             });
             return Json(result);
         }
@@ -97,6 +107,23 @@ namespace EndPoint.Site.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Edit(RequestEditProductDto request)
         {
+            if (!ModelState.IsValid)
+            {
+                return Json(new ResultDto
+                {
+                    IsSuccess = false,
+                    Message = Messages.ErrorsMessage.ValidationError
+                });
+            }
+            var userId = ClaimUtility.GetUserId(User);
+            if (userId == null)
+            {
+                return Json(new ResultDto
+                {
+                    IsSuccess = false,
+                    Message = Messages.ErrorsMessage.LoginField
+                });
+            }
             await _productFacad.EditProductServices.Execute(new RequestEditRegisterProductDto
             {
                 Id = request.Id,
@@ -116,7 +143,7 @@ namespace EndPoint.Site.Areas.Admin.Controllers
                 Quantity=request.Quantity,
                 Slug=request.Slug,
                 TagsId=request.TagsId,
-                UserId="08b1edd4-4da3-424b-ad6c-4cafaf047ffb"
+                UserId=userId
 
             });
             return Json(new ResultDto() { IsSuccess=true });
